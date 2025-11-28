@@ -13,3 +13,20 @@
 | aaa       |                      | Used at the end of a sentence as a way to like soften the statement just made     |
 | gew       | name                 |                                                                                   |
 | joy ghin  | good bye             |                                                                                   |
+| dye       | big                  |                                                                                   |
+| sigh      | small                |                                                                                   |
+| gai       | old (things)         |                                                                                   |
+| sun       | new                  |                                                                                   |
+| low       | old (people)         |                                                                                   |
+| high      | fast                 |                                                                                   |
+| marn      | slow                 |                                                                                   |
+| yung      | hot                  |                                                                                   |
+| dong      | cold                 |                                                                                   |
+| lung      | long                 |                                                                                   |
+| duen      | short                |                                                                                   |
+| gor       | tall/high            |                                                                                   |
+| ngai      | short (height)       |                                                                                   |
+| fay       | fat                  |                                                                                   |
+| saw       | thin                 |                                                                                   |
+| lay       | pretty               |                                                                                   |
+| chow      | ugly                 |                                                                                   |
