@@ -1,4 +1,5 @@
 import type { PoolItem } from "~/types";
+import { getWordId } from "~/types";
 
 interface LearningPoolState {
   items: PoolItem[];
@@ -77,6 +78,8 @@ export const useLearningPool = () => {
 
     // Priority 1: Eligible phrases (all words mastered, phrase not yet mastered)
     const eligiblePhraseIds = getEligiblePhrases();
+    console.log("[LearningPool] Eligible phrases:", eligiblePhraseIds.length);
+
     for (const phraseId of eligiblePhraseIds) {
       if (isInPool("phrase", phraseId)) continue;
 
@@ -84,35 +87,40 @@ export const useLearningPool = () => {
       if (entry && entry.mastered) continue;
 
       candidates.push({ type: "phrase", id: phraseId });
+      console.log("[LearningPool] Adding eligible phrase:", phraseId);
     }
+
+    console.log("[LearningPool] Total phrase candidates:", candidates.length);
 
     // Priority 2: Unmastered words ordered by usage frequency
     const wordsByUsage = [...words.value]
       .map((word) => ({
         word,
-        usage: getWordUsage(word.id),
+        usage: getWordUsage(getWordId(word)),
       }))
       .sort((a, b) => b.usage - a.usage);
 
     for (const { word } of wordsByUsage) {
-      if (isInPool("word", word.id)) continue;
+      const wordId = getWordId(word);
+      if (isInPool("word", wordId)) continue;
 
-      const entry = getEntry("word", word.id);
+      const entry = getEntry("word", wordId);
 
       // Include unlocked but not mastered words
       if (entry && entry.unlocked && !entry.mastered) {
-        candidates.push({ type: "word", id: word.id });
+        candidates.push({ type: "word", id: wordId });
       }
     }
 
     // Priority 3: New words (not yet unlocked) by frequency
     for (const { word } of wordsByUsage) {
-      if (isInPool("word", word.id)) continue;
+      const wordId = getWordId(word);
+      if (isInPool("word", wordId)) continue;
 
-      const entry = getEntry("word", word.id);
+      const entry = getEntry("word", wordId);
 
       if (!entry || !entry.unlocked) {
-        candidates.push({ type: "word", id: word.id });
+        candidates.push({ type: "word", id: wordId });
       }
     }
 

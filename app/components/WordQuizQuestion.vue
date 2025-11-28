@@ -4,9 +4,19 @@
       <div class="text-sm text-gray-500 mb-2">
         {{ question.promptType === "cantonese" ? "Cantonese" : "English" }}
       </div>
-      <div class="text-3xl font-bold text-gray-900 mb-8">
+      <div class="text-3xl font-bold text-gray-900 mb-2">
         {{ question.prompt }}
       </div>
+      <div
+        v-if="question.notes"
+        class="text-sm text-gray-500 italic mb-6"
+      >
+        {{ question.notes }}
+      </div>
+      <div
+        v-else
+        class="mb-6"
+      ></div>
     </div>
 
     <div class="grid grid-cols-1 gap-3">
@@ -23,7 +33,7 @@
     </div>
 
     <div
-      v-if="answered"
+      v-if="answered && !isAutoAdvancing"
       class="text-center mt-6"
     >
       <button
@@ -51,6 +61,7 @@
 
   const answered = ref(false);
   const selectedId = ref<string | null>(null);
+  const isAutoAdvancing = ref(false);
 
   const handleAnswer = (optionId: string) => {
     if (answered.value) return;
@@ -60,12 +71,28 @@
 
     const correct = optionId === props.question.correctOptionId;
 
+    // Set auto-advancing flag immediately for correct answers
+    if (correct) {
+      isAutoAdvancing.value = true;
+    }
+
     setTimeout(() => {
       emit("answered", { correct, wordId: props.question.wordId });
+
+      // Auto-advance on correct answer
+      if (correct) {
+        setTimeout(() => {
+          emit("next");
+          answered.value = false;
+          selectedId.value = null;
+          isAutoAdvancing.value = false;
+        }, 800);
+      }
     }, 300);
   };
 
   const handleNext = () => {
+    if (isAutoAdvancing.value) return;
     emit("next");
     // Reset for next question
     answered.value = false;

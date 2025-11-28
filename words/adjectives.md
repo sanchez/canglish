@@ -11,7 +11,7 @@
 | sik       | eat                  |                                                                                   |
 | ma        | ?                    | Used at the end of a sentence to indicate a the sentence is a question            |
 | aaa       |                      | Used at the end of a sentence as a way to like soften the statement just made     |
-| gew       | name                 |                                                                                   |
+| gew       | called               |                                                                                   |
 | joy ghin  | good bye             |                                                                                   |
 | dye       | big                  |                                                                                   |
 | sigh      | small                |                                                                                   |

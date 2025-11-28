@@ -1,15 +1,16 @@
 import type { Phrase } from "~/types";
+import { getPhraseId } from "~/types";
 import phrasesData from "~/content/phrases.json";
 
 export const usePhrases = () => {
   const phrases = ref<Phrase[]>(phrasesData as Phrase[]);
 
   const getPhraseById = (id: string): Phrase | undefined => {
-    return phrases.value.find((p) => p.id === id);
+    return phrases.value.find((p) => getPhraseId(p) === id);
   };
 
   const getPhrasesByIds = (ids: string[]): Phrase[] => {
-    return phrases.value.filter((p) => ids.includes(p.id));
+    return phrases.value.filter((p) => ids.includes(getPhraseId(p)));
   };
 
   const getPhrasesByCategory = (category: string): Phrase[] => {

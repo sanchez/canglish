@@ -12,7 +12,6 @@ const phrasesDir = join(rootDir, "phrases");
 const outputDir = join(rootDir, "app", "content");
 
 interface Word {
-  id: string;
   cantonese: string;
   english: string;
   notes: string;
@@ -20,7 +19,6 @@ interface Word {
 }
 
 interface Phrase {
-  id: string;
   cantonese: string;
   english: string;
   notes: string;
@@ -101,11 +99,7 @@ async function loadWords(): Promise<Word[]> {
     const rows = parseMarkdownTable(content);
 
     for (const row of rows) {
-      const id = `word-${category}-${slugify(row.cantonese)}-${slugify(
-        row.english
-      )}`;
       words.push({
-        id,
         cantonese: row.cantonese,
         english: row.english,
         notes: row.notes,
@@ -129,13 +123,9 @@ async function loadPhrases(): Promise<Phrase[]> {
     const rows = parseMarkdownTable(content);
 
     for (const row of rows) {
-      const id = `phrase-${category}-${slugify(row.cantonese)}-${slugify(
-        row.english
-      )}`;
       const tokens = tokenizePhrase(row.cantonese);
 
       phrases.push({
-        id,
         cantonese: row.cantonese,
         english: row.english,
         notes: row.notes,
@@ -148,6 +138,14 @@ async function loadPhrases(): Promise<Phrase[]> {
   return phrases;
 }
 
+function getWordId(word: Word): string {
+  return `word-${word.category}-${slugify(word.cantonese)}-${slugify(word.english)}`;
+}
+
+function getPhraseId(phrase: Phrase): string {
+  return `phrase-${phrase.category}-${slugify(phrase.cantonese)}-${slugify(phrase.english)}`;
+}
+
 function computeWordUsage(
   words: Word[],
   phrases: Phrase[]
@@ -156,7 +154,7 @@ function computeWordUsage(
 
   // Initialize all words with 0
   for (const word of words) {
-    usage[word.id] = 0;
+    usage[getWordId(word)] = 0;
   }
 
   // Count usage in phrases
@@ -165,7 +163,7 @@ function computeWordUsage(
       // Find matching word by cantonese text
       const matchingWord = words.find((w) => w.cantonese === token);
       if (matchingWord) {
-        usage[matchingWord.id]++;
+        usage[getWordId(matchingWord)]++;
       }
     }
   }

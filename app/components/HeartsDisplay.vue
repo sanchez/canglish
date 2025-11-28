@@ -4,9 +4,8 @@
       v-for="i in maxHearts"
       :key="i"
       class="text-2xl"
-      :class="i <= count ? 'text-red-500' : 'text-gray-300'"
     >
-      ❤️
+      {{ i <= count ? "❤️" : "🤍" }}
     </span>
   </div>
 </template>

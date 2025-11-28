@@ -1,4 +1,5 @@
 import type { ProgressEntry } from "~/types";
+import { getWordId, getPhraseId } from "~/types";
 import wordUsageData from "~/content/wordUsage.json";
 
 interface ProgressState {
@@ -144,13 +145,20 @@ export const useProgress = () => {
 
       if (!word) {
         // Token doesn't match any word - phrase is not eligible
+        console.log(
+          `[Progress] Token "${token}" in phrase ${phraseId} has no matching word`
+        );
         return false;
       }
 
-      const wordProgress = getEntry("word", word.id);
+      const wordId = getWordId(word);
+      const wordProgress = getEntry("word", wordId);
 
       if (!wordProgress || !wordProgress.mastered) {
         // Word is not mastered - phrase is not eligible
+        console.log(
+          `[Progress] Word "${word.cantonese}" (${wordId}) not mastered for phrase ${phraseId}`
+        );
         return false;
       }
     }
@@ -161,8 +169,8 @@ export const useProgress = () => {
   // Get all phrases where all constituent words are mastered
   const getEligiblePhrases = (): string[] => {
     return phrases.value
-      .filter((phrase) => areAllWordsMasteredForPhrase(phrase.id))
-      .map((phrase) => phrase.id);
+      .filter((phrase) => areAllWordsMasteredForPhrase(getPhraseId(phrase)))
+      .map((phrase) => getPhraseId(phrase));
   };
 
   const getWordUsage = (wordId: string): number => {

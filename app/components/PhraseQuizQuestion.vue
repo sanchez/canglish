@@ -44,25 +44,25 @@
         :key="`choice-${index}`"
         @click="addToken(choice)"
         :disabled="completed"
-        class="px-4 py-3 bg-gray-100 hover:bg-gray-200 text-gray-900 rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+        :class="[
+          wrongToken === choice
+            ? 'bg-red-500 text-white'
+            : 'bg-gray-100 hover:bg-gray-200 text-gray-900',
+          'px-4 py-3 rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed',
+        ]"
       >
         {{ choice }}
       </button>
     </div>
 
     <!-- Actions -->
-    <div class="flex gap-3 mt-6">
-      <button
-        @click="checkAnswer"
-        :disabled="selectedTokens.length === 0 || completed"
-        class="flex-1 px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors disabled:bg-gray-300 disabled:cursor-not-allowed"
-      >
-        Check Answer
-      </button>
+    <div
+      v-if="!completed"
+      class="flex gap-3 mt-6"
+    >
       <button
         @click="reset"
-        :disabled="completed"
-        class="px-6 py-3 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+        class="flex-1 px-6 py-3 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition-colors"
       >
         Reset
       </button>
@@ -80,7 +80,7 @@
         {{ feedback.message }}
       </div>
       <button
-        v-if="completed"
+        v-if="completed && !isAutoAdvancing"
         @click="handleNext"
         class="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
       >
@@ -108,8 +108,11 @@
   const hearts = ref(3);
   const selectedTokens = ref<string[]>([]);
   const availableChoices = ref<string[]>([]);
+  const originalChoices = ref<string[]>([]);
   const completed = ref(false);
   const feedback = ref<{ correct: boolean; message: string } | null>(null);
+  const isAutoAdvancing = ref(false);
+  const wrongToken = ref<string | null>(null);
 
   const addToken = (token: string) => {
     if (completed.value) return;
@@ -118,6 +121,9 @@
     if (index !== -1) {
       selectedTokens.value.push(token);
       availableChoices.value.splice(index, 1);
+
+      // Check immediately after adding token
+      checkAnswer();
     }
   };
 
@@ -126,42 +132,59 @@
 
     const token = selectedTokens.value[index];
     selectedTokens.value.splice(index, 1);
-    availableChoices.value.push(token);
+
+    // Return token to original position in choices
+    rebuildAvailableChoices();
+  };
+
+  const rebuildAvailableChoices = () => {
+    // Rebuild choices in original order, excluding selected tokens
+    availableChoices.value = originalChoices.value.filter(
+      (choice) => !selectedTokens.value.includes(choice)
+    );
   };
 
   const reset = () => {
     selectedTokens.value = [];
-    availableChoices.value = [...props.question.choices];
+    rebuildAvailableChoices();
     feedback.value = null;
   };
 
   const checkAnswer = () => {
     if (selectedTokens.value.length === 0 || completed.value) return;
 
-    const correct = arraysEqual(
-      selectedTokens.value,
-      props.question.targetTokens
-    );
+    // Check if current sequence matches the beginning of target
+    const currentLength = selectedTokens.value.length;
+    let isCorrectSoFar = true;
 
-    if (correct) {
-      completed.value = true;
-      feedback.value = {
-        correct: true,
-        message: "🎉 Correct! Well done!",
-      };
+    for (let i = 0; i < currentLength; i++) {
+      if (selectedTokens.value[i] !== props.question.targetTokens[i]) {
+        isCorrectSoFar = false;
+        break;
+      }
+    }
 
-      setTimeout(() => {
-        const heartsUsed = 3 - hearts.value;
-        emit("answered", {
-          correct: true,
-          phraseId: props.question.phraseId,
-          heartsUsed,
-        });
-      }, 300);
-    } else {
+    if (!isCorrectSoFar) {
+      // Wrong token - remove last token and lose a heart
+      const wrong = selectedTokens.value.pop();
+      wrongToken.value = wrong || null;
       hearts.value--;
 
+      console.log(
+        "[PhraseQuiz] Wrong token selected, hearts remaining:",
+        hearts.value
+      );
+
+      // Rebuild choices in original order
+      rebuildAvailableChoices();
+
+      // Clear wrong token highlight after a brief moment
+      setTimeout(() => {
+        wrongToken.value = null;
+      }, 500);
+
       if (hearts.value <= 0) {
+        // Out of hearts
         completed.value = true;
         feedback.value = {
           correct: false,
@@ -177,20 +200,39 @@
             heartsUsed: 3,
           });
         }, 300);
-      } else {
-        feedback.value = {
-          correct: false,
-          message: "❌ Not quite right. Try again!",
-        };
-
-        setTimeout(() => {
-          reset();
-        }, 1500);
       }
+      return;
+    }
+
+    // Check if phrase is complete
+    if (currentLength === props.question.targetTokens.length) {
+      // Phrase is complete and correct!
+      completed.value = true;
+      isAutoAdvancing.value = true;
+      feedback.value = {
+        correct: true,
+        message: "🎉 Correct! Well done!",
+      };
+
+      setTimeout(() => {
+        const heartsUsed = 3 - hearts.value;
+        emit("answered", {
+          correct: true,
+          phraseId: props.question.phraseId,
+          heartsUsed,
+        });
+
+        // Auto-advance on correct answer
+        setTimeout(() => {
+          emit("next");
+          isAutoAdvancing.value = false;
+        }, 800);
+      }, 300);
     }
   };
 
   const handleNext = () => {
+    if (isAutoAdvancing.value) return;
     emit("next");
   };
 
@@ -203,10 +245,14 @@
   const initialize = () => {
     hearts.value = 3;
     selectedTokens.value = [];
+    originalChoices.value = [...props.question.choices];
     availableChoices.value = [...props.question.choices];
     completed.value = false;
     feedback.value = null;
+    wrongToken.value = null;
   };
 
   watch(() => props.question, initialize, { immediate: true });
 </script>
+
+};ript>

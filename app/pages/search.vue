@@ -19,9 +19,9 @@
         <div class="grid gap-4 md:grid-cols-2">
           <WordListItem
             v-for="word in filteredWords"
-            :key="word.id"
+            :key="getWordId(word)"
             :word="word"
-            :progress="getEntry('word', word.id)"
+            :progress="getEntry('word', getWordId(word))"
           />
         </div>
       </div>
@@ -34,9 +34,9 @@
         <div class="grid gap-4">
           <PhraseListItem
             v-for="phrase in filteredPhrases"
-            :key="phrase.id"
+            :key="getPhraseId(phrase)"
             :phrase="phrase"
-            :progress="getEntry('phrase', phrase.id)"
+            :progress="getEntry('phrase', getPhraseId(phrase))"
           />
         </div>
       </div>
@@ -68,6 +68,8 @@
 </template>
 
 <script setup lang="ts">
+  import { getWordId, getPhraseId } from "~/types";
+
   const { words } = useWords();
   const { phrases } = usePhrases();
   const { filterWords, filterPhrases } = useSearch();

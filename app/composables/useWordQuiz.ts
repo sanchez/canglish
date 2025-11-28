@@ -1,4 +1,5 @@
 import type { WordQuizQuestion, QuizOption } from "~/types";
+import { getWordId } from "~/types";
 
 export const useWordQuiz = () => {
   const { words, getWordById } = useWords();
@@ -11,13 +12,15 @@ export const useWordQuiz = () => {
     const word = getWordById(wordId);
     if (!word) return null;
 
+    const wordId_computed = getWordId(word);
+
     // Randomly choose prompt type
     const promptType = Math.random() < 0.5 ? "cantonese" : "english";
     const prompt = promptType === "cantonese" ? word.cantonese : word.english;
 
     // Build options
     const correctOption: QuizOption = {
-      id: word.id,
+      id: wordId_computed,
       text: promptType === "cantonese" ? word.english : word.cantonese,
     };
 
@@ -29,11 +32,12 @@ export const useWordQuiz = () => {
     shuffleArray(allOptions);
 
     return {
-      wordId: word.id,
+      wordId: wordId_computed,
       promptType,
       prompt,
       options: allOptions,
-      correctOptionId: word.id,
+      correctOptionId: wordId_computed,
+      notes: word.notes,
     };
   };
 
@@ -43,10 +47,11 @@ export const useWordQuiz = () => {
     count: number
   ): QuizOption[] => {
     const distractors: QuizOption[] = [];
+    const targetWordId = getWordId(targetWord);
 
     // First try words from same category
     const sameCategoryWords = words.value.filter(
-      (w) => w.id !== targetWord.id && w.category === targetWord.category
+      (w) => getWordId(w) !== targetWordId && w.category === targetWord.category
     );
 
     // Shuffle and take some
@@ -54,7 +59,7 @@ export const useWordQuiz = () => {
     for (const word of sameCategoryWords) {
       if (distractors.length >= count) break;
       distractors.push({
-        id: word.id,
+        id: getWordId(word),
         text: promptType === "cantonese" ? word.english : word.cantonese,
       });
     }
@@ -62,14 +67,14 @@ export const useWordQuiz = () => {
     // If not enough, add random words
     if (distractors.length < count) {
       const otherWords = words.value.filter(
-        (w) => w.id !== targetWord.id && !sameCategoryWords.includes(w)
+        (w) => getWordId(w) !== targetWordId && !sameCategoryWords.includes(w)
       );
       shuffleArray(otherWords);
 
       for (const word of otherWords) {
         if (distractors.length >= count) break;
         distractors.push({
-          id: word.id,
+          id: getWordId(word),
           text: promptType === "cantonese" ? word.english : word.cantonese,
         });
       }

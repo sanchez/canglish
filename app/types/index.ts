@@ -1,5 +1,4 @@
 export interface Word {
-  id: string;
   cantonese: string;
   english: string;
   notes: string;
@@ -7,12 +6,35 @@ export interface Word {
 }
 
 export interface Phrase {
-  id: string;
   cantonese: string;
   english: string;
   notes: string;
   category: string;
   tokens: string[];
+}
+
+// Helper to compute word ID at runtime
+export function getWordId(word: Word): string {
+  const slugify = (text: string) =>
+    text
+      .toLowerCase()
+      .replace(/[^a-z0-9\s-]/g, "")
+      .replace(/\s+/g, "-")
+      .replace(/-+/g, "-")
+      .trim();
+  return `word-${word.category}-${slugify(word.cantonese)}-${slugify(word.english)}`;
+}
+
+// Helper to compute phrase ID at runtime
+export function getPhraseId(phrase: Phrase): string {
+  const slugify = (text: string) =>
+    text
+      .toLowerCase()
+      .replace(/[^a-z0-9\s-]/g, "")
+      .replace(/\s+/g, "-")
+      .replace(/-+/g, "-")
+      .trim();
+  return `phrase-${phrase.category}-${slugify(phrase.cantonese)}-${slugify(phrase.english)}`;
 }
 
 export interface ProgressEntry {
@@ -34,6 +56,7 @@ export interface WordQuizQuestion {
   prompt: string;
   options: QuizOption[];
   correctOptionId: string;
+  notes?: string;
 }
 
 export interface QuizOption {
