@@ -1,0 +1,215 @@
+import { readdir, readFile, writeFile, mkdir } from "fs/promises";
+import { join } from "path";
+import { fileURLToPath } from "url";
+import { dirname } from "path";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
+const rootDir = join(__dirname, "..");
+const wordsDir = join(rootDir, "words");
+const phrasesDir = join(rootDir, "phrases");
+const outputDir = join(rootDir, "app", "content");
+
+interface Word {
+  id: string;
+  cantonese: string;
+  english: string;
+  notes: string;
+  category: string;
+}
+
+interface Phrase {
+  id: string;
+  cantonese: string;
+  english: string;
+  notes: string;
+  category: string;
+  tokens: string[];
+}
+
+function slugify(text: string): string {
+  return text
+    .toLowerCase()
+    .replace(/[^a-z0-9\s-]/g, "")
+    .replace(/\s+/g, "-")
+    .replace(/-+/g, "-")
+    .trim();
+}
+
+function parseMarkdownTable(
+  content: string
+): Array<{ cantonese: string; english: string; notes: string }> {
+  const lines = content.split("\n");
+  const rows: Array<{ cantonese: string; english: string; notes: string }> = [];
+
+  let inTable = false;
+  for (const line of lines) {
+    const trimmed = line.trim();
+
+    // Skip empty lines
+    if (!trimmed) continue;
+
+    // Check if this is a table row
+    if (trimmed.startsWith("|") && trimmed.endsWith("|")) {
+      // Skip header row and separator row
+      if (
+        trimmed.includes("---") ||
+        trimmed.toLowerCase().includes("cantonese")
+      ) {
+        inTable = true;
+        continue;
+      }
+
+      if (inTable) {
+        const cells = trimmed
+          .split("|")
+          .map((cell) => cell.trim())
+          .filter((cell) => cell.length > 0);
+
+        if (cells.length >= 2) {
+          rows.push({
+            cantonese: cells[0],
+            english: cells[1],
+            notes: cells[2] || "",
+          });
+        }
+      }
+    }
+  }
+
+  return rows;
+}
+
+function tokenizePhrase(cantonese: string): string[] {
+  // Split on spaces, preserve hyphens within tokens
+  return cantonese
+    .split(/\s+/)
+    .map((token) => token.trim())
+    .filter((token) => token.length > 0);
+}
+
+async function loadWords(): Promise<Word[]> {
+  const files = await readdir(wordsDir);
+  const words: Word[] = [];
+
+  for (const file of files) {
+    if (!file.endsWith(".md")) continue;
+
+    const category = file.replace(".md", "");
+    const content = await readFile(join(wordsDir, file), "utf-8");
+    const rows = parseMarkdownTable(content);
+
+    for (const row of rows) {
+      const id = `word-${category}-${slugify(row.cantonese)}-${slugify(
+        row.english
+      )}`;
+      words.push({
+        id,
+        cantonese: row.cantonese,
+        english: row.english,
+        notes: row.notes,
+        category,
+      });
+    }
+  }
+
+  return words;
+}
+
+async function loadPhrases(): Promise<Phrase[]> {
+  const files = await readdir(phrasesDir);
+  const phrases: Phrase[] = [];
+
+  for (const file of files) {
+    if (!file.endsWith(".md")) continue;
+
+    const category = file.replace(".md", "");
+    const content = await readFile(join(phrasesDir, file), "utf-8");
+    const rows = parseMarkdownTable(content);
+
+    for (const row of rows) {
+      const id = `phrase-${category}-${slugify(row.cantonese)}-${slugify(
+        row.english
+      )}`;
+      const tokens = tokenizePhrase(row.cantonese);
+
+      phrases.push({
+        id,
+        cantonese: row.cantonese,
+        english: row.english,
+        notes: row.notes,
+        category,
+        tokens,
+      });
+    }
+  }
+
+  return phrases;
+}
+
+function computeWordUsage(
+  words: Word[],
+  phrases: Phrase[]
+): Record<string, number> {
+  const usage: Record<string, number> = {};
+
+  // Initialize all words with 0
+  for (const word of words) {
+    usage[word.id] = 0;
+  }
+
+  // Count usage in phrases
+  for (const phrase of phrases) {
+    for (const token of phrase.tokens) {
+      // Find matching word by cantonese text
+      const matchingWord = words.find((w) => w.cantonese === token);
+      if (matchingWord) {
+        usage[matchingWord.id]++;
+      }
+    }
+  }
+
+  return usage;
+}
+
+async function main() {
+  console.log("Building content JSON from markdown...");
+
+  // Load data
+  const words = await loadWords();
+  const phrases = await loadPhrases();
+  const wordUsage = computeWordUsage(words, phrases);
+
+  console.log(`Loaded ${words.length} words from ${wordsDir}`);
+  console.log(`Loaded ${phrases.length} phrases from ${phrasesDir}`);
+
+  // Ensure output directory exists
+  await mkdir(outputDir, { recursive: true });
+
+  // Write JSON files
+  await writeFile(
+    join(outputDir, "words.json"),
+    JSON.stringify(words, null, 2),
+    "utf-8"
+  );
+
+  await writeFile(
+    join(outputDir, "phrases.json"),
+    JSON.stringify(phrases, null, 2),
+    "utf-8"
+  );
+
+  await writeFile(
+    join(outputDir, "wordUsage.json"),
+    JSON.stringify(wordUsage, null, 2),
+    "utf-8"
+  );
+
+  console.log(`✅ Generated content JSON in ${outputDir}`);
+  console.log(`   - words.json (${words.length} entries)`);
+  console.log(`   - phrases.json (${phrases.length} entries)`);
+  console.log(`   - wordUsage.json`);
+}
+
+main().catch(console.error);

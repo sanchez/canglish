@@ -1,0 +1,2592 @@
+[
+  {
+    "id": "word-adjectives-ho-good-lots",
+    "cantonese": "ho",
+    "english": "good / lots",
+    "notes": "Could mean either good or lots, depends on the situation",
+    "category": "adjectives"
+  },
+  {
+    "id": "word-adjectives-mmm-not",
+    "cantonese": "mmm",
+    "english": "not",
+    "notes": "Placed infront of a word, means not, so mmm ho -> not good",
+    "category": "adjectives"
+  },
+  {
+    "id": "word-adjectives-oi-want",
+    "cantonese": "oi",
+    "english": "want",
+    "notes": "",
+    "category": "adjectives"
+  },
+  {
+    "id": "word-adjectives-hi-hi",
+    "cantonese": "hi",
+    "english": "hi",
+    "notes": "",
+    "category": "adjectives"
+  },
+  {
+    "id": "word-adjectives-hai-yes-am",
+    "cantonese": "hai",
+    "english": "yes / am",
+    "notes": "Can be used to either me yes, or you are (e.g. I am boy)",
+    "category": "adjectives"
+  },
+  {
+    "id": "word-adjectives-mou-lacking-dont-have",
+    "cantonese": "mou",
+    "english": "lacking / don't have",
+    "notes": "Similar to mmm, however would mean you don't have, e.g. useless -> don't have use",
+    "category": "adjectives"
+  },
+  {
+    "id": "word-adjectives-mmm-goi-please",
+    "cantonese": "mmm goi",
+    "english": "please",
+    "notes": "",
+    "category": "adjectives"
+  },
+  {
+    "id": "word-adjectives-chung-ee-like",
+    "cantonese": "chung-ee",
+    "english": "like",
+    "notes": "",
+    "category": "adjectives"
+  },
+  {
+    "id": "word-adjectives-sik-eat",
+    "cantonese": "sik",
+    "english": "eat",
+    "notes": "",
+    "category": "adjectives"
+  },
+  {
+    "id": "word-adjectives-ma-",
+    "cantonese": "ma",
+    "english": "?",
+    "notes": "Used at the end of a sentence to indicate a the sentence is a question",
+    "category": "adjectives"
+  },
+  {
+    "id": "word-adjectives-aaa-used-at-the-end-of-a-sentence-as-a-way-to-like-soften-the-statement-just-made",
+    "cantonese": "aaa",
+    "english": "Used at the end of a sentence as a way to like soften the statement just made",
+    "notes": "",
+    "category": "adjectives"
+  },
+  {
+    "id": "word-adjectives-gew-name",
+    "cantonese": "gew",
+    "english": "name",
+    "notes": "",
+    "category": "adjectives"
+  },
+  {
+    "id": "word-adjectives-joy-ghin-good-bye",
+    "cantonese": "joy ghin",
+    "english": "good bye",
+    "notes": "",
+    "category": "adjectives"
+  },
+  {
+    "id": "word-adjectives-dye-big",
+    "cantonese": "dye",
+    "english": "big",
+    "notes": "",
+    "category": "adjectives"
+  },
+  {
+    "id": "word-adjectives-sigh-small",
+    "cantonese": "sigh",
+    "english": "small",
+    "notes": "",
+    "category": "adjectives"
+  },
+  {
+    "id": "word-adjectives-gai-old-things",
+    "cantonese": "gai",
+    "english": "old (things)",
+    "notes": "",
+    "category": "adjectives"
+  },
+  {
+    "id": "word-adjectives-sun-new",
+    "cantonese": "sun",
+    "english": "new",
+    "notes": "",
+    "category": "adjectives"
+  },
+  {
+    "id": "word-adjectives-low-old-people",
+    "cantonese": "low",
+    "english": "old (people)",
+    "notes": "",
+    "category": "adjectives"
+  },
+  {
+    "id": "word-adjectives-high-fast",
+    "cantonese": "high",
+    "english": "fast",
+    "notes": "",
+    "category": "adjectives"
+  },
+  {
+    "id": "word-adjectives-marn-slow",
+    "cantonese": "marn",
+    "english": "slow",
+    "notes": "",
+    "category": "adjectives"
+  },
+  {
+    "id": "word-adjectives-yung-hot",
+    "cantonese": "yung",
+    "english": "hot",
+    "notes": "",
+    "category": "adjectives"
+  },
+  {
+    "id": "word-adjectives-dong-cold",
+    "cantonese": "dong",
+    "english": "cold",
+    "notes": "",
+    "category": "adjectives"
+  },
+  {
+    "id": "word-adjectives-lung-long",
+    "cantonese": "lung",
+    "english": "long",
+    "notes": "",
+    "category": "adjectives"
+  },
+  {
+    "id": "word-adjectives-duen-short",
+    "cantonese": "duen",
+    "english": "short",
+    "notes": "",
+    "category": "adjectives"
+  },
+  {
+    "id": "word-adjectives-gor-tallhigh",
+    "cantonese": "gor",
+    "english": "tall/high",
+    "notes": "",
+    "category": "adjectives"
+  },
+  {
+    "id": "word-adjectives-ngai-short-height",
+    "cantonese": "ngai",
+    "english": "short (height)",
+    "notes": "",
+    "category": "adjectives"
+  },
+  {
+    "id": "word-adjectives-fay-fat",
+    "cantonese": "fay",
+    "english": "fat",
+    "notes": "",
+    "category": "adjectives"
+  },
+  {
+    "id": "word-adjectives-saw-thin",
+    "cantonese": "saw",
+    "english": "thin",
+    "notes": "",
+    "category": "adjectives"
+  },
+  {
+    "id": "word-adjectives-lay-pretty",
+    "cantonese": "lay",
+    "english": "pretty",
+    "notes": "",
+    "category": "adjectives"
+  },
+  {
+    "id": "word-adjectives-chow-ugly",
+    "cantonese": "chow",
+    "english": "ugly",
+    "notes": "",
+    "category": "adjectives"
+  },
+  {
+    "id": "word-animals-maow-cat",
+    "cantonese": "maow",
+    "english": "cat",
+    "notes": "",
+    "category": "animals"
+  },
+  {
+    "id": "word-animals-gow-dog",
+    "cantonese": "gow",
+    "english": "dog",
+    "notes": "",
+    "category": "animals"
+  },
+  {
+    "id": "word-animals-jue-bird",
+    "cantonese": "jue",
+    "english": "bird",
+    "notes": "",
+    "category": "animals"
+  },
+  {
+    "id": "word-animals-yeu-fish",
+    "cantonese": "yeu",
+    "english": "fish",
+    "notes": "",
+    "category": "animals"
+  },
+  {
+    "id": "word-animals-sue-mouserat",
+    "cantonese": "sue",
+    "english": "mouse/rat",
+    "notes": "",
+    "category": "animals"
+  },
+  {
+    "id": "word-animals-jue-pig",
+    "cantonese": "jue",
+    "english": "pig",
+    "notes": "",
+    "category": "animals"
+  },
+  {
+    "id": "word-animals-oiw-cow",
+    "cantonese": "oiw",
+    "english": "cow",
+    "notes": "",
+    "category": "animals"
+  },
+  {
+    "id": "word-animals-ma-horse",
+    "cantonese": "ma",
+    "english": "horse",
+    "notes": "",
+    "category": "animals"
+  },
+  {
+    "id": "word-animals-yerng-sheep",
+    "cantonese": "yerng",
+    "english": "sheep",
+    "notes": "",
+    "category": "animals"
+  },
+  {
+    "id": "word-animals-gai-chicken",
+    "cantonese": "gai",
+    "english": "chicken",
+    "notes": "",
+    "category": "animals"
+  },
+  {
+    "id": "word-animals-app-duck",
+    "cantonese": "app",
+    "english": "duck",
+    "notes": "",
+    "category": "animals"
+  },
+  {
+    "id": "word-animals-see-jee-lion",
+    "cantonese": "see jee",
+    "english": "lion",
+    "notes": "",
+    "category": "animals"
+  },
+  {
+    "id": "word-animals-lo-fu-tiger",
+    "cantonese": "lo fu",
+    "english": "tiger",
+    "notes": "",
+    "category": "animals"
+  },
+  {
+    "id": "word-animals-yerng-bear",
+    "cantonese": "yerng",
+    "english": "bear",
+    "notes": "",
+    "category": "animals"
+  },
+  {
+    "id": "word-animals-haw-jee-monkey",
+    "cantonese": "haw jee",
+    "english": "monkey",
+    "notes": "",
+    "category": "animals"
+  },
+  {
+    "id": "word-animals-yerng-elephant",
+    "cantonese": "yerng",
+    "english": "elephant",
+    "notes": "",
+    "category": "animals"
+  },
+  {
+    "id": "word-animals-gai-luk-giraffe",
+    "cantonese": "gai luk",
+    "english": "giraffe",
+    "notes": "",
+    "category": "animals"
+  },
+  {
+    "id": "word-animals-toe-jee-rabbit",
+    "cantonese": "toe jee",
+    "english": "rabbit",
+    "notes": "",
+    "category": "animals"
+  },
+  {
+    "id": "word-animals-gui-turtle",
+    "cantonese": "gui",
+    "english": "turtle",
+    "notes": "",
+    "category": "animals"
+  },
+  {
+    "id": "word-animals-sea-snake",
+    "cantonese": "sea",
+    "english": "snake",
+    "notes": "",
+    "category": "animals"
+  },
+  {
+    "id": "word-animals-chung-insect",
+    "cantonese": "chung",
+    "english": "insect",
+    "notes": "",
+    "category": "animals"
+  },
+  {
+    "id": "word-animals-me-fung-bee",
+    "cantonese": "me fung",
+    "english": "bee",
+    "notes": "",
+    "category": "animals"
+  },
+  {
+    "id": "word-animals-wu-deep-butterfly",
+    "cantonese": "wu deep",
+    "english": "butterfly",
+    "notes": "",
+    "category": "animals"
+  },
+  {
+    "id": "word-body-parts-tow-head",
+    "cantonese": "tow",
+    "english": "head",
+    "notes": "",
+    "category": "body-parts"
+  },
+  {
+    "id": "word-body-parts-ngarn-eye",
+    "cantonese": "ngarn",
+    "english": "eye",
+    "notes": "",
+    "category": "body-parts"
+  },
+  {
+    "id": "word-body-parts-yee-ear",
+    "cantonese": "yee",
+    "english": "ear",
+    "notes": "",
+    "category": "body-parts"
+  },
+  {
+    "id": "word-body-parts-bay-nose",
+    "cantonese": "bay",
+    "english": "nose",
+    "notes": "",
+    "category": "body-parts"
+  },
+  {
+    "id": "word-body-parts-jew-mouth",
+    "cantonese": "jew",
+    "english": "mouth",
+    "notes": "",
+    "category": "body-parts"
+  },
+  {
+    "id": "word-body-parts-nga-toothteeth",
+    "cantonese": "nga",
+    "english": "tooth/teeth",
+    "notes": "",
+    "category": "body-parts"
+  },
+  {
+    "id": "word-body-parts-lain-face",
+    "cantonese": "lain",
+    "english": "face",
+    "notes": "",
+    "category": "body-parts"
+  },
+  {
+    "id": "word-body-parts-sow-hand",
+    "cantonese": "sow",
+    "english": "hand",
+    "notes": "",
+    "category": "body-parts"
+  },
+  {
+    "id": "word-body-parts-geok-footleg",
+    "cantonese": "geok",
+    "english": "foot/leg",
+    "notes": "",
+    "category": "body-parts"
+  },
+  {
+    "id": "word-body-parts-sum-heart",
+    "cantonese": "sum",
+    "english": "heart",
+    "notes": "",
+    "category": "body-parts"
+  },
+  {
+    "id": "word-body-parts-tou-stomach",
+    "cantonese": "tou",
+    "english": "stomach",
+    "notes": "",
+    "category": "body-parts"
+  },
+  {
+    "id": "word-body-parts-bay-back",
+    "cantonese": "bay",
+    "english": "back",
+    "notes": "",
+    "category": "body-parts"
+  },
+  {
+    "id": "word-body-parts-san-tye-body",
+    "cantonese": "san tye",
+    "english": "body",
+    "notes": "",
+    "category": "body-parts"
+  },
+  {
+    "id": "word-body-parts-sow-jee-finger",
+    "cantonese": "sow jee",
+    "english": "finger",
+    "notes": "",
+    "category": "body-parts"
+  },
+  {
+    "id": "word-body-parts-geok-jee-toe",
+    "cantonese": "geok jee",
+    "english": "toe",
+    "notes": "",
+    "category": "body-parts"
+  },
+  {
+    "id": "word-clothing-yee-fu-clothes",
+    "cantonese": "yee fu",
+    "english": "clothes",
+    "notes": "",
+    "category": "clothing"
+  },
+  {
+    "id": "word-clothing-saam-shirt",
+    "cantonese": "saam",
+    "english": "shirt",
+    "notes": "",
+    "category": "clothing"
+  },
+  {
+    "id": "word-clothing-foo-pants",
+    "cantonese": "foo",
+    "english": "pants",
+    "notes": "",
+    "category": "clothing"
+  },
+  {
+    "id": "word-clothing-kwun-skirt",
+    "cantonese": "kwun",
+    "english": "skirt",
+    "notes": "",
+    "category": "clothing"
+  },
+  {
+    "id": "word-clothing-ngoi-tau-jacket",
+    "cantonese": "ngoi tau",
+    "english": "jacket",
+    "notes": "",
+    "category": "clothing"
+  },
+  {
+    "id": "word-clothing-dai-yee-dress",
+    "cantonese": "dai yee",
+    "english": "dress",
+    "notes": "",
+    "category": "clothing"
+  },
+  {
+    "id": "word-clothing-dai-tie",
+    "cantonese": "dai",
+    "english": "tie",
+    "notes": "",
+    "category": "clothing"
+  },
+  {
+    "id": "word-clothing-mat-hat",
+    "cantonese": "mat",
+    "english": "hat",
+    "notes": "",
+    "category": "clothing"
+  },
+  {
+    "id": "word-clothing-hai-shoes",
+    "cantonese": "hai",
+    "english": "shoes",
+    "notes": "",
+    "category": "clothing"
+  },
+  {
+    "id": "word-clothing-mat-socks",
+    "cantonese": "mat",
+    "english": "socks",
+    "notes": "",
+    "category": "clothing"
+  },
+  {
+    "id": "word-clothing-sow-tow-gloves",
+    "cantonese": "sow tow",
+    "english": "gloves",
+    "notes": "",
+    "category": "clothing"
+  },
+  {
+    "id": "word-clothing-wai-gan-scarf",
+    "cantonese": "wai gan",
+    "english": "scarf",
+    "notes": "",
+    "category": "clothing"
+  },
+  {
+    "id": "word-clothing-noi-yee-fu-underwear",
+    "cantonese": "noi yee fu",
+    "english": "underwear",
+    "notes": "",
+    "category": "clothing"
+  },
+  {
+    "id": "word-clothing-bra-bra",
+    "cantonese": "bra",
+    "english": "bra",
+    "notes": "",
+    "category": "clothing"
+  },
+  {
+    "id": "word-clothing-po-zai-bag",
+    "cantonese": "po zai",
+    "english": "bag",
+    "notes": "",
+    "category": "clothing"
+  },
+  {
+    "id": "word-clothing-seen-belt",
+    "cantonese": "seen",
+    "english": "belt",
+    "notes": "",
+    "category": "clothing"
+  },
+  {
+    "id": "word-clothing-ngaan-geng-glasses",
+    "cantonese": "ngaan geng",
+    "english": "glasses",
+    "notes": "",
+    "category": "clothing"
+  },
+  {
+    "id": "word-clothing-sau-bew-watch",
+    "cantonese": "sau bew",
+    "english": "watch",
+    "notes": "",
+    "category": "clothing"
+  },
+  {
+    "id": "word-clothing-yee-fu-uniform",
+    "cantonese": "yee fu",
+    "english": "uniform",
+    "notes": "",
+    "category": "clothing"
+  },
+  {
+    "id": "word-clothing-yun-dong-hai-sneakers",
+    "cantonese": "yun dong hai",
+    "english": "sneakers",
+    "notes": "",
+    "category": "clothing"
+  },
+  {
+    "id": "word-colors-hong-sik-red",
+    "cantonese": "hong sik",
+    "english": "red",
+    "notes": "",
+    "category": "colors"
+  },
+  {
+    "id": "word-colors-lam-sik-blue",
+    "cantonese": "lam sik",
+    "english": "blue",
+    "notes": "",
+    "category": "colors"
+  },
+  {
+    "id": "word-colors-luk-sik-green",
+    "cantonese": "luk sik",
+    "english": "green",
+    "notes": "",
+    "category": "colors"
+  },
+  {
+    "id": "word-colors-wong-sik-yellow",
+    "cantonese": "wong sik",
+    "english": "yellow",
+    "notes": "",
+    "category": "colors"
+  },
+  {
+    "id": "word-colors-hak-sik-black",
+    "cantonese": "hak sik",
+    "english": "black",
+    "notes": "",
+    "category": "colors"
+  },
+  {
+    "id": "word-colors-bak-sik-white",
+    "cantonese": "bak sik",
+    "english": "white",
+    "notes": "",
+    "category": "colors"
+  },
+  {
+    "id": "word-colors-cheng-sik-orange",
+    "cantonese": "cheng sik",
+    "english": "orange",
+    "notes": "",
+    "category": "colors"
+  },
+  {
+    "id": "word-colors-jee-sik-purple",
+    "cantonese": "jee sik",
+    "english": "purple",
+    "notes": "",
+    "category": "colors"
+  },
+  {
+    "id": "word-colors-fun-hong-sik-pink",
+    "cantonese": "fun hong sik",
+    "english": "pink",
+    "notes": "",
+    "category": "colors"
+  },
+  {
+    "id": "word-colors-fay-sik-grey",
+    "cantonese": "fay sik",
+    "english": "grey",
+    "notes": "",
+    "category": "colors"
+  },
+  {
+    "id": "word-colors-gam-sik-gold",
+    "cantonese": "gam sik",
+    "english": "gold",
+    "notes": "",
+    "category": "colors"
+  },
+  {
+    "id": "word-colors-ngarn-sik-silver",
+    "cantonese": "ngarn sik",
+    "english": "silver",
+    "notes": "",
+    "category": "colors"
+  },
+  {
+    "id": "word-descriptor-lang-noi-beautiful-girl",
+    "cantonese": "lang noi",
+    "english": "beautiful girl",
+    "notes": "",
+    "category": "descriptor"
+  },
+  {
+    "id": "word-descriptor-chung-choy-idiot",
+    "cantonese": "chung choy",
+    "english": "idiot",
+    "notes": "",
+    "category": "descriptor"
+  },
+  {
+    "id": "word-descriptor-choy-zu-rich-man",
+    "cantonese": "choy zu",
+    "english": "rich man",
+    "notes": "",
+    "category": "descriptor"
+  },
+  {
+    "id": "word-descriptor-gwai-lo-western-man",
+    "cantonese": "gwai lo",
+    "english": "western man",
+    "notes": "",
+    "category": "descriptor"
+  },
+  {
+    "id": "word-descriptor-lang-zai-handsome-man",
+    "cantonese": "lang zai",
+    "english": "handsome man",
+    "notes": "",
+    "category": "descriptor"
+  },
+  {
+    "id": "word-descriptor-tin-choy-genius",
+    "cantonese": "tin choy",
+    "english": "genius",
+    "notes": "",
+    "category": "descriptor"
+  },
+  {
+    "id": "word-descriptor-si-fu-master",
+    "cantonese": "si fu",
+    "english": "master",
+    "notes": "",
+    "category": "descriptor"
+  },
+  {
+    "id": "word-descriptor-chee-sin-teacher",
+    "cantonese": "chee sin",
+    "english": "teacher",
+    "notes": "",
+    "category": "descriptor"
+  },
+  {
+    "id": "word-descriptor-fei-maow-fat-cat",
+    "cantonese": "fei maow",
+    "english": "fat cat",
+    "notes": "",
+    "category": "descriptor"
+  },
+  {
+    "id": "word-directions-jor-left",
+    "cantonese": "jor",
+    "english": "left",
+    "notes": "",
+    "category": "directions"
+  },
+  {
+    "id": "word-directions-yow-right",
+    "cantonese": "yow",
+    "english": "right",
+    "notes": "",
+    "category": "directions"
+  },
+  {
+    "id": "word-directions-zik-straight",
+    "cantonese": "zik",
+    "english": "straight",
+    "notes": "",
+    "category": "directions"
+  },
+  {
+    "id": "word-emotions-hoy-sum-happy",
+    "cantonese": "hoy sum",
+    "english": "happy",
+    "notes": "",
+    "category": "emotions"
+  },
+  {
+    "id": "word-emotions-mmm-hoy-sum-unhappysad",
+    "cantonese": "mmm hoy sum",
+    "english": "unhappy/sad",
+    "notes": "",
+    "category": "emotions"
+  },
+  {
+    "id": "word-emotions-fo-sum-angry",
+    "cantonese": "fo sum",
+    "english": "angry",
+    "notes": "",
+    "category": "emotions"
+  },
+  {
+    "id": "word-emotions-hai-pa-scaredafraid",
+    "cantonese": "hai pa",
+    "english": "scared/afraid",
+    "notes": "",
+    "category": "emotions"
+  },
+  {
+    "id": "word-emotions-gern-jung-nervous",
+    "cantonese": "gern jung",
+    "english": "nervous",
+    "notes": "",
+    "category": "emotions"
+  },
+  {
+    "id": "word-emotions-ying-dong-excited",
+    "cantonese": "ying dong",
+    "english": "excited",
+    "notes": "",
+    "category": "emotions"
+  },
+  {
+    "id": "word-emotions-gwai-tired",
+    "cantonese": "gwai",
+    "english": "tired",
+    "notes": "",
+    "category": "emotions"
+  },
+  {
+    "id": "word-emotions-mm-gwai-not-tired",
+    "cantonese": "mm gwai",
+    "english": "not tired",
+    "notes": "",
+    "category": "emotions"
+  },
+  {
+    "id": "word-emotions-mun-bored",
+    "cantonese": "mun",
+    "english": "bored",
+    "notes": "",
+    "category": "emotions"
+  },
+  {
+    "id": "word-emotions-juk-worried",
+    "cantonese": "juk",
+    "english": "worried",
+    "notes": "",
+    "category": "emotions"
+  },
+  {
+    "id": "word-emotions-gee-mo-proud",
+    "cantonese": "gee mo",
+    "english": "proud",
+    "notes": "",
+    "category": "emotions"
+  },
+  {
+    "id": "word-emotions-sau-sum-sad",
+    "cantonese": "sau sum",
+    "english": "sad",
+    "notes": "",
+    "category": "emotions"
+  },
+  {
+    "id": "word-emotions-foo-low-annoyed",
+    "cantonese": "foo low",
+    "english": "annoyed",
+    "notes": "",
+    "category": "emotions"
+  },
+  {
+    "id": "word-emotions-goy-ga-embarrassed",
+    "cantonese": "goy ga",
+    "english": "embarrassed",
+    "notes": "",
+    "category": "emotions"
+  },
+  {
+    "id": "word-emotions-gay-dong-touchedmoved",
+    "cantonese": "gay dong",
+    "english": "touched/moved",
+    "notes": "",
+    "category": "emotions"
+  },
+  {
+    "id": "word-emotions-ngoi-love",
+    "cantonese": "ngoi",
+    "english": "love",
+    "notes": "",
+    "category": "emotions"
+  },
+  {
+    "id": "word-emotions-jung-ee-like",
+    "cantonese": "jung ee",
+    "english": "like",
+    "notes": "",
+    "category": "emotions"
+  },
+  {
+    "id": "word-emotions-tow-yim-hate",
+    "cantonese": "tow yim",
+    "english": "hate",
+    "notes": "",
+    "category": "emotions"
+  },
+  {
+    "id": "word-emotions-gum-dong-grateful",
+    "cantonese": "gum dong",
+    "english": "grateful",
+    "notes": "",
+    "category": "emotions"
+  },
+  {
+    "id": "word-emotions-hoy-sum-comfortable",
+    "cantonese": "hoy sum",
+    "english": "comfortable",
+    "notes": "",
+    "category": "emotions"
+  },
+  {
+    "id": "word-emotions-mmm-sue-fu-uncomfortable",
+    "cantonese": "mmm sue fu",
+    "english": "uncomfortable",
+    "notes": "",
+    "category": "emotions"
+  },
+  {
+    "id": "word-food-mean-bao-bread",
+    "cantonese": "mean bao",
+    "english": "bread",
+    "notes": "",
+    "category": "food"
+  },
+  {
+    "id": "word-food-dahn-egg",
+    "cantonese": "dahn",
+    "english": "egg",
+    "notes": "",
+    "category": "food"
+  },
+  {
+    "id": "word-food-chee-see-cheese",
+    "cantonese": "chee see",
+    "english": "cheese",
+    "notes": "",
+    "category": "food"
+  },
+  {
+    "id": "word-food-oiw-yuk-meen-beef-noodles",
+    "cantonese": "oiw yuk meen",
+    "english": "beef noodles",
+    "notes": "",
+    "category": "food"
+  },
+  {
+    "id": "word-food-tau-fu-tofu",
+    "cantonese": "tau fu",
+    "english": "tofu",
+    "notes": "",
+    "category": "food"
+  },
+  {
+    "id": "word-food-tau-fu-fa-tofu-pudding",
+    "cantonese": "tau fu fa",
+    "english": "tofu pudding",
+    "notes": "",
+    "category": "food"
+  },
+  {
+    "id": "word-food-her-ung-chiew-banana",
+    "cantonese": "her-ung chiew",
+    "english": "banana",
+    "notes": "",
+    "category": "food"
+  },
+  {
+    "id": "word-food-ping-gaw-apple",
+    "cantonese": "ping gaw",
+    "english": "apple",
+    "notes": "",
+    "category": "food"
+  },
+  {
+    "id": "word-food-sea-door-bare-lay-strawberry",
+    "cantonese": "sea door bare lay",
+    "english": "strawberry",
+    "notes": "",
+    "category": "food"
+  },
+  {
+    "id": "word-food-ying-taw-peach",
+    "cantonese": "ying taw",
+    "english": "peach",
+    "notes": "",
+    "category": "food"
+  },
+  {
+    "id": "word-food-taw-peach",
+    "cantonese": "taw",
+    "english": "peach",
+    "notes": "",
+    "category": "food"
+  },
+  {
+    "id": "word-food-faan-care-tomato",
+    "cantonese": "faan care",
+    "english": "tomato",
+    "notes": "",
+    "category": "food"
+  },
+  {
+    "id": "word-food-yerng-chong-onion",
+    "cantonese": "yerng chong",
+    "english": "onion",
+    "notes": "",
+    "category": "food"
+  },
+  {
+    "id": "word-food-woo-law-baa-carrot",
+    "cantonese": "woo law baa",
+    "english": "carrot",
+    "notes": "",
+    "category": "food"
+  },
+  {
+    "id": "word-food-suw-zai-potato",
+    "cantonese": "suw zai",
+    "english": "potato",
+    "notes": "",
+    "category": "food"
+  },
+  {
+    "id": "word-food-yuk-meat",
+    "cantonese": "yuk",
+    "english": "meat",
+    "notes": "",
+    "category": "food"
+  },
+  {
+    "id": "word-food-jew-yuk-pork",
+    "cantonese": "jew yuk",
+    "english": "pork",
+    "notes": "",
+    "category": "food"
+  },
+  {
+    "id": "word-food-oiw-yuk-beef",
+    "cantonese": "oiw yuk",
+    "english": "beef",
+    "notes": "",
+    "category": "food"
+  },
+  {
+    "id": "word-food-yeu-fish",
+    "cantonese": "yeu",
+    "english": "fish",
+    "notes": "",
+    "category": "food"
+  },
+  {
+    "id": "word-food-guy-chicken",
+    "cantonese": "guy",
+    "english": "chicken",
+    "notes": "",
+    "category": "food"
+  },
+  {
+    "id": "word-food-ha-shrimp",
+    "cantonese": "ha",
+    "english": "shrimp",
+    "notes": "",
+    "category": "food"
+  },
+  {
+    "id": "word-food-hai-crab",
+    "cantonese": "hai",
+    "english": "crab",
+    "notes": "",
+    "category": "food"
+  },
+  {
+    "id": "word-food-app-duck",
+    "cantonese": "app",
+    "english": "duck",
+    "notes": "",
+    "category": "food"
+  },
+  {
+    "id": "word-food-goo-lamb",
+    "cantonese": "goo",
+    "english": "lamb",
+    "notes": "",
+    "category": "food"
+  },
+  {
+    "id": "word-food-sam-man-you-salmon",
+    "cantonese": "sam man you",
+    "english": "salmon",
+    "notes": "",
+    "category": "food"
+  },
+  {
+    "id": "word-food-dahn-tart-egg-tart",
+    "cantonese": "dahn tart",
+    "english": "egg tart",
+    "notes": "",
+    "category": "food"
+  },
+  {
+    "id": "word-food-ta-su-bao-bbq-pork-bun",
+    "cantonese": "ta su bao",
+    "english": "bbq pork bun",
+    "notes": "",
+    "category": "food"
+  },
+  {
+    "id": "word-household-items-dor-table",
+    "cantonese": "dor",
+    "english": "table",
+    "notes": "",
+    "category": "household-items"
+  },
+  {
+    "id": "word-household-items-yee-chair",
+    "cantonese": "yee",
+    "english": "chair",
+    "notes": "",
+    "category": "household-items"
+  },
+  {
+    "id": "word-household-items-chong-bed",
+    "cantonese": "chong",
+    "english": "bed",
+    "notes": "",
+    "category": "household-items"
+  },
+  {
+    "id": "word-household-items-moon-door",
+    "cantonese": "moon",
+    "english": "door",
+    "notes": "",
+    "category": "household-items"
+  },
+  {
+    "id": "word-household-items-chong-moon-window",
+    "cantonese": "chong moon",
+    "english": "window",
+    "notes": "",
+    "category": "household-items"
+  },
+  {
+    "id": "word-household-items-deng-lamplight",
+    "cantonese": "deng",
+    "english": "lamp/light",
+    "notes": "",
+    "category": "household-items"
+  },
+  {
+    "id": "word-household-items-din-wah-telephone",
+    "cantonese": "din wah",
+    "english": "telephone",
+    "notes": "",
+    "category": "household-items"
+  },
+  {
+    "id": "word-household-items-din-see-television",
+    "cantonese": "din see",
+    "english": "television",
+    "notes": "",
+    "category": "household-items"
+  },
+  {
+    "id": "word-household-items-syut-gay-refrigerator",
+    "cantonese": "syut gay",
+    "english": "refrigerator",
+    "notes": "",
+    "category": "household-items"
+  },
+  {
+    "id": "word-household-items-lo-stove",
+    "cantonese": "lo",
+    "english": "stove",
+    "notes": "",
+    "category": "household-items"
+  },
+  {
+    "id": "word-household-items-chaw-fu-sofa",
+    "cantonese": "chaw fu",
+    "english": "sofa",
+    "notes": "",
+    "category": "household-items"
+  },
+  {
+    "id": "word-household-items-geng-mirror",
+    "cantonese": "geng",
+    "english": "mirror",
+    "notes": "",
+    "category": "household-items"
+  },
+  {
+    "id": "word-household-items-zong-clock",
+    "cantonese": "zong",
+    "english": "clock",
+    "notes": "",
+    "category": "household-items"
+  },
+  {
+    "id": "word-household-items-sue-book",
+    "cantonese": "sue",
+    "english": "book",
+    "notes": "",
+    "category": "household-items"
+  },
+  {
+    "id": "word-household-items-but-pen",
+    "cantonese": "but",
+    "english": "pen",
+    "notes": "",
+    "category": "household-items"
+  },
+  {
+    "id": "word-household-items-yee-fu-clothes",
+    "cantonese": "yee fu",
+    "english": "clothes",
+    "notes": "",
+    "category": "household-items"
+  },
+  {
+    "id": "word-household-items-hai-shoes",
+    "cantonese": "hai",
+    "english": "shoes",
+    "notes": "",
+    "category": "household-items"
+  },
+  {
+    "id": "word-household-items-mao-blanket",
+    "cantonese": "mao",
+    "english": "blanket",
+    "notes": "",
+    "category": "household-items"
+  },
+  {
+    "id": "word-household-items-jam-tow-pillow",
+    "cantonese": "jam tow",
+    "english": "pillow",
+    "notes": "",
+    "category": "household-items"
+  },
+  {
+    "id": "word-household-items-buy-cup",
+    "cantonese": "buy",
+    "english": "cup",
+    "notes": "",
+    "category": "household-items"
+  },
+  {
+    "id": "word-household-items-dip-plate",
+    "cantonese": "dip",
+    "english": "plate",
+    "notes": "",
+    "category": "household-items"
+  },
+  {
+    "id": "word-household-items-gung-bowl",
+    "cantonese": "gung",
+    "english": "bowl",
+    "notes": "",
+    "category": "household-items"
+  },
+  {
+    "id": "word-household-items-cha-fork",
+    "cantonese": "cha",
+    "english": "fork",
+    "notes": "",
+    "category": "household-items"
+  },
+  {
+    "id": "word-household-items-sue-gung-spoon",
+    "cantonese": "sue gung",
+    "english": "spoon",
+    "notes": "",
+    "category": "household-items"
+  },
+  {
+    "id": "word-household-items-fai-jee-chopsticks",
+    "cantonese": "fai jee",
+    "english": "chopsticks",
+    "notes": "",
+    "category": "household-items"
+  },
+  {
+    "id": "word-household-items-dao-knife",
+    "cantonese": "dao",
+    "english": "knife",
+    "notes": "",
+    "category": "household-items"
+  },
+  {
+    "id": "word-liquids-sui-water",
+    "cantonese": "sui",
+    "english": "water",
+    "notes": "",
+    "category": "liquids"
+  },
+  {
+    "id": "word-liquids-cha-tea",
+    "cantonese": "cha",
+    "english": "tea",
+    "notes": "",
+    "category": "liquids"
+  },
+  {
+    "id": "word-liquids-oiw-lai-milk",
+    "cantonese": "oiw lai",
+    "english": "milk",
+    "notes": "",
+    "category": "liquids"
+  },
+  {
+    "id": "word-liquids-gaa-fair-coffee",
+    "cantonese": "gaa fair",
+    "english": "coffee",
+    "notes": "",
+    "category": "liquids"
+  },
+  {
+    "id": "word-liquids-chan-zup-orange-juice",
+    "cantonese": "chan zup",
+    "english": "orange juice",
+    "notes": "",
+    "category": "liquids"
+  },
+  {
+    "id": "word-liquids-pee-jaw-beer",
+    "cantonese": "pee jaw",
+    "english": "beer",
+    "notes": "",
+    "category": "liquids"
+  },
+  {
+    "id": "word-liquids-jaw-alcohol",
+    "cantonese": "jaw",
+    "english": "alcohol",
+    "notes": "",
+    "category": "liquids"
+  },
+  {
+    "id": "word-liquids-hong-jaw-red-wine",
+    "cantonese": "hong jaw",
+    "english": "red wine",
+    "notes": "",
+    "category": "liquids"
+  },
+  {
+    "id": "word-liquids-bak-jaw-white-wine",
+    "cantonese": "bak jaw",
+    "english": "white wine",
+    "notes": "",
+    "category": "liquids"
+  },
+  {
+    "id": "word-liquids-yi-lew-soft-drink",
+    "cantonese": "yi lew",
+    "english": "soft drink",
+    "notes": "",
+    "category": "liquids"
+  },
+  {
+    "id": "word-liquids-ho-law-cola",
+    "cantonese": "ho law",
+    "english": "cola",
+    "notes": "",
+    "category": "liquids"
+  },
+  {
+    "id": "word-money-shopping-chin-money",
+    "cantonese": "chin",
+    "english": "money",
+    "notes": "",
+    "category": "money-shopping"
+  },
+  {
+    "id": "word-money-shopping-ngarn-dollar",
+    "cantonese": "ngarn",
+    "english": "dollar",
+    "notes": "",
+    "category": "money-shopping"
+  },
+  {
+    "id": "word-money-shopping-man-cent",
+    "cantonese": "man",
+    "english": "cent",
+    "notes": "",
+    "category": "money-shopping"
+  },
+  {
+    "id": "word-money-shopping-gay-dor-chin-how-much",
+    "cantonese": "gay dor chin",
+    "english": "how much",
+    "notes": "",
+    "category": "money-shopping"
+  },
+  {
+    "id": "word-money-shopping-gwai-expensive",
+    "cantonese": "gwai",
+    "english": "expensive",
+    "notes": "",
+    "category": "money-shopping"
+  },
+  {
+    "id": "word-money-shopping-ping-cheap",
+    "cantonese": "ping",
+    "english": "cheap",
+    "notes": "",
+    "category": "money-shopping"
+  },
+  {
+    "id": "word-money-shopping-da-jit-discount",
+    "cantonese": "da jit",
+    "english": "discount",
+    "notes": "",
+    "category": "money-shopping"
+  },
+  {
+    "id": "word-money-shopping-mai-buy",
+    "cantonese": "mai",
+    "english": "buy",
+    "notes": "",
+    "category": "money-shopping"
+  },
+  {
+    "id": "word-money-shopping-mai-sell",
+    "cantonese": "mai",
+    "english": "sell",
+    "notes": "",
+    "category": "money-shopping"
+  },
+  {
+    "id": "word-money-shopping-toi-receipt",
+    "cantonese": "toi",
+    "english": "receipt",
+    "notes": "",
+    "category": "money-shopping"
+  },
+  {
+    "id": "word-money-shopping-bay-chin-pay-money",
+    "cantonese": "bay chin",
+    "english": "pay money",
+    "notes": "",
+    "category": "money-shopping"
+  },
+  {
+    "id": "word-money-shopping-seen-gum-cash",
+    "cantonese": "seen gum",
+    "english": "cash",
+    "notes": "",
+    "category": "money-shopping"
+  },
+  {
+    "id": "word-money-shopping-seen-yong-kart-credit-card",
+    "cantonese": "seen yong kart",
+    "english": "credit card",
+    "notes": "",
+    "category": "money-shopping"
+  },
+  {
+    "id": "word-money-shopping-ba-si-kart-octopus-card",
+    "cantonese": "ba si kart",
+    "english": "octopus card",
+    "notes": "",
+    "category": "money-shopping"
+  },
+  {
+    "id": "word-money-shopping-jung-chin-change-money",
+    "cantonese": "jung chin",
+    "english": "change (money)",
+    "notes": "",
+    "category": "money-shopping"
+  },
+  {
+    "id": "word-money-shopping-mm-sai-dont-need",
+    "cantonese": "mm sai",
+    "english": "don't need",
+    "notes": "",
+    "category": "money-shopping"
+  },
+  {
+    "id": "word-money-shopping-yow-mo-da-jit-any-discount",
+    "cantonese": "yow mo da jit",
+    "english": "any discount",
+    "notes": "",
+    "category": "money-shopping"
+  },
+  {
+    "id": "word-money-shopping-tai-gwai-too-expensive",
+    "cantonese": "tai gwai",
+    "english": "too expensive",
+    "notes": "",
+    "category": "money-shopping"
+  },
+  {
+    "id": "word-money-shopping-ping-dee-cheaper",
+    "cantonese": "ping dee",
+    "english": "cheaper",
+    "notes": "",
+    "category": "money-shopping"
+  },
+  {
+    "id": "word-money-shopping-seen-seen-tai-try-on-clothes",
+    "cantonese": "seen seen tai",
+    "english": "try on (clothes)",
+    "notes": "",
+    "category": "money-shopping"
+  },
+  {
+    "id": "word-numbers-yut-one",
+    "cantonese": "yut",
+    "english": "one",
+    "notes": "",
+    "category": "numbers"
+  },
+  {
+    "id": "word-numbers-yee-two",
+    "cantonese": "yee",
+    "english": "two",
+    "notes": "",
+    "category": "numbers"
+  },
+  {
+    "id": "word-numbers-saam-three",
+    "cantonese": "saam",
+    "english": "three",
+    "notes": "",
+    "category": "numbers"
+  },
+  {
+    "id": "word-numbers-say-four",
+    "cantonese": "say",
+    "english": "four",
+    "notes": "",
+    "category": "numbers"
+  },
+  {
+    "id": "word-numbers-nnnnng-five",
+    "cantonese": "nnnnng",
+    "english": "five",
+    "notes": "",
+    "category": "numbers"
+  },
+  {
+    "id": "word-numbers-lok-six",
+    "cantonese": "lok",
+    "english": "six",
+    "notes": "",
+    "category": "numbers"
+  },
+  {
+    "id": "word-numbers-chat-seven",
+    "cantonese": "chat",
+    "english": "seven",
+    "notes": "",
+    "category": "numbers"
+  },
+  {
+    "id": "word-numbers-bat-eight",
+    "cantonese": "bat",
+    "english": "eight",
+    "notes": "",
+    "category": "numbers"
+  },
+  {
+    "id": "word-numbers-gow-nine",
+    "cantonese": "gow",
+    "english": "nine",
+    "notes": "",
+    "category": "numbers"
+  },
+  {
+    "id": "word-numbers-sup-ten",
+    "cantonese": "sup",
+    "english": "ten",
+    "notes": "",
+    "category": "numbers"
+  },
+  {
+    "id": "word-numbers-yee-sup-twenty",
+    "cantonese": "yee sup",
+    "english": "twenty",
+    "notes": "",
+    "category": "numbers"
+  },
+  {
+    "id": "word-numbers-saam-sup-thirty",
+    "cantonese": "saam sup",
+    "english": "thirty",
+    "notes": "",
+    "category": "numbers"
+  },
+  {
+    "id": "word-numbers-yut-bak-hundred",
+    "cantonese": "yut bak",
+    "english": "hundred",
+    "notes": "",
+    "category": "numbers"
+  },
+  {
+    "id": "word-numbers-yut-chin-thousand",
+    "cantonese": "yut chin",
+    "english": "thousand",
+    "notes": "",
+    "category": "numbers"
+  },
+  {
+    "id": "word-numbers-ling-zero",
+    "cantonese": "ling",
+    "english": "zero",
+    "notes": "",
+    "category": "numbers"
+  },
+  {
+    "id": "word-people-ore-me",
+    "cantonese": "ore",
+    "english": "Me",
+    "notes": "Represents the speaker",
+    "category": "people"
+  },
+  {
+    "id": "word-people-lay-you",
+    "cantonese": "lay",
+    "english": "You",
+    "notes": "Represents the person the speaker is referring to",
+    "category": "people"
+  },
+  {
+    "id": "word-people-koy-heshe",
+    "cantonese": "koy",
+    "english": "He/She",
+    "notes": "",
+    "category": "people"
+  },
+  {
+    "id": "word-people-ma-ma-mum",
+    "cantonese": "ma-ma",
+    "english": "Mum",
+    "notes": "",
+    "category": "people"
+  },
+  {
+    "id": "word-people-ba-ba-dad",
+    "cantonese": "ba-ba",
+    "english": "Dad",
+    "notes": "",
+    "category": "people"
+  },
+  {
+    "id": "word-people-gaw-gaw-older-brother",
+    "cantonese": "gaw gaw",
+    "english": "older brother",
+    "notes": "",
+    "category": "people"
+  },
+  {
+    "id": "word-people-jee-jee-older-sister",
+    "cantonese": "jee jee",
+    "english": "older sister",
+    "notes": "",
+    "category": "people"
+  },
+  {
+    "id": "word-people-die-die-younger-brother",
+    "cantonese": "die die",
+    "english": "younger brother",
+    "notes": "",
+    "category": "people"
+  },
+  {
+    "id": "word-people-mui-mui-younger-sister",
+    "cantonese": "mui mui",
+    "english": "younger sister",
+    "notes": "",
+    "category": "people"
+  },
+  {
+    "id": "word-people-yea-yea-grandfather",
+    "cantonese": "yea yea",
+    "english": "grandfather",
+    "notes": "",
+    "category": "people"
+  },
+  {
+    "id": "word-people-po-po-grandmother",
+    "cantonese": "po po",
+    "english": "grandmother",
+    "notes": "",
+    "category": "people"
+  },
+  {
+    "id": "word-people-pang-yau-friend",
+    "cantonese": "pang-yau",
+    "english": "Friend",
+    "notes": "",
+    "category": "people"
+  },
+  {
+    "id": "word-people-lou-baan-bossowner",
+    "cantonese": "lou-baan",
+    "english": "Boss/Owner",
+    "notes": "",
+    "category": "people"
+  },
+  {
+    "id": "word-people-tung-si-colleague",
+    "cantonese": "tung-si",
+    "english": "Colleague",
+    "notes": "",
+    "category": "people"
+  },
+  {
+    "id": "word-people-nam-yan-man",
+    "cantonese": "nam yan",
+    "english": "man",
+    "notes": "",
+    "category": "people"
+  },
+  {
+    "id": "word-people-lui-yan-woman",
+    "cantonese": "lui yan",
+    "english": "woman",
+    "notes": "",
+    "category": "people"
+  },
+  {
+    "id": "word-people-sigh-nam-zai-boy",
+    "cantonese": "sigh nam zai",
+    "english": "boy",
+    "notes": "",
+    "category": "people"
+  },
+  {
+    "id": "word-people-sigh-lui-zai-girl",
+    "cantonese": "sigh lui zai",
+    "english": "girl",
+    "notes": "",
+    "category": "people"
+  },
+  {
+    "id": "word-places-ook-kay-home",
+    "cantonese": "ook kay",
+    "english": "home",
+    "notes": "",
+    "category": "places"
+  },
+  {
+    "id": "word-places-hok-hau-school",
+    "cantonese": "hok-hau",
+    "english": "school",
+    "notes": "",
+    "category": "places"
+  },
+  {
+    "id": "word-places-gung-si-office",
+    "cantonese": "gung si",
+    "english": "office",
+    "notes": "",
+    "category": "places"
+  },
+  {
+    "id": "word-places-chaan-teng-restaurant",
+    "cantonese": "chaan teng",
+    "english": "restaurant",
+    "notes": "",
+    "category": "places"
+  },
+  {
+    "id": "word-places-chaa-chan-teng-cafe",
+    "cantonese": "chaa chan teng",
+    "english": "cafe",
+    "notes": "",
+    "category": "places"
+  },
+  {
+    "id": "word-places-see-jern-bookstore",
+    "cantonese": "see jern",
+    "english": "bookstore",
+    "notes": "",
+    "category": "places"
+  },
+  {
+    "id": "word-places-choy-see-chang-market",
+    "cantonese": "choy see chang",
+    "english": "market",
+    "notes": "",
+    "category": "places"
+  },
+  {
+    "id": "word-places-yee-yun-hospital",
+    "cantonese": "yee yun",
+    "english": "hospital",
+    "notes": "",
+    "category": "places"
+  },
+  {
+    "id": "word-places-gay-cheung-airport",
+    "cantonese": "gay cheung",
+    "english": "airport",
+    "notes": "",
+    "category": "places"
+  },
+  {
+    "id": "word-places-fo-chee-jarm-train-station",
+    "cantonese": "fo chee jarm",
+    "english": "train station",
+    "notes": "",
+    "category": "places"
+  },
+  {
+    "id": "word-places-ba-si-jarm-bus-station",
+    "cantonese": "ba si jarm",
+    "english": "bus station",
+    "notes": "",
+    "category": "places"
+  },
+  {
+    "id": "word-places-dim-shopstore",
+    "cantonese": "dim",
+    "english": "shop/store",
+    "notes": "",
+    "category": "places"
+  },
+  {
+    "id": "word-places-gai-street",
+    "cantonese": "gai",
+    "english": "street",
+    "notes": "",
+    "category": "places"
+  },
+  {
+    "id": "word-places-gung-yun-park",
+    "cantonese": "gung yun",
+    "english": "park",
+    "notes": "",
+    "category": "places"
+  },
+  {
+    "id": "word-places-hay-yun-theater",
+    "cantonese": "hay yun",
+    "english": "theater",
+    "notes": "",
+    "category": "places"
+  },
+  {
+    "id": "word-places-tow-sue-gorn-library",
+    "cantonese": "tow sue gorn",
+    "english": "library",
+    "notes": "",
+    "category": "places"
+  },
+  {
+    "id": "word-places-ngarn-hong-bank",
+    "cantonese": "ngarn hong",
+    "english": "bank",
+    "notes": "",
+    "category": "places"
+  },
+  {
+    "id": "word-places-yau-gook-post-office",
+    "cantonese": "yau gook",
+    "english": "post office",
+    "notes": "",
+    "category": "places"
+  },
+  {
+    "id": "word-places-been-dee-which-place",
+    "cantonese": "been dee",
+    "english": "which place",
+    "notes": "",
+    "category": "places"
+  },
+  {
+    "id": "word-places-gaw-dee-there",
+    "cantonese": "gaw dee",
+    "english": "there",
+    "notes": "",
+    "category": "places"
+  },
+  {
+    "id": "word-places-nee-dee-here",
+    "cantonese": "nee dee",
+    "english": "here",
+    "notes": "",
+    "category": "places"
+  },
+  {
+    "id": "word-places-seung-meen-upstairs",
+    "cantonese": "seung meen",
+    "english": "upstairs",
+    "notes": "",
+    "category": "places"
+  },
+  {
+    "id": "word-places-ha-meen-downstairs",
+    "cantonese": "ha meen",
+    "english": "downstairs",
+    "notes": "",
+    "category": "places"
+  },
+  {
+    "id": "word-places-yun-far",
+    "cantonese": "yun",
+    "english": "far",
+    "notes": "",
+    "category": "places"
+  },
+  {
+    "id": "word-places-kahn-near",
+    "cantonese": "kahn",
+    "english": "near",
+    "notes": "",
+    "category": "places"
+  },
+  {
+    "id": "word-questions-gay-how-many",
+    "cantonese": "gay",
+    "english": "how many",
+    "notes": "",
+    "category": "questions"
+  },
+  {
+    "id": "word-questions-mat-yea-what",
+    "cantonese": "mat yea",
+    "english": "what",
+    "notes": "",
+    "category": "questions"
+  },
+  {
+    "id": "word-questions-been-go-who",
+    "cantonese": "been go",
+    "english": "who",
+    "notes": "",
+    "category": "questions"
+  },
+  {
+    "id": "word-questions-been-dee-where",
+    "cantonese": "been dee",
+    "english": "where",
+    "notes": "",
+    "category": "questions"
+  },
+  {
+    "id": "word-questions-gay-see-when",
+    "cantonese": "gay see",
+    "english": "when",
+    "notes": "",
+    "category": "questions"
+  },
+  {
+    "id": "word-questions-dim-gaai-why",
+    "cantonese": "dim gaai",
+    "english": "why",
+    "notes": "",
+    "category": "questions"
+  },
+  {
+    "id": "word-questions-dim-yeung-how",
+    "cantonese": "dim yeung",
+    "english": "how",
+    "notes": "",
+    "category": "questions"
+  },
+  {
+    "id": "word-questions-bin-which",
+    "cantonese": "bin",
+    "english": "which",
+    "notes": "",
+    "category": "questions"
+  },
+  {
+    "id": "word-questions-hay-mmm-hay-is-it",
+    "cantonese": "hay mmm hay",
+    "english": "is it",
+    "notes": "",
+    "category": "questions"
+  },
+  {
+    "id": "word-questions-yow-mo-have-or-not",
+    "cantonese": "yow mo",
+    "english": "have or not",
+    "notes": "",
+    "category": "questions"
+  },
+  {
+    "id": "word-time-yut-day",
+    "cantonese": "yut",
+    "english": "day",
+    "notes": "",
+    "category": "time"
+  },
+  {
+    "id": "word-time-sing-kay-yut-monday",
+    "cantonese": "sing kay yut",
+    "english": "Monday",
+    "notes": "",
+    "category": "time"
+  },
+  {
+    "id": "word-time-sing-kay-yee-tuesday",
+    "cantonese": "sing kay yee",
+    "english": "Tuesday",
+    "notes": "",
+    "category": "time"
+  },
+  {
+    "id": "word-time-sing-kay-sam-wednesday",
+    "cantonese": "sing kay sam",
+    "english": "Wednesday",
+    "notes": "",
+    "category": "time"
+  },
+  {
+    "id": "word-time-sing-kay-say-thursday",
+    "cantonese": "sing kay say",
+    "english": "Thursday",
+    "notes": "",
+    "category": "time"
+  },
+  {
+    "id": "word-time-sing-kay-ng-friday",
+    "cantonese": "sing kay ng",
+    "english": "Friday",
+    "notes": "",
+    "category": "time"
+  },
+  {
+    "id": "word-time-sing-kay-lok-saturday",
+    "cantonese": "sing kay lok",
+    "english": "Saturday",
+    "notes": "",
+    "category": "time"
+  },
+  {
+    "id": "word-time-sing-kay-yut-sunday",
+    "cantonese": "sing kay yut",
+    "english": "Sunday",
+    "notes": "",
+    "category": "time"
+  },
+  {
+    "id": "word-time-yut-tow-morning",
+    "cantonese": "yut tow",
+    "english": "morning",
+    "notes": "",
+    "category": "time"
+  },
+  {
+    "id": "word-time-ng-an-afternoon",
+    "cantonese": "ng an",
+    "english": "afternoon",
+    "notes": "",
+    "category": "time"
+  },
+  {
+    "id": "word-time-man-man-evening",
+    "cantonese": "man man",
+    "english": "evening",
+    "notes": "",
+    "category": "time"
+  },
+  {
+    "id": "word-time-yea-man-night",
+    "cantonese": "yea man",
+    "english": "night",
+    "notes": "",
+    "category": "time"
+  },
+  {
+    "id": "word-time-gum-yut-today",
+    "cantonese": "gum yut",
+    "english": "today",
+    "notes": "",
+    "category": "time"
+  },
+  {
+    "id": "word-time-kam-yut-yesterday",
+    "cantonese": "kam yut",
+    "english": "yesterday",
+    "notes": "",
+    "category": "time"
+  },
+  {
+    "id": "word-time-ting-yut-tomorrow",
+    "cantonese": "ting yut",
+    "english": "tomorrow",
+    "notes": "",
+    "category": "time"
+  },
+  {
+    "id": "word-time-yee-ga-now",
+    "cantonese": "yee ga",
+    "english": "now",
+    "notes": "",
+    "category": "time"
+  },
+  {
+    "id": "word-time-yi-chin-before",
+    "cantonese": "yi chin",
+    "english": "before",
+    "notes": "",
+    "category": "time"
+  },
+  {
+    "id": "word-time-yi-hoe-after",
+    "cantonese": "yi hoe",
+    "english": "after",
+    "notes": "",
+    "category": "time"
+  },
+  {
+    "id": "word-time-dim-jung-what-time",
+    "cantonese": "dim jung",
+    "english": "what time",
+    "notes": "",
+    "category": "time"
+  },
+  {
+    "id": "word-time-gay-dim-what-time",
+    "cantonese": "gay dim",
+    "english": "what time",
+    "notes": "",
+    "category": "time"
+  },
+  {
+    "id": "word-time-yut-day",
+    "cantonese": "yut",
+    "english": "day",
+    "notes": "",
+    "category": "time"
+  },
+  {
+    "id": "word-time-yut-gay-week",
+    "cantonese": "yut gay",
+    "english": "week",
+    "notes": "",
+    "category": "time"
+  },
+  {
+    "id": "word-time-yut-month",
+    "cantonese": "yut",
+    "english": "month",
+    "notes": "",
+    "category": "time"
+  },
+  {
+    "id": "word-time-nin-year",
+    "cantonese": "nin",
+    "english": "year",
+    "notes": "",
+    "category": "time"
+  },
+  {
+    "id": "word-time-dim-jung-hour",
+    "cantonese": "dim jung",
+    "english": "hour",
+    "notes": "",
+    "category": "time"
+  },
+  {
+    "id": "word-time-fun-jung-minute",
+    "cantonese": "fun jung",
+    "english": "minute",
+    "notes": "",
+    "category": "time"
+  },
+  {
+    "id": "word-time-mew-second",
+    "cantonese": "mew",
+    "english": "second",
+    "notes": "",
+    "category": "time"
+  },
+  {
+    "id": "word-transportation-chee-car",
+    "cantonese": "chee",
+    "english": "car",
+    "notes": "",
+    "category": "transportation"
+  },
+  {
+    "id": "word-transportation-ba-si-bus",
+    "cantonese": "ba si",
+    "english": "bus",
+    "notes": "",
+    "category": "transportation"
+  },
+  {
+    "id": "word-transportation-dik-si-taxi",
+    "cantonese": "dik si",
+    "english": "taxi",
+    "notes": "",
+    "category": "transportation"
+  },
+  {
+    "id": "word-transportation-dee-tee-subwaymtr",
+    "cantonese": "dee tee",
+    "english": "subway/MTR",
+    "notes": "",
+    "category": "transportation"
+  },
+  {
+    "id": "word-transportation-fo-chee-train",
+    "cantonese": "fo chee",
+    "english": "train",
+    "notes": "",
+    "category": "transportation"
+  },
+  {
+    "id": "word-transportation-fay-gay-airplane",
+    "cantonese": "fay gay",
+    "english": "airplane",
+    "notes": "",
+    "category": "transportation"
+  },
+  {
+    "id": "word-transportation-suen-boatship",
+    "cantonese": "suen",
+    "english": "boat/ship",
+    "notes": "",
+    "category": "transportation"
+  },
+  {
+    "id": "word-transportation-daan-chee-bicycle",
+    "cantonese": "daan chee",
+    "english": "bicycle",
+    "notes": "",
+    "category": "transportation"
+  },
+  {
+    "id": "word-transportation-mo-tow-chee-motorcycle",
+    "cantonese": "mo tow chee",
+    "english": "motorcycle",
+    "notes": "",
+    "category": "transportation"
+  },
+  {
+    "id": "word-transportation-gung-gay-truck",
+    "cantonese": "gung gay",
+    "english": "truck",
+    "notes": "",
+    "category": "transportation"
+  },
+  {
+    "id": "word-transportation-din-chee-tram",
+    "cantonese": "din chee",
+    "english": "tram",
+    "notes": "",
+    "category": "transportation"
+  },
+  {
+    "id": "word-transportation-chut-jor-chee-rental-car",
+    "cantonese": "chut jor chee",
+    "english": "rental car",
+    "notes": "",
+    "category": "transportation"
+  },
+  {
+    "id": "word-transportation-sigh-ba-minibus",
+    "cantonese": "sigh ba",
+    "english": "minibus",
+    "notes": "",
+    "category": "transportation"
+  },
+  {
+    "id": "word-verbs-sik-eat",
+    "cantonese": "sik",
+    "english": "eat",
+    "notes": "",
+    "category": "verbs"
+  },
+  {
+    "id": "word-verbs-yum-drink",
+    "cantonese": "yum",
+    "english": "drink",
+    "notes": "",
+    "category": "verbs"
+  },
+  {
+    "id": "word-verbs-tai-lookwatchsee",
+    "cantonese": "tai",
+    "english": "look/watch/see",
+    "notes": "",
+    "category": "verbs"
+  },
+  {
+    "id": "word-verbs-ting-listenhear",
+    "cantonese": "ting",
+    "english": "listen/hear",
+    "notes": "",
+    "category": "verbs"
+  },
+  {
+    "id": "word-verbs-gong-speaksay",
+    "cantonese": "gong",
+    "english": "speak/say",
+    "notes": "",
+    "category": "verbs"
+  },
+  {
+    "id": "word-verbs-zor-domake",
+    "cantonese": "zor",
+    "english": "do/make",
+    "notes": "",
+    "category": "verbs"
+  },
+  {
+    "id": "word-verbs-high-go",
+    "cantonese": "high",
+    "english": "go",
+    "notes": "",
+    "category": "verbs"
+  },
+  {
+    "id": "word-verbs-loy-come",
+    "cantonese": "loy",
+    "english": "come",
+    "notes": "",
+    "category": "verbs"
+  },
+  {
+    "id": "word-verbs-fan-gau-sleep",
+    "cantonese": "fan gau",
+    "english": "sleep",
+    "notes": "",
+    "category": "verbs"
+  },
+  {
+    "id": "word-verbs-hai-gum-wake-up",
+    "cantonese": "hai gum",
+    "english": "wake up",
+    "notes": "",
+    "category": "verbs"
+  },
+  {
+    "id": "word-verbs-jor-sit",
+    "cantonese": "jor",
+    "english": "sit",
+    "notes": "",
+    "category": "verbs"
+  },
+  {
+    "id": "word-verbs-zarn-stand",
+    "cantonese": "zarn",
+    "english": "stand",
+    "notes": "",
+    "category": "verbs"
+  },
+  {
+    "id": "word-verbs-zow-run",
+    "cantonese": "zow",
+    "english": "run",
+    "notes": "",
+    "category": "verbs"
+  },
+  {
+    "id": "word-verbs-hang-walk",
+    "cantonese": "hang",
+    "english": "walk",
+    "notes": "",
+    "category": "verbs"
+  },
+  {
+    "id": "word-verbs-mai-buy",
+    "cantonese": "mai",
+    "english": "buy",
+    "notes": "",
+    "category": "verbs"
+  },
+  {
+    "id": "word-verbs-mai-sell",
+    "cantonese": "mai",
+    "english": "sell",
+    "notes": "Same sound as buy, context determines which",
+    "category": "verbs"
+  },
+  {
+    "id": "word-verbs-bay-give",
+    "cantonese": "bay",
+    "english": "give",
+    "notes": "",
+    "category": "verbs"
+  },
+  {
+    "id": "word-verbs-gnor-take",
+    "cantonese": "gnor",
+    "english": "take",
+    "notes": "",
+    "category": "verbs"
+  },
+  {
+    "id": "word-verbs-hok-learnstudy",
+    "cantonese": "hok",
+    "english": "learn/study",
+    "notes": "",
+    "category": "verbs"
+  },
+  {
+    "id": "word-verbs-gaa-teach",
+    "cantonese": "gaa",
+    "english": "teach",
+    "notes": "",
+    "category": "verbs"
+  },
+  {
+    "id": "word-verbs-sew-write",
+    "cantonese": "sew",
+    "english": "write",
+    "notes": "",
+    "category": "verbs"
+  },
+  {
+    "id": "word-verbs-duk-read",
+    "cantonese": "duk",
+    "english": "read",
+    "notes": "",
+    "category": "verbs"
+  },
+  {
+    "id": "word-verbs-min-understand",
+    "cantonese": "min",
+    "english": "understand",
+    "notes": "",
+    "category": "verbs"
+  },
+  {
+    "id": "word-verbs-zee-know",
+    "cantonese": "zee",
+    "english": "know",
+    "notes": "",
+    "category": "verbs"
+  },
+  {
+    "id": "word-verbs-gem-try",
+    "cantonese": "gem",
+    "english": "try",
+    "notes": "",
+    "category": "verbs"
+  },
+  {
+    "id": "word-verbs-zo-help",
+    "cantonese": "zo",
+    "english": "help",
+    "notes": "",
+    "category": "verbs"
+  },
+  {
+    "id": "word-verbs-tung-hurtpain",
+    "cantonese": "tung",
+    "english": "hurt/pain",
+    "notes": "",
+    "category": "verbs"
+  },
+  {
+    "id": "word-verbs-gwai-expensivecostly",
+    "cantonese": "gwai",
+    "english": "expensive/costly",
+    "notes": "",
+    "category": "verbs"
+  },
+  {
+    "id": "word-verbs-ping-cheapinexpensive",
+    "cantonese": "ping",
+    "english": "cheap/inexpensive",
+    "notes": "",
+    "category": "verbs"
+  },
+  {
+    "id": "word-weather-teng-yut-weather",
+    "cantonese": "teng yut",
+    "english": "weather",
+    "notes": "",
+    "category": "weather"
+  },
+  {
+    "id": "word-weather-teen-chee-sky",
+    "cantonese": "teen chee",
+    "english": "sky",
+    "notes": "",
+    "category": "weather"
+  },
+  {
+    "id": "word-weather-yut-tow-sun",
+    "cantonese": "yut tow",
+    "english": "sun",
+    "notes": "",
+    "category": "weather"
+  },
+  {
+    "id": "word-weather-yut-leung-moon",
+    "cantonese": "yut leung",
+    "english": "moon",
+    "notes": "",
+    "category": "weather"
+  },
+  {
+    "id": "word-weather-sing-sing-star",
+    "cantonese": "sing sing",
+    "english": "star",
+    "notes": "",
+    "category": "weather"
+  },
+  {
+    "id": "word-weather-wun-cloud",
+    "cantonese": "wun",
+    "english": "cloud",
+    "notes": "",
+    "category": "weather"
+  },
+  {
+    "id": "word-weather-yo-rain",
+    "cantonese": "yo",
+    "english": "rain",
+    "notes": "",
+    "category": "weather"
+  },
+  {
+    "id": "word-weather-fung-wind",
+    "cantonese": "fung",
+    "english": "wind",
+    "notes": "",
+    "category": "weather"
+  },
+  {
+    "id": "word-weather-suet-snow",
+    "cantonese": "suet",
+    "english": "snow",
+    "notes": "",
+    "category": "weather"
+  },
+  {
+    "id": "word-weather-lee-thunder",
+    "cantonese": "lee",
+    "english": "thunder",
+    "notes": "",
+    "category": "weather"
+  },
+  {
+    "id": "word-weather-sim-deen-lightning",
+    "cantonese": "sim deen",
+    "english": "lightning",
+    "notes": "",
+    "category": "weather"
+  },
+  {
+    "id": "word-weather-yeet-hot-weather",
+    "cantonese": "yeet",
+    "english": "hot (weather)",
+    "notes": "",
+    "category": "weather"
+  },
+  {
+    "id": "word-weather-dung-cold-weather",
+    "cantonese": "dung",
+    "english": "cold (weather)",
+    "notes": "",
+    "category": "weather"
+  },
+  {
+    "id": "word-weather-yeet-chee-temperature",
+    "cantonese": "yeet chee",
+    "english": "temperature",
+    "notes": "",
+    "category": "weather"
+  },
+  {
+    "id": "word-weather-chow-sam-humid",
+    "cantonese": "chow sam",
+    "english": "humid",
+    "notes": "",
+    "category": "weather"
+  },
+  {
+    "id": "word-weather-gon-jaw-dry",
+    "cantonese": "gon jaw",
+    "english": "dry",
+    "notes": "",
+    "category": "weather"
+  }
+]

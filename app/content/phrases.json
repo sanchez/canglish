@@ -1,0 +1,745 @@
+[
+  {
+    "id": "phrase-descriptions-nay-hai-lang-noi-you-are-a-beautiful-girl",
+    "cantonese": "nay hai lang noi",
+    "english": "You are a beautiful girl",
+    "notes": "Compliment",
+    "category": "descriptions",
+    "tokens": [
+      "nay",
+      "hai",
+      "lang",
+      "noi"
+    ]
+  },
+  {
+    "id": "phrase-descriptions-ore-hai-chung-choy-i-am-an-idiot",
+    "cantonese": "ore hai chung choy",
+    "english": "I am an idiot",
+    "notes": "Self-deprecating statement",
+    "category": "descriptions",
+    "tokens": [
+      "ore",
+      "hai",
+      "chung",
+      "choy"
+    ]
+  },
+  {
+    "id": "phrase-descriptions-nay-hai-tin-choy-you-are-a-genius",
+    "cantonese": "nay hai tin choy",
+    "english": "You are a genius",
+    "notes": "Compliment",
+    "category": "descriptions",
+    "tokens": [
+      "nay",
+      "hai",
+      "tin",
+      "choy"
+    ]
+  },
+  {
+    "id": "phrase-descriptions-ore-pang-yau-hai-lang-zai-my-friend-is-a-handsome-man",
+    "cantonese": "ore pang-yau hai lang zai",
+    "english": "My friend is a handsome man",
+    "notes": "Describing friend",
+    "category": "descriptions",
+    "tokens": [
+      "ore",
+      "pang-yau",
+      "hai",
+      "lang",
+      "zai"
+    ]
+  },
+  {
+    "id": "phrase-descriptions-nay-ma-ma-hai-si-fu-your-mum-is-a-master",
+    "cantonese": "nay ma-ma hai si fu",
+    "english": "Your mum is a master",
+    "notes": "Respectful description",
+    "category": "descriptions",
+    "tokens": [
+      "nay",
+      "ma-ma",
+      "hai",
+      "si",
+      "fu"
+    ]
+  },
+  {
+    "id": "phrase-descriptions-ore-ba-ba-hai-choy-zu-my-dad-is-a-rich-man",
+    "cantonese": "ore ba-ba hai choy zu",
+    "english": "My dad is a rich man",
+    "notes": "Describing father",
+    "category": "descriptions",
+    "tokens": [
+      "ore",
+      "ba-ba",
+      "hai",
+      "choy",
+      "zu"
+    ]
+  },
+  {
+    "id": "phrase-descriptions-nay-hai-gwai-lo-you-are-a-western-man",
+    "cantonese": "nay hai gwai lo",
+    "english": "You are a western man",
+    "notes": "Identifying someone",
+    "category": "descriptions",
+    "tokens": [
+      "nay",
+      "hai",
+      "gwai",
+      "lo"
+    ]
+  },
+  {
+    "id": "phrase-descriptions-ore-tung-si-hai-chee-sin-my-colleague-is-a-teacher",
+    "cantonese": "ore tung-si hai chee sin",
+    "english": "My colleague is a teacher",
+    "notes": "Describing colleague",
+    "category": "descriptions",
+    "tokens": [
+      "ore",
+      "tung-si",
+      "hai",
+      "chee",
+      "sin"
+    ]
+  },
+  {
+    "id": "phrase-descriptions-nay-lou-baan-hai-chung-choy-ma-is-your-boss-an-idiot",
+    "cantonese": "nay lou-baan hai chung choy ma",
+    "english": "Is your boss an idiot?",
+    "notes": "Question about boss",
+    "category": "descriptions",
+    "tokens": [
+      "nay",
+      "lou-baan",
+      "hai",
+      "chung",
+      "choy",
+      "ma"
+    ]
+  },
+  {
+    "id": "phrase-descriptions-ore-chung-ee-hong-sik-i-like-red",
+    "cantonese": "ore chung-ee hong sik",
+    "english": "I like red",
+    "notes": "Color preference",
+    "category": "descriptions",
+    "tokens": [
+      "ore",
+      "chung-ee",
+      "hong",
+      "sik"
+    ]
+  },
+  {
+    "id": "phrase-descriptions-nay-chung-ee-lam-sik-ma-do-you-like-blue",
+    "cantonese": "nay chung-ee lam sik ma",
+    "english": "Do you like blue?",
+    "notes": "Asking about color preference",
+    "category": "descriptions",
+    "tokens": [
+      "nay",
+      "chung-ee",
+      "lam",
+      "sik",
+      "ma"
+    ]
+  },
+  {
+    "id": "phrase-descriptions-ore-oi-luk-sik-i-want-green",
+    "cantonese": "ore oi luk sik",
+    "english": "I want green",
+    "notes": "Requesting green color",
+    "category": "descriptions",
+    "tokens": [
+      "ore",
+      "oi",
+      "luk",
+      "sik"
+    ]
+  },
+  {
+    "id": "phrase-descriptions-hai-hong-sik-yes-red",
+    "cantonese": "hai hong sik",
+    "english": "Yes, red",
+    "notes": "Confirming red color",
+    "category": "descriptions",
+    "tokens": [
+      "hai",
+      "hong",
+      "sik"
+    ]
+  },
+  {
+    "id": "phrase-descriptions-ho-ho-very-good-lots-and-lots",
+    "cantonese": "ho ho",
+    "english": "Very good / lots and lots",
+    "notes": "Strong emphasis",
+    "category": "descriptions",
+    "tokens": [
+      "ho",
+      "ho"
+    ]
+  },
+  {
+    "id": "phrase-descriptions-nay-ho-aaa-you-are-good",
+    "cantonese": "nay ho aaa",
+    "english": "You are good",
+    "notes": "Compliment (softened)",
+    "category": "descriptions",
+    "tokens": [
+      "nay",
+      "ho",
+      "aaa"
+    ]
+  },
+  {
+    "id": "phrase-descriptions-ore-mmm-ho-i-am-not-good",
+    "cantonese": "ore mmm ho",
+    "english": "I am not good",
+    "notes": "Negative self-description",
+    "category": "descriptions",
+    "tokens": [
+      "ore",
+      "mmm",
+      "ho"
+    ]
+  },
+  {
+    "id": "phrase-descriptions-nay-hai-ho-pang-yau-you-are-a-good-friend",
+    "cantonese": "nay hai ho pang-yau",
+    "english": "You are a good friend",
+    "notes": "Compliment",
+    "category": "descriptions",
+    "tokens": [
+      "nay",
+      "hai",
+      "ho",
+      "pang-yau"
+    ]
+  },
+  {
+    "id": "phrase-directions-jor-left",
+    "cantonese": "jor",
+    "english": "Left",
+    "notes": "Direction",
+    "category": "directions",
+    "tokens": [
+      "jor"
+    ]
+  },
+  {
+    "id": "phrase-directions-yow-right",
+    "cantonese": "yow",
+    "english": "Right",
+    "notes": "Direction",
+    "category": "directions",
+    "tokens": [
+      "yow"
+    ]
+  },
+  {
+    "id": "phrase-directions-zik-straight",
+    "cantonese": "zik",
+    "english": "Straight",
+    "notes": "Direction",
+    "category": "directions",
+    "tokens": [
+      "zik"
+    ]
+  },
+  {
+    "id": "phrase-directions-ore-oi-jor-i-want-left",
+    "cantonese": "ore oi jor",
+    "english": "I want left",
+    "notes": "Indicating left direction",
+    "category": "directions",
+    "tokens": [
+      "ore",
+      "oi",
+      "jor"
+    ]
+  },
+  {
+    "id": "phrase-directions-nay-oi-yow-ma-do-you-want-right",
+    "cantonese": "nay oi yow ma",
+    "english": "Do you want right?",
+    "notes": "Asking about right direction",
+    "category": "directions",
+    "tokens": [
+      "nay",
+      "oi",
+      "yow",
+      "ma"
+    ]
+  },
+  {
+    "id": "phrase-food-and-drinks-ore-oi-sik-i-want-to-eat",
+    "cantonese": "ore oi sik",
+    "english": "I want to eat",
+    "notes": "Expressing hunger/desire to eat",
+    "category": "food-and-drinks",
+    "tokens": [
+      "ore",
+      "oi",
+      "sik"
+    ]
+  },
+  {
+    "id": "phrase-food-and-drinks-nay-oi-sik-ma-do-you-want-to-eat",
+    "cantonese": "nay oi sik ma",
+    "english": "Do you want to eat?",
+    "notes": "Asking if someone wants to eat",
+    "category": "food-and-drinks",
+    "tokens": [
+      "nay",
+      "oi",
+      "sik",
+      "ma"
+    ]
+  },
+  {
+    "id": "phrase-food-and-drinks-ore-chung-ee-sik-guy-i-like-to-eat-chicken",
+    "cantonese": "ore chung-ee sik guy",
+    "english": "I like to eat chicken",
+    "notes": "Expressing food preference",
+    "category": "food-and-drinks",
+    "tokens": [
+      "ore",
+      "chung-ee",
+      "sik",
+      "guy"
+    ]
+  },
+  {
+    "id": "phrase-food-and-drinks-ore-oi-cha-i-want-tea",
+    "cantonese": "ore oi cha",
+    "english": "I want tea",
+    "notes": "Ordering tea",
+    "category": "food-and-drinks",
+    "tokens": [
+      "ore",
+      "oi",
+      "cha"
+    ]
+  },
+  {
+    "id": "phrase-food-and-drinks-ore-oi-gaa-fair-i-want-coffee",
+    "cantonese": "ore oi gaa fair",
+    "english": "I want coffee",
+    "notes": "Ordering coffee",
+    "category": "food-and-drinks",
+    "tokens": [
+      "ore",
+      "oi",
+      "gaa",
+      "fair"
+    ]
+  },
+  {
+    "id": "phrase-food-and-drinks-ore-oi-sui-i-want-water",
+    "cantonese": "ore oi sui",
+    "english": "I want water",
+    "notes": "Ordering water",
+    "category": "food-and-drinks",
+    "tokens": [
+      "ore",
+      "oi",
+      "sui"
+    ]
+  },
+  {
+    "id": "phrase-food-and-drinks-nay-oi-cha-ding-hai-gaa-fair-ma-do-you-want-tea-or-coffee",
+    "cantonese": "nay oi cha ding-hai gaa fair ma",
+    "english": "Do you want tea or coffee?",
+    "notes": "Offering drink choices (missing \"or\" word)",
+    "category": "food-and-drinks",
+    "tokens": [
+      "nay",
+      "oi",
+      "cha",
+      "ding-hai",
+      "gaa",
+      "fair",
+      "ma"
+    ]
+  },
+  {
+    "id": "phrase-food-and-drinks-ore-chung-ee-chan-zup-i-like-orange-juice",
+    "cantonese": "ore chung-ee chan zup",
+    "english": "I like orange juice",
+    "notes": "Expressing drink preference",
+    "category": "food-and-drinks",
+    "tokens": [
+      "ore",
+      "chung-ee",
+      "chan",
+      "zup"
+    ]
+  },
+  {
+    "id": "phrase-food-and-drinks-nay-chung-ee-oiw-lai-ma-do-you-like-milk",
+    "cantonese": "nay chung-ee oiw lai ma",
+    "english": "Do you like milk?",
+    "notes": "Asking about milk preference",
+    "category": "food-and-drinks",
+    "tokens": [
+      "nay",
+      "chung-ee",
+      "oiw",
+      "lai",
+      "ma"
+    ]
+  },
+  {
+    "id": "phrase-food-and-drinks-ore-oi-oiw-yuk-meen-i-want-beef-noodles",
+    "cantonese": "ore oi oiw yuk meen",
+    "english": "I want beef noodles",
+    "notes": "Ordering specific dish",
+    "category": "food-and-drinks",
+    "tokens": [
+      "ore",
+      "oi",
+      "oiw",
+      "yuk",
+      "meen"
+    ]
+  },
+  {
+    "id": "phrase-food-and-drinks-mmm-goi-yut-ping-gaw-please-one-apple",
+    "cantonese": "mmm goi yut ping gaw",
+    "english": "Please one apple",
+    "notes": "Ordering one apple politely",
+    "category": "food-and-drinks",
+    "tokens": [
+      "mmm",
+      "goi",
+      "yut",
+      "ping",
+      "gaw"
+    ]
+  },
+  {
+    "id": "phrase-food-and-drinks-ore-oi-yee-dahn-i-want-two-eggs",
+    "cantonese": "ore oi yee dahn",
+    "english": "I want two eggs",
+    "notes": "Ordering two eggs",
+    "category": "food-and-drinks",
+    "tokens": [
+      "ore",
+      "oi",
+      "yee",
+      "dahn"
+    ]
+  },
+  {
+    "id": "phrase-food-and-drinks-ore-chung-ee-tau-fu-i-like-tofu",
+    "cantonese": "ore chung-ee tau fu",
+    "english": "I like tofu",
+    "notes": "Expressing tofu preference",
+    "category": "food-and-drinks",
+    "tokens": [
+      "ore",
+      "chung-ee",
+      "tau",
+      "fu"
+    ]
+  },
+  {
+    "id": "phrase-food-and-drinks-ore-oi-sik-yeu-i-want-to-eat-fish",
+    "cantonese": "ore oi sik yeu",
+    "english": "I want to eat fish",
+    "notes": "Ordering fish",
+    "category": "food-and-drinks",
+    "tokens": [
+      "ore",
+      "oi",
+      "sik",
+      "yeu"
+    ]
+  },
+  {
+    "id": "phrase-food-and-drinks-nay-chung-ee-jew-yuk-ma-do-you-like-pork",
+    "cantonese": "nay chung-ee jew yuk ma",
+    "english": "Do you like pork?",
+    "notes": "Asking about pork preference",
+    "category": "food-and-drinks",
+    "tokens": [
+      "nay",
+      "chung-ee",
+      "jew",
+      "yuk",
+      "ma"
+    ]
+  },
+  {
+    "id": "phrase-food-and-drinks-ore-oi-dahn-tart-i-want-egg-tart",
+    "cantonese": "ore oi dahn tart",
+    "english": "I want egg tart",
+    "notes": "Ordering egg tart",
+    "category": "food-and-drinks",
+    "tokens": [
+      "ore",
+      "oi",
+      "dahn",
+      "tart"
+    ]
+  },
+  {
+    "id": "phrase-food-and-drinks-ore-ho-chung-ee-ta-su-bao-i-really-like-bbq-pork-bun",
+    "cantonese": "ore ho chung-ee ta su bao",
+    "english": "I really like BBQ pork bun",
+    "notes": "Expressing strong preference",
+    "category": "food-and-drinks",
+    "tokens": [
+      "ore",
+      "ho",
+      "chung-ee",
+      "ta",
+      "su",
+      "bao"
+    ]
+  },
+  {
+    "id": "phrase-food-and-drinks-ore-mou-oiw-lai-i-dont-have-milk",
+    "cantonese": "ore mou oiw lai",
+    "english": "I don't have milk",
+    "notes": "Stating lack of milk",
+    "category": "food-and-drinks",
+    "tokens": [
+      "ore",
+      "mou",
+      "oiw",
+      "lai"
+    ]
+  },
+  {
+    "id": "phrase-food-and-drinks-mmm-goi-saam-cha-please-three-teas",
+    "cantonese": "mmm goi saam cha",
+    "english": "Please three teas",
+    "notes": "Ordering three teas politely",
+    "category": "food-and-drinks",
+    "tokens": [
+      "mmm",
+      "goi",
+      "saam",
+      "cha"
+    ]
+  },
+  {
+    "id": "phrase-food-and-drinks-ore-chung-ee-her-ung-chiew-i-like-banana",
+    "cantonese": "ore chung-ee her-ung chiew",
+    "english": "I like banana",
+    "notes": "Expressing fruit preference",
+    "category": "food-and-drinks",
+    "tokens": [
+      "ore",
+      "chung-ee",
+      "her-ung",
+      "chiew"
+    ]
+  },
+  {
+    "id": "phrase-food-and-drinks-nay-oi-ping-gaw-ma-do-you-want-apple",
+    "cantonese": "nay oi ping gaw ma",
+    "english": "Do you want apple?",
+    "notes": "Offering apple",
+    "category": "food-and-drinks",
+    "tokens": [
+      "nay",
+      "oi",
+      "ping",
+      "gaw",
+      "ma"
+    ]
+  },
+  {
+    "id": "phrase-food-and-drinks-ho-ho-sik-very-good-to-eat-delicious",
+    "cantonese": "ho ho sik",
+    "english": "Very good to eat / delicious",
+    "notes": "Complimenting food",
+    "category": "food-and-drinks",
+    "tokens": [
+      "ho",
+      "ho",
+      "sik"
+    ]
+  },
+  {
+    "id": "phrase-food-and-drinks-mmm-ho-sik-not-good-to-eat",
+    "cantonese": "mmm ho sik",
+    "english": "Not good to eat",
+    "notes": "Negative food review",
+    "category": "food-and-drinks",
+    "tokens": [
+      "mmm",
+      "ho",
+      "sik"
+    ]
+  },
+  {
+    "id": "phrase-food-and-drinks-ore-oi-ho-yuk-i-want-lots-of-meat",
+    "cantonese": "ore oi ho yuk",
+    "english": "I want lots of meat",
+    "notes": "Requesting extra meat",
+    "category": "food-and-drinks",
+    "tokens": [
+      "ore",
+      "oi",
+      "ho",
+      "yuk"
+    ]
+  },
+  {
+    "id": "phrase-greetings-hi-hi",
+    "cantonese": "hi",
+    "english": "Hi",
+    "notes": "Simple greeting",
+    "category": "greetings",
+    "tokens": [
+      "hi"
+    ]
+  },
+  {
+    "id": "phrase-greetings-ore-ho-aaa-i-am-good",
+    "cantonese": "ore ho aaa",
+    "english": "I am good",
+    "notes": "Response to \"how are you\"",
+    "category": "greetings",
+    "tokens": [
+      "ore",
+      "ho",
+      "aaa"
+    ]
+  },
+  {
+    "id": "phrase-greetings-nay-ho-ma-are-you-good",
+    "cantonese": "nay ho ma",
+    "english": "Are you good?",
+    "notes": "Asking how someone is",
+    "category": "greetings",
+    "tokens": [
+      "nay",
+      "ho",
+      "ma"
+    ]
+  },
+  {
+    "id": "phrase-greetings-mmm-ho-not-good",
+    "cantonese": "mmm ho",
+    "english": "Not good",
+    "notes": "Negative response",
+    "category": "greetings",
+    "tokens": [
+      "mmm",
+      "ho"
+    ]
+  },
+  {
+    "id": "phrase-greetings-ore-hai-lay-pang-yau-i-am-your-friend",
+    "cantonese": "ore hai lay pang-yau",
+    "english": "I am your friend",
+    "notes": "Stating friendship",
+    "category": "greetings",
+    "tokens": [
+      "ore",
+      "hai",
+      "lay",
+      "pang-yau"
+    ]
+  },
+  {
+    "id": "phrase-greetings-nay-gew-ma-whats-your-name",
+    "cantonese": "nay gew ma",
+    "english": "What's your name?",
+    "notes": "Asking someone's name",
+    "category": "greetings",
+    "tokens": [
+      "nay",
+      "gew",
+      "ma"
+    ]
+  },
+  {
+    "id": "phrase-greetings-joy-ghin-good-bye",
+    "cantonese": "joy ghin",
+    "english": "Good bye",
+    "notes": "Farewell",
+    "category": "greetings",
+    "tokens": [
+      "joy",
+      "ghin"
+    ]
+  },
+  {
+    "id": "phrase-greetings-mmm-goi-please",
+    "cantonese": "mmm goi",
+    "english": "Please",
+    "notes": "Polite request",
+    "category": "greetings",
+    "tokens": [
+      "mmm",
+      "goi"
+    ]
+  },
+  {
+    "id": "phrase-greetings-ore-oi-i-want",
+    "cantonese": "ore oi",
+    "english": "I want",
+    "notes": "Expressing desire (incomplete phrase)",
+    "category": "greetings",
+    "tokens": [
+      "ore",
+      "oi"
+    ]
+  },
+  {
+    "id": "phrase-greetings-nay-oi-ma-do-you-want",
+    "cantonese": "nay oi ma",
+    "english": "Do you want?",
+    "notes": "Asking if someone wants something",
+    "category": "greetings",
+    "tokens": [
+      "nay",
+      "oi",
+      "ma"
+    ]
+  },
+  {
+    "id": "phrase-greetings-ore-chung-ee-i-like",
+    "cantonese": "ore chung-ee",
+    "english": "I like",
+    "notes": "Expressing preference (incomplete)",
+    "category": "greetings",
+    "tokens": [
+      "ore",
+      "chung-ee"
+    ]
+  },
+  {
+    "id": "phrase-greetings-nay-chung-ee-ma-do-you-like",
+    "cantonese": "nay chung-ee ma",
+    "english": "Do you like?",
+    "notes": "Asking if someone likes something",
+    "category": "greetings",
+    "tokens": [
+      "nay",
+      "chung-ee",
+      "ma"
+    ]
+  },
+  {
+    "id": "phrase-greetings-hai-yes",
+    "cantonese": "hai",
+    "english": "Yes",
+    "notes": "Affirmative response",
+    "category": "greetings",
+    "tokens": [
+      "hai"
+    ]
+  }
+]
