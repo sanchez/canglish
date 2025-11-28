@@ -139,11 +139,15 @@ async function loadPhrases(): Promise<Phrase[]> {
 }
 
 function getWordId(word: Word): string {
-  return `word-${word.category}-${slugify(word.cantonese)}-${slugify(word.english)}`;
+  return `word-${word.category}-${slugify(word.cantonese)}-${slugify(
+    word.english
+  )}`;
 }
 
 function getPhraseId(phrase: Phrase): string {
-  return `phrase-${phrase.category}-${slugify(phrase.cantonese)}-${slugify(phrase.english)}`;
+  return `phrase-${phrase.category}-${slugify(phrase.cantonese)}-${slugify(
+    phrase.english
+  )}`;
 }
 
 function computeWordUsage(

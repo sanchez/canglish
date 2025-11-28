@@ -22,7 +22,9 @@ export function getWordId(word: Word): string {
       .replace(/\s+/g, "-")
       .replace(/-+/g, "-")
       .trim();
-  return `word-${word.category}-${slugify(word.cantonese)}-${slugify(word.english)}`;
+  return `word-${word.category}-${slugify(word.cantonese)}-${slugify(
+    word.english
+  )}`;
 }
 
 // Helper to compute phrase ID at runtime
@@ -34,7 +36,9 @@ export function getPhraseId(phrase: Phrase): string {
       .replace(/\s+/g, "-")
       .replace(/-+/g, "-")
       .trim();
-  return `phrase-${phrase.category}-${slugify(phrase.cantonese)}-${slugify(phrase.english)}`;
+  return `phrase-${phrase.category}-${slugify(phrase.cantonese)}-${slugify(
+    phrase.english
+  )}`;
 }
 
 export interface ProgressEntry {
