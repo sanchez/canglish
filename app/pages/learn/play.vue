@@ -1,18 +1,21 @@
 <template>
   <div>
     <QuizShell :mode="'learn'">
+      <template #top-right>
+        <NuxtLink
+          to="/learn"
+          class="text-sm text-blue-600 hover:text-blue-800 whitespace-nowrap"
+        >
+          Exit
+        </NuxtLink>
+      </template>
+
       <template #header>
-        <div class="flex items-center gap-4">
-          <div class="text-sm text-gray-600">
-            Session: {{ sessionCount }} answered
-          </div>
-          <NuxtLink
-            to="/learn"
-            class="text-sm text-blue-600 hover:text-blue-800"
-          >
-            Exit
-          </NuxtLink>
-        </div>
+        <ProgressBar
+          :current="sessionCount"
+          :total="sessionTarget"
+          label="Session Progress"
+        />
       </template>
 
       <div
@@ -76,6 +79,7 @@
 
   const loading = ref(false);
   const sessionCount = ref(0);
+  const sessionTarget = ref(0);
   const currentQuestion = ref<{
     type: "word" | "phrase";
     question: WordQuizQuestion | PhraseQuizQuestion;
@@ -166,6 +170,8 @@
 
   // Load first question on mount
   onMounted(() => {
+    refillIfNeeded();
+    sessionTarget.value = pool.value.length;
     loadNextQuestion();
   });
 </script>

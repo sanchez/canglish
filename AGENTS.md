@@ -180,4 +180,17 @@ Progress:
 - Nuxt 3 docs: https://nuxt.com/docs
 - Vue 3 Composition API: https://vuejs.org/api/composition-api.html
 - Tailwind CSS: https://tailwindcss.com/docs
-- @nuxt/ui: https://ui.nuxt.com
+- @nuxt/ui: https://ui.nxt.com
+
+## Canglish Skill
+
+Use the `canglish` skill when generating new vocabulary words or phrases:
+
+```bash
+skill({ name: "canglish" })
+```
+
+This skill provides guidance on:
+- Canglish phonetic conventions
+- Word and phrase format requirements
+- How to expand the dataset without duplication

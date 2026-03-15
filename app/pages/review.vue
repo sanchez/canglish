@@ -32,18 +32,21 @@
       v-if="hasItems && showQuiz"
       :mode="'review'"
     >
+      <template #top-right>
+        <button
+          @click="exitReview"
+          class="text-sm text-blue-600 hover:text-blue-800 whitespace-nowrap"
+        >
+          Exit Review
+        </button>
+      </template>
+
       <template #header>
-        <div class="flex items-center gap-4">
-          <div class="text-sm text-gray-600">
-            Reviewed: {{ sessionCount }} items
-          </div>
-          <button
-            @click="exitReview"
-            class="text-sm text-blue-600 hover:text-blue-800"
-          >
-            Exit Review
-          </button>
-        </div>
+        <ProgressBar
+          :current="sessionCount"
+          :total="sessionTarget"
+          label="Session Progress"
+        />
       </template>
 
       <div
@@ -106,6 +109,7 @@
 
   const loading = ref(false);
   const sessionCount = ref(0);
+  const sessionTarget = ref(0);
   const showQuiz = ref(false);
   const currentQuestion = ref<{
     type: "word" | "phrase";
@@ -115,6 +119,7 @@
   const masteredItemsCount = computed(() => getMasteredItems().length);
 
   const startReview = () => {
+    sessionTarget.value = getMasteredItems().length;
     showQuiz.value = true;
     loadNextQuestion();
   };

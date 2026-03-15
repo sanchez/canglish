@@ -1,686 +1,768 @@
 [
   {
-    "cantonese": "nay hai lang noi",
+    "jyutping": "nei5 hai6 leng3 neoi5 zai2",
+    "cantonese": "lay hai leng nui zai",
     "english": "You are a beautiful girl",
     "notes": "Compliment",
     "category": "descriptions",
     "tokens": [
-      "nay",
-      "hai",
-      "lang",
-      "noi"
+      "nei5",
+      "hai6",
+      "leng3",
+      "neoi5",
+      "zai2"
     ]
   },
   {
-    "cantonese": "ore hai chung choy",
+    "jyutping": "ngo5 hai6 so1 so1",
+    "cantonese": "ore hai so so",
     "english": "I am an idiot",
     "notes": "Self-deprecating statement",
     "category": "descriptions",
     "tokens": [
-      "ore",
-      "hai",
-      "chung",
-      "choy"
+      "ngo5",
+      "hai6",
+      "so1",
+      "so1"
     ]
   },
   {
-    "cantonese": "nay hai tin choy",
+    "jyutping": "nei5 hai6 tin1 coi4",
+    "cantonese": "lay hai tin coi",
     "english": "You are a genius",
     "notes": "Compliment",
     "category": "descriptions",
     "tokens": [
-      "nay",
-      "hai",
-      "tin",
-      "choy"
+      "nei5",
+      "hai6",
+      "tin1",
+      "coi4"
     ]
   },
   {
-    "cantonese": "ore pang-yau hai lang zai",
+    "jyutping": "ngo5 pang4 jau5 hai6 leng3 zai2",
+    "cantonese": "ore pang yau hai leng zai",
     "english": "My friend is a handsome man",
     "notes": "Describing friend",
     "category": "descriptions",
     "tokens": [
-      "ore",
-      "pang-yau",
-      "hai",
-      "lang",
-      "zai"
+      "ngo5",
+      "pang4",
+      "jau5",
+      "hai6",
+      "leng3",
+      "zai2"
     ]
   },
   {
-    "cantonese": "nay ma-ma hai si fu",
+    "jyutping": "nei5 maa1 maa1 hai6 si1 fu6",
+    "cantonese": "lay ma ma hai si fu",
     "english": "Your mum is a master",
     "notes": "Respectful description",
     "category": "descriptions",
     "tokens": [
-      "nay",
-      "ma-ma",
-      "hai",
-      "si",
-      "fu"
+      "nei5",
+      "maa1",
+      "maa1",
+      "hai6",
+      "si1",
+      "fu6"
     ]
   },
   {
-    "cantonese": "ore ba-ba hai choy zu",
+    "jyutping": "ngo5 baa1 baa1 hai6 coi4 zaap3 zau1",
+    "cantonese": "ore ba ba hai coi zaap zau",
     "english": "My dad is a rich man",
     "notes": "Describing father",
     "category": "descriptions",
     "tokens": [
-      "ore",
-      "ba-ba",
-      "hai",
-      "choy",
-      "zu"
+      "ngo5",
+      "baa1",
+      "baa1",
+      "hai6",
+      "coi4",
+      "zaap3",
+      "zau1"
     ]
   },
   {
-    "cantonese": "nay hai gwai lo",
+    "jyutping": "nei5 hai6 gwai2 lou5",
+    "cantonese": "lay hai gwai lou",
     "english": "You are a western man",
     "notes": "Identifying someone",
     "category": "descriptions",
     "tokens": [
-      "nay",
-      "hai",
-      "gwai",
-      "lo"
+      "nei5",
+      "hai6",
+      "gwai2",
+      "lou5"
     ]
   },
   {
-    "cantonese": "ore tung-si hai chee sin",
+    "jyutping": "ngo5 tung4 si6 hai6 sang1 sau1",
+    "cantonese": "ore tung si hai sang sau",
     "english": "My colleague is a teacher",
     "notes": "Describing colleague",
     "category": "descriptions",
     "tokens": [
-      "ore",
-      "tung-si",
-      "hai",
-      "chee",
-      "sin"
+      "ngo5",
+      "tung4",
+      "si6",
+      "hai6",
+      "sang1",
+      "sau1"
     ]
   },
   {
-    "cantonese": "nay lou-baan hai chung choy ma",
+    "jyutping": "nei5 lou5 baan2 hai6 so1 so1 maa1",
+    "cantonese": "lay lou baan hai so so ma",
     "english": "Is your boss an idiot?",
     "notes": "Question about boss",
     "category": "descriptions",
     "tokens": [
-      "nay",
-      "lou-baan",
-      "hai",
-      "chung",
-      "choy",
-      "ma"
+      "nei5",
+      "lou5",
+      "baan2",
+      "hai6",
+      "so1",
+      "so1",
+      "maa1"
     ]
   },
   {
-    "cantonese": "ore chung-ee hong sik",
+    "jyutping": "ngo5 zung1 ji3 hung4 sik1",
+    "cantonese": "ore jung ji hung sik",
     "english": "I like red",
     "notes": "Color preference",
     "category": "descriptions",
     "tokens": [
-      "ore",
-      "chung-ee",
-      "hong",
-      "sik"
+      "ngo5",
+      "zung1",
+      "ji3",
+      "hung4",
+      "sik1"
     ]
   },
   {
-    "cantonese": "nay chung-ee lam sik ma",
+    "jyutping": "nei5 zung1 ji3 laam4 sik1 maa1",
+    "cantonese": "lay jung ji laam sik ma",
     "english": "Do you like blue?",
     "notes": "Asking about color preference",
     "category": "descriptions",
     "tokens": [
-      "nay",
-      "chung-ee",
-      "lam",
-      "sik",
-      "ma"
+      "nei5",
+      "zung1",
+      "ji3",
+      "laam4",
+      "sik1",
+      "maa1"
     ]
   },
   {
+    "jyutping": "ngo5 oi3 luk6 sik1",
     "cantonese": "ore oi luk sik",
     "english": "I want green",
     "notes": "Requesting green color",
     "category": "descriptions",
     "tokens": [
-      "ore",
-      "oi",
-      "luk",
-      "sik"
+      "ngo5",
+      "oi3",
+      "luk6",
+      "sik1"
     ]
   },
   {
-    "cantonese": "hai hong sik",
+    "jyutping": "hai6 hung4 sik1",
+    "cantonese": "hai hung sik",
     "english": "Yes, red",
     "notes": "Confirming red color",
     "category": "descriptions",
     "tokens": [
-      "hai",
-      "hong",
-      "sik"
+      "hai6",
+      "hung4",
+      "sik1"
     ]
   },
   {
+    "jyutping": "hou2 hou2",
     "cantonese": "ho ho",
     "english": "Very good / lots and lots",
     "notes": "Strong emphasis",
     "category": "descriptions",
     "tokens": [
-      "ho",
-      "ho"
+      "hou2",
+      "hou2"
     ]
   },
   {
-    "cantonese": "nay ho aaa",
+    "jyutping": "nei5 hou2 aa3",
+    "cantonese": "lay ho aa",
     "english": "You are good",
     "notes": "Compliment (softened)",
     "category": "descriptions",
     "tokens": [
-      "nay",
-      "ho",
-      "aaa"
+      "nei5",
+      "hou2",
+      "aa3"
     ]
   },
   {
-    "cantonese": "ore mmm ho",
+    "jyutping": "ngo5 m4 hou2",
+    "cantonese": "ore m ho",
     "english": "I am not good",
     "notes": "Negative self-description",
     "category": "descriptions",
     "tokens": [
-      "ore",
-      "mmm",
-      "ho"
+      "ngo5",
+      "m4",
+      "hou2"
     ]
   },
   {
-    "cantonese": "nay hai ho pang-yau",
+    "jyutping": "nei5 hai6 hou2 pang4 jau5",
+    "cantonese": "lay hai ho pang yau",
     "english": "You are a good friend",
     "notes": "Compliment",
     "category": "descriptions",
     "tokens": [
-      "nay",
-      "hai",
-      "ho",
-      "pang-yau"
+      "nei5",
+      "hai6",
+      "hou2",
+      "pang4",
+      "jau5"
     ]
   },
   {
-    "cantonese": "jor",
+    "jyutping": "zo2",
+    "cantonese": "zo",
     "english": "Left",
     "notes": "Direction",
     "category": "directions",
     "tokens": [
-      "jor"
+      "zo2"
     ]
   },
   {
-    "cantonese": "yow",
+    "jyutping": "jau6",
+    "cantonese": "yau",
     "english": "Right",
     "notes": "Direction",
     "category": "directions",
     "tokens": [
-      "yow"
+      "jau6"
     ]
   },
   {
+    "jyutping": "zik6",
     "cantonese": "zik",
     "english": "Straight",
     "notes": "Direction",
     "category": "directions",
     "tokens": [
-      "zik"
+      "zik6"
     ]
   },
   {
-    "cantonese": "ore oi jor",
+    "jyutping": "ngo5 oi3 zo2",
+    "cantonese": "ore oi zo",
     "english": "I want left",
     "notes": "Indicating left direction",
     "category": "directions",
     "tokens": [
-      "ore",
-      "oi",
-      "jor"
+      "ngo5",
+      "oi3",
+      "zo2"
     ]
   },
   {
-    "cantonese": "nay oi yow ma",
+    "jyutping": "nei5 oi3 jau6 maa1",
+    "cantonese": "lay oi yau ma",
     "english": "Do you want right?",
     "notes": "Asking about right direction",
     "category": "directions",
     "tokens": [
-      "nay",
-      "oi",
-      "yow",
-      "ma"
+      "nei5",
+      "oi3",
+      "jau6",
+      "maa1"
     ]
   },
   {
+    "jyutping": "ngo5 oi3 sik6",
     "cantonese": "ore oi sik",
     "english": "I want to eat",
     "notes": "Expressing hunger/desire to eat",
     "category": "food-and-drinks",
     "tokens": [
-      "ore",
-      "oi",
-      "sik"
+      "ngo5",
+      "oi3",
+      "sik6"
     ]
   },
   {
-    "cantonese": "nay oi sik ma",
+    "jyutping": "nei5 oi3 sik6 maa1",
+    "cantonese": "lay oi sik ma",
     "english": "Do you want to eat?",
     "notes": "Asking if someone wants to eat",
     "category": "food-and-drinks",
     "tokens": [
-      "nay",
-      "oi",
-      "sik",
-      "ma"
+      "nei5",
+      "oi3",
+      "sik6",
+      "maa1"
     ]
   },
   {
-    "cantonese": "ore chung-ee sik guy",
+    "jyutping": "ngo5 zung1 ji3 sik6 gai1",
+    "cantonese": "ore jung ji sik gai",
     "english": "I like to eat chicken",
     "notes": "Expressing food preference",
     "category": "food-and-drinks",
     "tokens": [
-      "ore",
-      "chung-ee",
-      "sik",
-      "guy"
+      "ngo5",
+      "zung1",
+      "ji3",
+      "sik6",
+      "gai1"
     ]
   },
   {
-    "cantonese": "ore oi cha",
+    "jyutping": "ngo5 oi3 caa4",
+    "cantonese": "ore oi caa",
     "english": "I want tea",
     "notes": "Ordering tea",
     "category": "food-and-drinks",
     "tokens": [
-      "ore",
-      "oi",
-      "cha"
+      "ngo5",
+      "oi3",
+      "caa4"
     ]
   },
   {
-    "cantonese": "ore oi gaa fair",
+    "jyutping": "ngo5 oi3 gaa1 fe1",
+    "cantonese": "ore oi ga fe",
     "english": "I want coffee",
     "notes": "Ordering coffee",
     "category": "food-and-drinks",
     "tokens": [
-      "ore",
-      "oi",
-      "gaa",
-      "fair"
+      "ngo5",
+      "oi3",
+      "gaa1",
+      "fe1"
     ]
   },
   {
-    "cantonese": "ore oi sui",
+    "jyutping": "ngo5 oi3 seoi2",
+    "cantonese": "ore oi seui",
     "english": "I want water",
     "notes": "Ordering water",
     "category": "food-and-drinks",
     "tokens": [
-      "ore",
-      "oi",
-      "sui"
+      "ngo5",
+      "oi3",
+      "seoi2"
     ]
   },
   {
-    "cantonese": "nay oi cha ding-hai gaa fair ma",
+    "jyutping": "nei5 oi3 caa4 ding1 haa6 gaa1 fe1 maa1",
+    "cantonese": "lay oi caa ding hai ga fe ma",
     "english": "Do you want tea or coffee?",
     "notes": "Offering drink choices (missing \"or\" word)",
     "category": "food-and-drinks",
     "tokens": [
-      "nay",
-      "oi",
-      "cha",
-      "ding-hai",
-      "gaa",
-      "fair",
-      "ma"
+      "nei5",
+      "oi3",
+      "caa4",
+      "ding1",
+      "haa6",
+      "gaa1",
+      "fe1",
+      "maa1"
     ]
   },
   {
-    "cantonese": "ore chung-ee chan zup",
+    "jyutping": "ngo5 zung1 ji3 caang4 zap1",
+    "cantonese": "ore jung ji caang zap",
     "english": "I like orange juice",
     "notes": "Expressing drink preference",
     "category": "food-and-drinks",
     "tokens": [
-      "ore",
-      "chung-ee",
-      "chan",
-      "zup"
+      "ngo5",
+      "zung1",
+      "ji3",
+      "caang4",
+      "zap1"
     ]
   },
   {
-    "cantonese": "nay chung-ee oiw lai ma",
+    "jyutping": "nei5 zung1 ji3 ngau5 naai5 maa1",
+    "cantonese": "lay jung ji ngau naai ma",
     "english": "Do you like milk?",
     "notes": "Asking about milk preference",
     "category": "food-and-drinks",
     "tokens": [
-      "nay",
-      "chung-ee",
-      "oiw",
-      "lai",
-      "ma"
+      "nei5",
+      "zung1",
+      "ji3",
+      "ngau5",
+      "naai5",
+      "maa1"
     ]
   },
   {
-    "cantonese": "ore oi oiw yuk meen",
+    "jyutping": "ngo5 oi3 ngau5 juk6 min6",
+    "cantonese": "ore oi ow yuk min",
     "english": "I want beef noodles",
     "notes": "Ordering specific dish",
     "category": "food-and-drinks",
     "tokens": [
-      "ore",
-      "oi",
-      "oiw",
-      "yuk",
-      "meen"
+      "ngo5",
+      "oi3",
+      "ngau5",
+      "juk6",
+      "min6"
     ]
   },
   {
-    "cantonese": "mmm goi yut ping gaw",
+    "jyutping": "m4 goi1 jat1 go3 ping4 gwo1",
+    "cantonese": "m goi yat go ping gwo",
     "english": "Please one apple",
     "notes": "Ordering one apple politely",
     "category": "food-and-drinks",
     "tokens": [
-      "mmm",
-      "goi",
-      "yut",
-      "ping",
-      "gaw"
+      "m4",
+      "goi1",
+      "jat1",
+      "go3",
+      "ping4",
+      "gwo1"
     ]
   },
   {
-    "cantonese": "ore oi yee dahn",
+    "jyutping": "ngo5 oi3 ji6 daan6",
+    "cantonese": "ore oi yi daan",
     "english": "I want two eggs",
     "notes": "Ordering two eggs",
     "category": "food-and-drinks",
     "tokens": [
-      "ore",
-      "oi",
-      "yee",
-      "dahn"
+      "ngo5",
+      "oi3",
+      "ji6",
+      "daan6"
     ]
   },
   {
-    "cantonese": "ore chung-ee tau fu",
+    "jyutping": "ngo5 zung1 ji3 dau6 fu6",
+    "cantonese": "ore jung ji dau fu",
     "english": "I like tofu",
     "notes": "Expressing tofu preference",
     "category": "food-and-drinks",
     "tokens": [
-      "ore",
-      "chung-ee",
-      "tau",
-      "fu"
+      "ngo5",
+      "zung1",
+      "ji3",
+      "dau6",
+      "fu6"
     ]
   },
   {
-    "cantonese": "ore oi sik yeu",
+    "jyutping": "ngo5 oi3 sik6 jyu4",
+    "cantonese": "ore oi sik yu",
     "english": "I want to eat fish",
     "notes": "Ordering fish",
     "category": "food-and-drinks",
     "tokens": [
-      "ore",
-      "oi",
-      "sik",
-      "yeu"
+      "ngo5",
+      "oi3",
+      "sik6",
+      "jyu4"
     ]
   },
   {
-    "cantonese": "nay chung-ee jew yuk ma",
+    "jyutping": "nei5 zung1 ji3 zyu1 juk6 maa1",
+    "cantonese": "lay jung ji zyu yuk ma",
     "english": "Do you like pork?",
     "notes": "Asking about pork preference",
     "category": "food-and-drinks",
     "tokens": [
-      "nay",
-      "chung-ee",
-      "jew",
-      "yuk",
-      "ma"
+      "nei5",
+      "zung1",
+      "ji3",
+      "zyu1",
+      "juk6",
+      "maa1"
     ]
   },
   {
-    "cantonese": "ore oi dahn tart",
+    "jyutping": "ngo5 oi3 daan6 taat1",
+    "cantonese": "ore oi daan tat",
     "english": "I want egg tart",
     "notes": "Ordering egg tart",
     "category": "food-and-drinks",
     "tokens": [
-      "ore",
-      "oi",
-      "dahn",
-      "tart"
+      "ngo5",
+      "oi3",
+      "daan6",
+      "taat1"
     ]
   },
   {
-    "cantonese": "ore ho chung-ee ta su bao",
+    "jyutping": "ngo5 hou2 zung1 ji3 caa1 siu1 baau1",
+    "cantonese": "ore ho jung ji cha siu baau",
     "english": "I really like BBQ pork bun",
     "notes": "Expressing strong preference",
     "category": "food-and-drinks",
     "tokens": [
-      "ore",
-      "ho",
-      "chung-ee",
-      "ta",
-      "su",
-      "bao"
+      "ngo5",
+      "hou2",
+      "zung1",
+      "ji3",
+      "caa1",
+      "siu1",
+      "baau1"
     ]
   },
   {
-    "cantonese": "ore mou oiw lai",
+    "jyutping": "ngo5 mou5 ngau5 naai5",
+    "cantonese": "ore mo ow naai",
     "english": "I don't have milk",
     "notes": "Stating lack of milk",
     "category": "food-and-drinks",
     "tokens": [
-      "ore",
-      "mou",
-      "oiw",
-      "lai"
+      "ngo5",
+      "mou5",
+      "ngau5",
+      "naai5"
     ]
   },
   {
-    "cantonese": "mmm goi saam cha",
+    "jyutping": "m4 goi1 saam1 bo1 caa4",
+    "cantonese": "m goi saam bo caa",
     "english": "Please three teas",
     "notes": "Ordering three teas politely",
     "category": "food-and-drinks",
     "tokens": [
-      "mmm",
-      "goi",
-      "saam",
-      "cha"
+      "m4",
+      "goi1",
+      "saam1",
+      "bo1",
+      "caa4"
     ]
   },
   {
-    "cantonese": "ore chung-ee her-ung chiew",
+    "jyutping": "ngo5 zung1 ji3 hoeng1 ziu1",
+    "cantonese": "ore jung ji heung ziu",
     "english": "I like banana",
     "notes": "Expressing fruit preference",
     "category": "food-and-drinks",
     "tokens": [
-      "ore",
-      "chung-ee",
-      "her-ung",
-      "chiew"
+      "ngo5",
+      "zung1",
+      "ji3",
+      "hoeng1",
+      "ziu1"
     ]
   },
   {
-    "cantonese": "nay oi ping gaw ma",
+    "jyutping": "nei5 oi3 ping4 gwo1 maa1",
+    "cantonese": "lay oi ping gwo ma",
     "english": "Do you want apple?",
     "notes": "Offering apple",
     "category": "food-and-drinks",
     "tokens": [
-      "nay",
-      "oi",
-      "ping",
-      "gaw",
-      "ma"
+      "nei5",
+      "oi3",
+      "ping4",
+      "gwo1",
+      "maa1"
     ]
   },
   {
+    "jyutping": "hou2 hou2 sik6",
     "cantonese": "ho ho sik",
     "english": "Very good to eat / delicious",
     "notes": "Complimenting food",
     "category": "food-and-drinks",
     "tokens": [
-      "ho",
-      "ho",
-      "sik"
+      "hou2",
+      "hou2",
+      "sik6"
     ]
   },
   {
-    "cantonese": "mmm ho sik",
+    "jyutping": "m4 hou2 sik6",
+    "cantonese": "m ho sik",
     "english": "Not good to eat",
     "notes": "Negative food review",
     "category": "food-and-drinks",
     "tokens": [
-      "mmm",
-      "ho",
-      "sik"
+      "m4",
+      "hou2",
+      "sik6"
     ]
   },
   {
+    "jyutping": "ngo5 oi3 hou2 juk6",
     "cantonese": "ore oi ho yuk",
     "english": "I want lots of meat",
     "notes": "Requesting extra meat",
     "category": "food-and-drinks",
     "tokens": [
-      "ore",
-      "oi",
-      "ho",
-      "yuk"
+      "ngo5",
+      "oi3",
+      "hou2",
+      "juk6"
     ]
   },
   {
+    "jyutping": "hai1",
     "cantonese": "hi",
     "english": "Hi",
     "notes": "Simple greeting",
     "category": "greetings",
     "tokens": [
-      "hi"
+      "hai1"
     ]
   },
   {
+    "jyutping": "ngo5 hou2 aa3",
     "cantonese": "ore ho aaa",
     "english": "I am good",
     "notes": "Response to \"how are you\"",
     "category": "greetings",
     "tokens": [
-      "ore",
-      "ho",
-      "aaa"
+      "ngo5",
+      "hou2",
+      "aa3"
     ]
   },
   {
-    "cantonese": "nay ho ma",
+    "jyutping": "nei5 hou2 maa1",
+    "cantonese": "lay ho ma",
     "english": "Are you good?",
     "notes": "Asking how someone is",
     "category": "greetings",
     "tokens": [
-      "nay",
-      "ho",
-      "ma"
+      "nei5",
+      "hou2",
+      "maa1"
     ]
   },
   {
-    "cantonese": "mmm ho",
+    "jyutping": "m4 hou2",
+    "cantonese": "m ho",
     "english": "Not good",
     "notes": "Negative response",
     "category": "greetings",
     "tokens": [
-      "mmm",
-      "ho"
+      "m4",
+      "hou2"
     ]
   },
   {
-    "cantonese": "ore hai lay pang-yau",
+    "jyutping": "ngo5 hai6 nei5 pang4 jau5",
+    "cantonese": "ore hai lay pang yau",
     "english": "I am your friend",
     "notes": "Stating friendship",
     "category": "greetings",
     "tokens": [
-      "ore",
-      "hai",
-      "lay",
-      "pang-yau"
+      "ngo5",
+      "hai6",
+      "nei5",
+      "pang4",
+      "jau5"
     ]
   },
   {
-    "cantonese": "nay gew ma",
+    "jyutping": "nei5 giu3 maa1",
+    "cantonese": "lay giu ma",
     "english": "What's your name?",
     "notes": "Asking someone's name",
     "category": "greetings",
     "tokens": [
-      "nay",
-      "gew",
-      "ma"
+      "nei5",
+      "giu3",
+      "maa1"
     ]
   },
   {
-    "cantonese": "joy ghin",
+    "jyutping": "zoi3 gin3",
+    "cantonese": "joi gin",
     "english": "Good bye",
     "notes": "Farewell",
     "category": "greetings",
     "tokens": [
-      "joy",
-      "ghin"
+      "zoi3",
+      "gin3"
     ]
   },
   {
-    "cantonese": "mmm goi",
+    "jyutping": "m4 goi1",
+    "cantonese": "m goi",
     "english": "Please",
     "notes": "Polite request",
     "category": "greetings",
     "tokens": [
-      "mmm",
-      "goi"
+      "m4",
+      "goi1"
     ]
   },
   {
+    "jyutping": "ngo5 oi3",
     "cantonese": "ore oi",
     "english": "I want",
     "notes": "Expressing desire (incomplete phrase)",
     "category": "greetings",
     "tokens": [
-      "ore",
-      "oi"
+      "ngo5",
+      "oi3"
     ]
   },
   {
-    "cantonese": "nay oi ma",
+    "jyutping": "nei5 oi3 maa1",
+    "cantonese": "lay oi ma",
     "english": "Do you want?",
     "notes": "Asking if someone wants something",
     "category": "greetings",
     "tokens": [
-      "nay",
-      "oi",
-      "ma"
+      "nei5",
+      "oi3",
+      "maa1"
     ]
   },
   {
-    "cantonese": "ore chung-ee",
+    "jyutping": "ngo5 zung1 ji3",
+    "cantonese": "ore jung ji",
     "english": "I like",
     "notes": "Expressing preference (incomplete)",
     "category": "greetings",
     "tokens": [
-      "ore",
-      "chung-ee"
+      "ngo5",
+      "zung1",
+      "ji3"
     ]
   },
   {
-    "cantonese": "nay chung-ee ma",
+    "jyutping": "nei5 zung1 ji3 maa1",
+    "cantonese": "lay jung ji ma",
     "english": "Do you like?",
     "notes": "Asking if someone likes something",
     "category": "greetings",
     "tokens": [
-      "nay",
-      "chung-ee",
-      "ma"
+      "nei5",
+      "zung1",
+      "ji3",
+      "maa1"
     ]
   },
   {
+    "jyutping": "hai6",
     "cantonese": "hai",
     "english": "Yes",
     "notes": "Affirmative response",
     "category": "greetings",
     "tokens": [
-      "hai"
+      "hai6"
     ]
   }
 ]

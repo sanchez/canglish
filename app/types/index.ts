@@ -1,4 +1,5 @@
 export interface Word {
+  jyutping: string;
   cantonese: string;
   english: string;
   notes: string;
@@ -6,6 +7,7 @@ export interface Word {
 }
 
 export interface Phrase {
+  jyutping: string;
   cantonese: string;
   english: string;
   notes: string;
@@ -73,4 +75,11 @@ export interface PhraseQuizQuestion {
   english: string;
   targetTokens: string[];
   choices: string[];
+}
+
+export interface FlagEntry {
+  id: string;
+  type: "word" | "phrase";
+  flaggedAt: string;
+  reason: string;
 }

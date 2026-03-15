@@ -12,6 +12,7 @@ const phrasesDir = join(rootDir, "phrases");
 const outputDir = join(rootDir, "app", "content");
 
 interface Word {
+  jyutping: string;
   cantonese: string;
   english: string;
   notes: string;
@@ -19,6 +20,7 @@ interface Word {
 }
 
 interface Phrase {
+  jyutping: string;
   cantonese: string;
   english: string;
   notes: string;
@@ -37,22 +39,20 @@ function slugify(text: string): string {
 
 function parseMarkdownTable(
   content: string
-): Array<{ cantonese: string; english: string; notes: string }> {
+): Array<{ jyutping: string; cantonese: string; english: string; notes: string }> {
   const lines = content.split("\n");
-  const rows: Array<{ cantonese: string; english: string; notes: string }> = [];
+  const rows: Array<{ jyutping: string; cantonese: string; english: string; notes: string }> = [];
 
   let inTable = false;
   for (const line of lines) {
     const trimmed = line.trim();
 
-    // Skip empty lines
     if (!trimmed) continue;
 
-    // Check if this is a table row
     if (trimmed.startsWith("|") && trimmed.endsWith("|")) {
-      // Skip header row and separator row
       if (
         trimmed.includes("---") ||
+        trimmed.toLowerCase().includes("jyutping") ||
         trimmed.toLowerCase().includes("cantonese")
       ) {
         inTable = true;
@@ -65,11 +65,12 @@ function parseMarkdownTable(
           .map((cell) => cell.trim())
           .filter((cell) => cell.length > 0);
 
-        if (cells.length >= 2) {
+        if (cells.length >= 3) {
           rows.push({
-            cantonese: cells[0],
-            english: cells[1],
-            notes: cells[2] || "",
+            jyutping: cells[0],
+            cantonese: cells[1],
+            english: cells[2],
+            notes: cells[3] || "",
           });
         }
       }
@@ -98,14 +99,15 @@ async function loadWords(): Promise<Word[]> {
     const content = await readFile(join(wordsDir, file), "utf-8");
     const rows = parseMarkdownTable(content);
 
-    for (const row of rows) {
-      words.push({
-        cantonese: row.cantonese,
-        english: row.english,
-        notes: row.notes,
-        category,
-      });
-    }
+for (const row of rows) {
+    words.push({
+      jyutping: row.jyutping,
+      cantonese: row.cantonese,
+      english: row.english,
+      notes: row.notes,
+      category,
+    });
+  }
   }
 
   return words;
@@ -122,17 +124,18 @@ async function loadPhrases(): Promise<Phrase[]> {
     const content = await readFile(join(phrasesDir, file), "utf-8");
     const rows = parseMarkdownTable(content);
 
-    for (const row of rows) {
-      const tokens = tokenizePhrase(row.cantonese);
+for (const row of rows) {
+    const tokens = tokenizePhrase(row.jyutping);
 
-      phrases.push({
-        cantonese: row.cantonese,
-        english: row.english,
-        notes: row.notes,
-        category,
-        tokens,
-      });
-    }
+    phrases.push({
+      jyutping: row.jyutping,
+      cantonese: row.cantonese,
+      english: row.english,
+      notes: row.notes,
+      category,
+      tokens,
+    });
+  }
   }
 
   return phrases;

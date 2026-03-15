@@ -1,2208 +1,2289 @@
 [
   {
+    "jyutping": "hou2",
     "cantonese": "ho",
     "english": "good / lots",
     "notes": "Could mean either good or lots, depends on the situation",
     "category": "adjectives"
   },
   {
-    "cantonese": "mmm",
+    "jyutping": "m4",
+    "cantonese": "m",
     "english": "not",
-    "notes": "Placed infront of a word, means not, so mmm ho -> not good",
+    "notes": "Placed in front of a word, means not, so m ho -> not good",
     "category": "adjectives"
   },
   {
+    "jyutping": "oi3",
     "cantonese": "oi",
     "english": "want",
     "notes": "",
     "category": "adjectives"
   },
   {
+    "jyutping": "hai1",
     "cantonese": "hi",
     "english": "hi",
     "notes": "",
     "category": "adjectives"
   },
   {
+    "jyutping": "hai6",
     "cantonese": "hai",
     "english": "yes / am",
     "notes": "Can be used to either mean yes, or you are (e.g. I am boy)",
     "category": "adjectives"
   },
   {
-    "cantonese": "mou",
+    "jyutping": "mou5",
+    "cantonese": "mow",
     "english": "lacking / don't have",
-    "notes": "Similar to mmm, however would mean you don't have, e.g. useless -> don't have use",
+    "notes": "Similar to m, however would mean you don't have, e.g. useless -> don't have use",
     "category": "adjectives"
   },
   {
-    "cantonese": "mmm goi",
+    "jyutping": "m4 goi1",
+    "cantonese": "m goi",
     "english": "please",
     "notes": "",
     "category": "adjectives"
   },
   {
-    "cantonese": "chung-ee",
+    "jyutping": "zung1 ji3",
+    "cantonese": "jung-ee",
     "english": "like",
     "notes": "",
     "category": "adjectives"
   },
   {
+    "jyutping": "sik6",
     "cantonese": "sik",
     "english": "eat",
     "notes": "",
     "category": "adjectives"
   },
   {
+    "jyutping": "maa1",
     "cantonese": "ma",
     "english": "?",
-    "notes": "Used at the end of a sentence to indicate a the sentence is a question",
+    "notes": "Used at the end of a sentence to indicate the sentence is a question",
     "category": "adjectives"
   },
   {
-    "cantonese": "aaa",
-    "english": "Used at the end of a sentence as a way to like soften the statement just made",
+    "jyutping": "aa3",
+    "cantonese": "aa",
+    "english": "Used at the end of a sentence as a way to soften the statement just made",
     "notes": "",
     "category": "adjectives"
   },
   {
-    "cantonese": "gew",
+    "jyutping": "giu3",
+    "cantonese": "giu",
     "english": "called",
     "notes": "",
     "category": "adjectives"
   },
   {
-    "cantonese": "joy ghin",
+    "jyutping": "zoi3 gin3",
+    "cantonese": "joi gin",
     "english": "good bye",
     "notes": "",
     "category": "adjectives"
   },
   {
-    "cantonese": "die",
+    "jyutping": "daai6",
+    "cantonese": "dai",
     "english": "big",
     "notes": "",
     "category": "adjectives"
   },
   {
-    "cantonese": "say",
+    "jyutping": "sai3",
+    "cantonese": "sai",
     "english": "small",
     "notes": "",
     "category": "adjectives"
   },
   {
-    "cantonese": "low",
-    "english": "old (people)",
-    "notes": "",
+    "jyutping": "man4 di1",
+    "cantonese": "man-dee",
+    "english": "slow down",
+    "notes": "Say to someone to ask them to slow down",
     "category": "adjectives"
   },
   {
-    "cantonese": "high",
-    "english": "fast",
-    "notes": "",
-    "category": "adjectives"
-  },
-  {
-    "cantonese": "marn",
-    "english": "slow",
-    "notes": "",
-    "category": "adjectives"
-  },
-  {
-    "cantonese": "yung",
+    "jyutping": "jit6",
+    "cantonese": "yit",
     "english": "hot",
     "notes": "",
     "category": "adjectives"
   },
   {
-    "cantonese": "dong",
+    "jyutping": "dung1",
+    "cantonese": "dung",
     "english": "cold",
     "notes": "",
     "category": "adjectives"
   },
   {
-    "cantonese": "lung",
-    "english": "long",
-    "notes": "",
-    "category": "adjectives"
-  },
-  {
-    "cantonese": "duen",
-    "english": "short",
-    "notes": "",
-    "category": "adjectives"
-  },
-  {
-    "cantonese": "gor",
-    "english": "tall/high",
-    "notes": "",
-    "category": "adjectives"
-  },
-  {
-    "cantonese": "ngai",
-    "english": "short (height)",
-    "notes": "",
-    "category": "adjectives"
-  },
-  {
-    "cantonese": "fay",
+    "jyutping": "fei4",
+    "cantonese": "fei",
     "english": "fat",
     "notes": "",
     "category": "adjectives"
   },
   {
-    "cantonese": "saw",
-    "english": "thin",
+    "jyutping": "sau1",
+    "cantonese": "sau",
+    "english": "skinny",
     "notes": "",
     "category": "adjectives"
   },
   {
-    "cantonese": "lay",
+    "jyutping": "so1",
+    "cantonese": "so",
+    "english": "stupid",
+    "notes": "",
+    "category": "adjectives"
+  },
+  {
+    "jyutping": "leng3",
+    "cantonese": "leng",
     "english": "pretty",
     "notes": "",
     "category": "adjectives"
   },
   {
-    "cantonese": "chow",
-    "english": "ugly",
-    "notes": "",
-    "category": "adjectives"
-  },
-  {
-    "cantonese": "maow",
+    "jyutping": "maau1",
+    "cantonese": "mow",
     "english": "cat",
     "notes": "",
     "category": "animals"
   },
   {
+    "jyutping": "gau2",
     "cantonese": "gow",
     "english": "dog",
     "notes": "",
     "category": "animals"
   },
   {
-    "cantonese": "jue",
+    "jyutping": "zek3",
+    "cantonese": "jek",
     "english": "bird",
-    "notes": "",
+    "notes": "Pronounced very fast",
     "category": "animals"
   },
   {
-    "cantonese": "yeu",
+    "jyutping": "jyu4",
+    "cantonese": "yu",
     "english": "fish",
     "notes": "",
     "category": "animals"
   },
   {
-    "cantonese": "sue",
+    "jyutping": "lou5 syu2",
+    "cantonese": "lou-syu",
     "english": "mouse/rat",
     "notes": "",
     "category": "animals"
   },
   {
-    "cantonese": "jue",
+    "jyutping": "zyu1",
+    "cantonese": "ju",
     "english": "pig",
     "notes": "",
     "category": "animals"
   },
   {
-    "cantonese": "oiw",
+    "jyutping": "ngau4",
+    "cantonese": "ow",
     "english": "cow",
     "notes": "",
     "category": "animals"
   },
   {
-    "cantonese": "ma",
+    "jyutping": "maa5",
+    "cantonese": "maa",
     "english": "horse",
     "notes": "",
     "category": "animals"
   },
   {
-    "cantonese": "yerng",
+    "jyutping": "joeng4",
+    "cantonese": "joeng",
     "english": "sheep",
     "notes": "",
     "category": "animals"
   },
   {
+    "jyutping": "gai1",
     "cantonese": "gai",
     "english": "chicken",
     "notes": "",
     "category": "animals"
   },
   {
-    "cantonese": "app",
+    "jyutping": "ngaap3",
+    "cantonese": "ngaap",
     "english": "duck",
     "notes": "",
     "category": "animals"
   },
   {
-    "cantonese": "see jee",
+    "jyutping": "si1 zi2",
+    "cantonese": "si-ji",
     "english": "lion",
     "notes": "",
     "category": "animals"
   },
   {
-    "cantonese": "lo fu",
+    "jyutping": "laap3 fu1",
+    "cantonese": "lap-fu",
     "english": "tiger",
     "notes": "",
     "category": "animals"
   },
   {
-    "cantonese": "yerng",
+    "jyutping": "hung4",
+    "cantonese": "hung",
     "english": "bear",
     "notes": "",
     "category": "animals"
   },
   {
-    "cantonese": "haw jee",
+    "jyutping": "maau6 lau4",
+    "cantonese": "mow-lau",
     "english": "monkey",
     "notes": "",
     "category": "animals"
   },
   {
-    "cantonese": "yerng",
+    "jyutping": "hung4 maau1",
+    "cantonese": "hung-mow",
+    "english": "panda",
+    "notes": "",
+    "category": "animals"
+  },
+  {
+    "jyutping": "daai6 bong1 zoeng1",
+    "cantonese": "dai-bong-zeng",
     "english": "elephant",
     "notes": "",
     "category": "animals"
   },
   {
-    "cantonese": "gai luk",
-    "english": "giraffe",
-    "notes": "",
-    "category": "animals"
-  },
-  {
-    "cantonese": "toe jee",
-    "english": "rabbit",
-    "notes": "",
-    "category": "animals"
-  },
-  {
-    "cantonese": "gui",
-    "english": "turtle",
-    "notes": "",
-    "category": "animals"
-  },
-  {
-    "cantonese": "sea",
+    "jyutping": "se4",
+    "cantonese": "se",
     "english": "snake",
     "notes": "",
     "category": "animals"
   },
   {
-    "cantonese": "chung",
-    "english": "insect",
+    "jyutping": "gaat6 zaat6",
+    "cantonese": "gat-jaat",
+    "english": "cockroach",
+    "notes": "Pronounced very fast",
+    "category": "animals"
+  },
+  {
+    "jyutping": "tou3 zai2",
+    "cantonese": "tou-zai",
+    "english": "rabbit",
     "notes": "",
     "category": "animals"
   },
   {
-    "cantonese": "me fung",
-    "english": "bee",
+    "jyutping": "gwai1",
+    "cantonese": "gwai",
+    "english": "turtle",
     "notes": "",
     "category": "animals"
   },
   {
-    "cantonese": "wu deep",
-    "english": "butterfly",
-    "notes": "",
-    "category": "animals"
-  },
-  {
-    "cantonese": "tow",
+    "jyutping": "tau4",
+    "cantonese": "tau",
     "english": "head",
     "notes": "",
     "category": "body-parts"
   },
   {
-    "cantonese": "ngarn",
+    "jyutping": "ngaan5",
+    "cantonese": "ngaan",
     "english": "eye",
     "notes": "",
     "category": "body-parts"
   },
   {
-    "cantonese": "yee",
+    "jyutping": "ji5",
+    "cantonese": "ji",
     "english": "ear",
     "notes": "",
     "category": "body-parts"
   },
   {
-    "cantonese": "bay",
+    "jyutping": "bei6",
+    "cantonese": "bei",
     "english": "nose",
     "notes": "",
     "category": "body-parts"
   },
   {
-    "cantonese": "jew",
+    "jyutping": "zau2",
+    "cantonese": "jow",
     "english": "mouth",
     "notes": "",
     "category": "body-parts"
   },
   {
+    "jyutping": "nga5",
     "cantonese": "nga",
     "english": "tooth/teeth",
     "notes": "",
     "category": "body-parts"
   },
   {
-    "cantonese": "lain",
+    "jyutping": "min6",
+    "cantonese": "min",
     "english": "face",
     "notes": "",
     "category": "body-parts"
   },
   {
-    "cantonese": "sow",
+    "jyutping": "sau2",
+    "cantonese": "sau",
     "english": "hand",
     "notes": "",
     "category": "body-parts"
   },
   {
-    "cantonese": "geok",
+    "jyutping": "goek3",
+    "cantonese": "goek",
     "english": "foot/leg",
     "notes": "",
     "category": "body-parts"
   },
   {
-    "cantonese": "sum",
+    "jyutping": "sam1",
+    "cantonese": "sam",
     "english": "heart",
     "notes": "",
     "category": "body-parts"
   },
   {
+    "jyutping": "tou5",
     "cantonese": "tou",
     "english": "stomach",
     "notes": "",
     "category": "body-parts"
   },
   {
-    "cantonese": "bay",
+    "jyutping": "bui3 zek3",
+    "cantonese": "bui-zek",
     "english": "back",
     "notes": "",
     "category": "body-parts"
   },
   {
-    "cantonese": "san tye",
+    "jyutping": "san1",
+    "cantonese": "san",
     "english": "body",
     "notes": "",
     "category": "body-parts"
   },
   {
-    "cantonese": "sow jee",
+    "jyutping": "sau2 zi2",
+    "cantonese": "sau-zi",
     "english": "finger",
-    "notes": "",
+    "notes": "Direct translation is end of hand",
     "category": "body-parts"
   },
   {
-    "cantonese": "geok jee",
+    "jyutping": "goek3 zi2",
+    "cantonese": "goek-zi",
     "english": "toe",
-    "notes": "",
+    "notes": "Direct translation is end of foot",
     "category": "body-parts"
   },
   {
-    "cantonese": "yee fu",
-    "english": "clothes",
-    "notes": "",
-    "category": "clothing"
-  },
-  {
+    "jyutping": "saam1",
     "cantonese": "saam",
     "english": "shirt",
     "notes": "",
     "category": "clothing"
   },
   {
-    "cantonese": "foo",
+    "jyutping": "coi3 saam1",
+    "cantonese": "choi-saam",
+    "english": "Take your cloths off",
+    "notes": "",
+    "category": "clothing"
+  },
+  {
+    "jyutping": "fu6",
+    "cantonese": "fu",
     "english": "pants",
     "notes": "",
     "category": "clothing"
   },
   {
+    "jyutping": "kwun4",
     "cantonese": "kwun",
     "english": "skirt",
-    "notes": "",
+    "notes": "The w is said very quickly",
     "category": "clothing"
   },
   {
-    "cantonese": "ngoi tau",
-    "english": "jacket",
-    "notes": "",
-    "category": "clothing"
-  },
-  {
-    "cantonese": "dai yee",
-    "english": "dress",
-    "notes": "",
-    "category": "clothing"
-  },
-  {
-    "cantonese": "dai",
-    "english": "tie",
-    "notes": "",
-    "category": "clothing"
-  },
-  {
-    "cantonese": "mat",
-    "english": "hat",
-    "notes": "",
-    "category": "clothing"
-  },
-  {
-    "cantonese": "hai",
-    "english": "shoes",
-    "notes": "",
-    "category": "clothing"
-  },
-  {
-    "cantonese": "mat",
-    "english": "socks",
-    "notes": "",
-    "category": "clothing"
-  },
-  {
-    "cantonese": "sow tow",
-    "english": "gloves",
-    "notes": "",
-    "category": "clothing"
-  },
-  {
-    "cantonese": "wai gan",
-    "english": "scarf",
-    "notes": "",
-    "category": "clothing"
-  },
-  {
-    "cantonese": "noi yee fu",
-    "english": "underwear",
-    "notes": "",
-    "category": "clothing"
-  },
-  {
-    "cantonese": "bra",
-    "english": "bra",
-    "notes": "",
-    "category": "clothing"
-  },
-  {
-    "cantonese": "po zai",
-    "english": "bag",
-    "notes": "",
-    "category": "clothing"
-  },
-  {
-    "cantonese": "seen",
-    "english": "belt",
-    "notes": "",
-    "category": "clothing"
-  },
-  {
-    "cantonese": "ngaan geng",
-    "english": "glasses",
-    "notes": "",
-    "category": "clothing"
-  },
-  {
-    "cantonese": "sau bew",
-    "english": "watch",
-    "notes": "",
-    "category": "clothing"
-  },
-  {
-    "cantonese": "yee fu",
-    "english": "uniform",
-    "notes": "",
-    "category": "clothing"
-  },
-  {
-    "cantonese": "yun dong hai",
-    "english": "sneakers",
-    "notes": "",
-    "category": "clothing"
-  },
-  {
-    "cantonese": "hong sik",
+    "jyutping": "hung4 sik1",
+    "cantonese": "hung-sik",
     "english": "red",
     "notes": "",
     "category": "colors"
   },
   {
-    "cantonese": "lam sik",
+    "jyutping": "laam4 sik1",
+    "cantonese": "laam-sik",
     "english": "blue",
     "notes": "",
     "category": "colors"
   },
   {
-    "cantonese": "luk sik",
+    "jyutping": "luk6 sik1",
+    "cantonese": "luk-sik",
     "english": "green",
     "notes": "",
     "category": "colors"
   },
   {
-    "cantonese": "wong sik",
+    "jyutping": "wong4 sik1",
+    "cantonese": "wong-sik",
     "english": "yellow",
     "notes": "",
     "category": "colors"
   },
   {
-    "cantonese": "hak sik",
+    "jyutping": "hak1 sik1",
+    "cantonese": "hak-sik",
     "english": "black",
     "notes": "",
     "category": "colors"
   },
   {
-    "cantonese": "bak sik",
+    "jyutping": "baak6 sik1",
+    "cantonese": "baak-sik",
     "english": "white",
     "notes": "",
     "category": "colors"
   },
   {
-    "cantonese": "cheng sik",
+    "jyutping": "caang4 sik1",
+    "cantonese": "chaang-sik",
     "english": "orange",
     "notes": "",
     "category": "colors"
   },
   {
-    "cantonese": "jee sik",
+    "jyutping": "zi2 sik1",
+    "cantonese": "ji-sik",
     "english": "purple",
     "notes": "",
     "category": "colors"
   },
   {
-    "cantonese": "fun hong sik",
+    "jyutping": "fan2 hung4 sik1",
+    "cantonese": "fan-hung-sik",
     "english": "pink",
     "notes": "",
     "category": "colors"
   },
   {
-    "cantonese": "fay sik",
+    "jyutping": "fui1 sik1",
+    "cantonese": "fui-sik",
     "english": "grey",
     "notes": "",
     "category": "colors"
   },
   {
-    "cantonese": "gam sik",
+    "jyutping": "gam1 sik1",
+    "cantonese": "gam-sik",
     "english": "gold",
     "notes": "",
     "category": "colors"
   },
   {
-    "cantonese": "ngarn sik",
+    "jyutping": "ngan4 sik1",
+    "cantonese": "ngan-sik",
     "english": "silver",
     "notes": "",
     "category": "colors"
   },
   {
-    "cantonese": "lang noi",
+    "jyutping": "leng3 neoi5 zai2",
+    "cantonese": "leng-neoi-zai",
     "english": "beautiful girl",
     "notes": "",
     "category": "descriptor"
   },
   {
-    "cantonese": "chung choy",
+    "jyutping": "so1 so1",
+    "cantonese": "so-so",
     "english": "idiot",
     "notes": "",
     "category": "descriptor"
   },
   {
-    "cantonese": "choy zu",
+    "jyutping": "coi4 zaap3 zau1",
+    "cantonese": "coi-zaap-jow",
     "english": "rich man",
     "notes": "",
     "category": "descriptor"
   },
   {
-    "cantonese": "gwai lo",
+    "jyutping": "gwai2 lou5",
+    "cantonese": "gwai-low",
     "english": "western man",
     "notes": "",
     "category": "descriptor"
   },
   {
-    "cantonese": "lang zai",
+    "jyutping": "leng3 zai2",
+    "cantonese": "leng-zai",
     "english": "handsome man",
     "notes": "",
     "category": "descriptor"
   },
   {
-    "cantonese": "tin choy",
+    "jyutping": "tin1 coi4",
+    "cantonese": "tin-coi",
     "english": "genius",
     "notes": "",
     "category": "descriptor"
   },
   {
-    "cantonese": "si fu",
+    "jyutping": "si1 fu6",
+    "cantonese": "si-fu",
     "english": "master",
     "notes": "",
     "category": "descriptor"
   },
   {
-    "cantonese": "chee sin",
+    "jyutping": "ci1 sin3",
+    "cantonese": "chi-sin",
+    "english": "crazy",
+    "notes": "",
+    "category": "descriptor"
+  },
+  {
+    "jyutping": "sang1 sau1",
+    "cantonese": "sang-sau",
     "english": "teacher",
     "notes": "",
     "category": "descriptor"
   },
   {
-    "cantonese": "fei maow",
+    "jyutping": "fei1 maau1",
+    "cantonese": "fei-mow",
     "english": "fat cat",
     "notes": "",
     "category": "descriptor"
   },
   {
-    "cantonese": "jor",
+    "jyutping": "zo2",
+    "cantonese": "zo",
     "english": "left",
     "notes": "",
     "category": "directions"
   },
   {
-    "cantonese": "yow",
+    "jyutping": "jau6",
+    "cantonese": "yau",
     "english": "right",
     "notes": "",
     "category": "directions"
   },
   {
-    "cantonese": "zik",
+    "jyutping": "zik6",
+    "cantonese": "jik",
     "english": "straight",
     "notes": "",
     "category": "directions"
   },
   {
-    "cantonese": "hoy sum",
+    "jyutping": "bin1 dou6",
+    "cantonese": "bin-do",
+    "english": "Where is",
+    "notes": "",
+    "category": "directions"
+  },
+  {
+    "jyutping": "hai6 zo2 bin1",
+    "cantonese": "hai-zo-bin",
+    "english": "On the left",
+    "notes": "",
+    "category": "directions"
+  },
+  {
+    "jyutping": "hai6 jau6 bin1",
+    "cantonese": "hai-yau-bin",
+    "english": "On the right",
+    "notes": "",
+    "category": "directions"
+  },
+  {
+    "jyutping": "hoi1 sam1",
+    "cantonese": "hoi-sam",
     "english": "happy",
     "notes": "",
     "category": "emotions"
   },
   {
-    "cantonese": "mmm hoy sum",
-    "english": "unhappy/sad",
+    "jyutping": "m4 hoi1 sam1",
+    "cantonese": "m-hoi-sam",
+    "english": "unhappy",
     "notes": "",
     "category": "emotions"
   },
   {
-    "cantonese": "fo sum",
+    "jyutping": "lau5 nei5",
+    "cantonese": "lau-nei",
     "english": "angry",
     "notes": "",
     "category": "emotions"
   },
   {
-    "cantonese": "hai pa",
+    "jyutping": "gong2 geng1",
+    "cantonese": "gong-geng",
     "english": "scared/afraid",
     "notes": "",
     "category": "emotions"
   },
   {
-    "cantonese": "gern jung",
+    "jyutping": "gung1 zing1",
+    "cantonese": "gung-zing",
     "english": "nervous",
     "notes": "",
     "category": "emotions"
   },
   {
-    "cantonese": "ying dong",
+    "jyutping": "hing1 fan3",
+    "cantonese": "hing-fan",
     "english": "excited",
     "notes": "",
     "category": "emotions"
   },
   {
+    "jyutping": "gwai3",
     "cantonese": "gwai",
     "english": "tired",
     "notes": "",
     "category": "emotions"
   },
   {
-    "cantonese": "mm gwai",
+    "jyutping": "m4 gwai3",
+    "cantonese": "m-gwai",
     "english": "not tired",
     "notes": "",
     "category": "emotions"
   },
   {
-    "cantonese": "mun",
+    "jyutping": "mou4 man4",
+    "cantonese": "mou-man",
     "english": "bored",
     "notes": "",
     "category": "emotions"
   },
   {
-    "cantonese": "juk",
+    "jyutping": "paa3",
+    "cantonese": "paa",
     "english": "worried",
     "notes": "",
     "category": "emotions"
   },
   {
-    "cantonese": "gee mo",
+    "jyutping": "hou2 laap1",
+    "cantonese": "ho-laap",
     "english": "proud",
     "notes": "",
     "category": "emotions"
   },
   {
-    "cantonese": "sau sum",
-    "english": "sad",
-    "notes": "",
-    "category": "emotions"
-  },
-  {
-    "cantonese": "foo low",
-    "english": "annoyed",
-    "notes": "",
-    "category": "emotions"
-  },
-  {
-    "cantonese": "goy ga",
-    "english": "embarrassed",
-    "notes": "",
-    "category": "emotions"
-  },
-  {
-    "cantonese": "gay dong",
-    "english": "touched/moved",
-    "notes": "",
-    "category": "emotions"
-  },
-  {
+    "jyutping": "ngoi3",
     "cantonese": "ngoi",
     "english": "love",
     "notes": "",
     "category": "emotions"
   },
   {
-    "cantonese": "jung ee",
+    "jyutping": "zung1 ji3",
+    "cantonese": "jung-ji",
     "english": "like",
     "notes": "",
     "category": "emotions"
   },
   {
-    "cantonese": "tow yim",
+    "jyutping": "m4 zung1 ji3",
+    "cantonese": "m-jung-ji",
     "english": "hate",
     "notes": "",
     "category": "emotions"
   },
   {
-    "cantonese": "gum dong",
-    "english": "grateful",
-    "notes": "",
-    "category": "emotions"
-  },
-  {
-    "cantonese": "hoy sum",
+    "jyutping": "syu1 fuk1",
+    "cantonese": "syu-fuk",
     "english": "comfortable",
     "notes": "",
     "category": "emotions"
   },
   {
-    "cantonese": "mmm sue fu",
+    "jyutping": "m4 syu1 fuk1",
+    "cantonese": "m-syu-fuk",
     "english": "uncomfortable",
     "notes": "",
     "category": "emotions"
   },
   {
-    "cantonese": "mean bao",
+    "jyutping": "min6 baau1",
+    "cantonese": "min-bow",
     "english": "bread",
     "notes": "",
     "category": "food"
   },
   {
-    "cantonese": "dahn",
+    "jyutping": "daan6",
+    "cantonese": "daan",
     "english": "egg",
     "notes": "",
     "category": "food"
   },
   {
-    "cantonese": "chee see",
+    "jyutping": "zi1 si1",
+    "cantonese": "ji-see",
     "english": "cheese",
     "notes": "",
     "category": "food"
   },
   {
-    "cantonese": "oiw yuk meen",
+    "jyutping": "ngau5 juk6 min6",
+    "cantonese": "ow-yuk-min",
     "english": "beef noodles",
     "notes": "",
     "category": "food"
   },
   {
-    "cantonese": "tau fu",
+    "jyutping": "dau6 fu6",
+    "cantonese": "dow-fu",
     "english": "tofu",
     "notes": "",
     "category": "food"
   },
   {
-    "cantonese": "tau fu fa",
+    "jyutping": "dau6 fu6 faa1",
+    "cantonese": "dow-fu-fa",
     "english": "tofu pudding",
     "notes": "",
     "category": "food"
   },
   {
-    "cantonese": "her-ung chiew",
+    "jyutping": "ngaan3 caan1",
+    "cantonese": "ngan-chaan",
+    "english": "Lunch",
+    "notes": "",
+    "category": "food"
+  },
+  {
+    "jyutping": "zou2 caan1",
+    "cantonese": "zo-chaan",
+    "english": "Breakfast",
+    "notes": "",
+    "category": "food"
+  },
+  {
+    "jyutping": "hoeng1 ziu1",
+    "cantonese": "heung-jiu",
     "english": "banana",
     "notes": "",
     "category": "food"
   },
   {
-    "cantonese": "ping gaw",
+    "jyutping": "ping4 gwo1",
+    "cantonese": "ping-gwo",
     "english": "apple",
     "notes": "",
     "category": "food"
   },
   {
-    "cantonese": "sea door bare lay",
+    "jyutping": "si1 do1 lei1",
+    "cantonese": "si-do-lei",
     "english": "strawberry",
     "notes": "",
     "category": "food"
   },
   {
-    "cantonese": "ying taw",
+    "jyutping": "tou4",
+    "cantonese": "tou",
     "english": "peach",
     "notes": "",
     "category": "food"
   },
   {
-    "cantonese": "taw",
-    "english": "peach",
-    "notes": "",
-    "category": "food"
-  },
-  {
-    "cantonese": "faan care",
+    "jyutping": "faan2 ke4",
+    "cantonese": "faan-ke",
     "english": "tomato",
     "notes": "",
     "category": "food"
   },
   {
-    "cantonese": "yerng chong",
+    "jyutping": "joeng4 cong1",
+    "cantonese": "joeng-cong",
     "english": "onion",
     "notes": "",
     "category": "food"
   },
   {
-    "cantonese": "woo law baa",
+    "jyutping": "hung4 lo2 baak1",
+    "cantonese": "hung-lo-baak",
     "english": "carrot",
     "notes": "",
     "category": "food"
   },
   {
-    "cantonese": "suw zai",
+    "jyutping": "syu4 zai2",
+    "cantonese": "syu-jai",
     "english": "potato",
     "notes": "",
     "category": "food"
   },
   {
+    "jyutping": "mong1 gwo1",
+    "cantonese": "mong-gwo",
+    "english": "mango",
+    "notes": "",
+    "category": "food"
+  },
+  {
+    "jyutping": "je6 zi1",
+    "cantonese": "ye-ji",
+    "english": "coconut",
+    "notes": "",
+    "category": "food"
+  },
+  {
+    "jyutping": "je6 zap1",
+    "cantonese": "ye-jap",
+    "english": "coconut sauce",
+    "notes": "",
+    "category": "food"
+  },
+  {
+    "jyutping": "juk6",
     "cantonese": "yuk",
     "english": "meat",
     "notes": "",
     "category": "food"
   },
   {
-    "cantonese": "jew yuk",
+    "jyutping": "zyu1 juk6",
+    "cantonese": "ju-yuk",
     "english": "pork",
     "notes": "",
     "category": "food"
   },
   {
-    "cantonese": "oiw yuk",
+    "jyutping": "ngau5 juk6",
+    "cantonese": "ow-yuk",
     "english": "beef",
     "notes": "",
     "category": "food"
   },
   {
-    "cantonese": "yeu",
+    "jyutping": "jyu4",
+    "cantonese": "yu",
     "english": "fish",
     "notes": "",
     "category": "food"
   },
   {
-    "cantonese": "guy",
+    "jyutping": "gai1",
+    "cantonese": "gai",
     "english": "chicken",
     "notes": "",
     "category": "food"
   },
   {
-    "cantonese": "ha",
+    "jyutping": "haa1",
+    "cantonese": "haa",
     "english": "shrimp",
     "notes": "",
     "category": "food"
   },
   {
-    "cantonese": "hai",
+    "jyutping": "haai3",
+    "cantonese": "haai",
     "english": "crab",
     "notes": "",
     "category": "food"
   },
   {
-    "cantonese": "app",
+    "jyutping": "ngaap3",
+    "cantonese": "ngaap",
     "english": "duck",
     "notes": "",
     "category": "food"
   },
   {
-    "cantonese": "goo",
+    "jyutping": "ngo5",
+    "cantonese": "ore",
+    "english": "goose",
+    "notes": "",
+    "category": "food"
+  },
+  {
+    "jyutping": "joeng4",
+    "cantonese": "joeng",
     "english": "lamb",
     "notes": "",
     "category": "food"
   },
   {
-    "cantonese": "sam man you",
+    "jyutping": "saam1 man4 jyu4",
+    "cantonese": "saam-man-yu",
     "english": "salmon",
     "notes": "",
     "category": "food"
   },
   {
-    "cantonese": "dahn tart",
+    "jyutping": "daan6 taat1",
+    "cantonese": "daan-tat",
     "english": "egg tart",
     "notes": "",
     "category": "food"
   },
   {
-    "cantonese": "ta su bao",
+    "jyutping": "caa1 siu1 baau1",
+    "cantonese": "cha-siu-bow",
     "english": "bbq pork bun",
     "notes": "",
     "category": "food"
   },
   {
-    "cantonese": "dor",
-    "english": "table",
+    "jyutping": "fung1 zau2",
+    "cantonese": "fung-jow",
+    "english": "chicken feet",
     "notes": "",
-    "category": "household-items"
+    "category": "food"
   },
   {
-    "cantonese": "yee",
-    "english": "chair",
-    "notes": "",
-    "category": "household-items"
-  },
-  {
-    "cantonese": "chong",
-    "english": "bed",
-    "notes": "",
-    "category": "household-items"
-  },
-  {
-    "cantonese": "moon",
-    "english": "door",
-    "notes": "",
-    "category": "household-items"
-  },
-  {
-    "cantonese": "chong moon",
-    "english": "window",
-    "notes": "",
-    "category": "household-items"
-  },
-  {
-    "cantonese": "deng",
-    "english": "lamp/light",
-    "notes": "",
-    "category": "household-items"
-  },
-  {
-    "cantonese": "din wah",
-    "english": "telephone",
-    "notes": "",
-    "category": "household-items"
-  },
-  {
-    "cantonese": "din see",
-    "english": "television",
-    "notes": "",
-    "category": "household-items"
-  },
-  {
-    "cantonese": "syut gay",
-    "english": "refrigerator",
-    "notes": "",
-    "category": "household-items"
-  },
-  {
-    "cantonese": "lo",
-    "english": "stove",
-    "notes": "",
-    "category": "household-items"
-  },
-  {
-    "cantonese": "chaw fu",
-    "english": "sofa",
-    "notes": "",
-    "category": "household-items"
-  },
-  {
-    "cantonese": "geng",
-    "english": "mirror",
-    "notes": "",
-    "category": "household-items"
-  },
-  {
-    "cantonese": "zong",
-    "english": "clock",
-    "notes": "",
-    "category": "household-items"
-  },
-  {
-    "cantonese": "sue",
-    "english": "book",
-    "notes": "",
-    "category": "household-items"
-  },
-  {
-    "cantonese": "but",
-    "english": "pen",
-    "notes": "",
-    "category": "household-items"
-  },
-  {
-    "cantonese": "yee fu",
-    "english": "clothes",
-    "notes": "",
-    "category": "household-items"
-  },
-  {
-    "cantonese": "hai",
-    "english": "shoes",
-    "notes": "",
-    "category": "household-items"
-  },
-  {
-    "cantonese": "mao",
-    "english": "blanket",
-    "notes": "",
-    "category": "household-items"
-  },
-  {
-    "cantonese": "jam tow",
-    "english": "pillow",
-    "notes": "",
-    "category": "household-items"
-  },
-  {
-    "cantonese": "buy",
-    "english": "cup",
-    "notes": "",
-    "category": "household-items"
-  },
-  {
-    "cantonese": "dip",
-    "english": "plate",
-    "notes": "",
-    "category": "household-items"
-  },
-  {
-    "cantonese": "gung",
-    "english": "bowl",
-    "notes": "",
-    "category": "household-items"
-  },
-  {
+    "jyutping": "ca1",
     "cantonese": "cha",
     "english": "fork",
     "notes": "",
     "category": "household-items"
   },
   {
-    "cantonese": "sue gung",
+    "jyutping": "so1 gung1",
+    "cantonese": "so-gung",
     "english": "spoon",
     "notes": "",
     "category": "household-items"
   },
   {
-    "cantonese": "fai jee",
+    "jyutping": "faai3 zi2",
+    "cantonese": "fai-ji",
     "english": "chopsticks",
     "notes": "",
     "category": "household-items"
   },
   {
-    "cantonese": "dao",
+    "jyutping": "dou1",
+    "cantonese": "dou",
     "english": "knife",
     "notes": "",
     "category": "household-items"
   },
   {
-    "cantonese": "sui",
+    "jyutping": "seoi2",
+    "cantonese": "seui",
     "english": "water",
     "notes": "",
     "category": "liquids"
   },
   {
+    "jyutping": "caa4",
     "cantonese": "cha",
     "english": "tea",
     "notes": "",
     "category": "liquids"
   },
   {
-    "cantonese": "oiw lai",
+    "jyutping": "ngau5 naai5",
+    "cantonese": "ow-lie",
     "english": "milk",
     "notes": "",
     "category": "liquids"
   },
   {
-    "cantonese": "gaa fair",
+    "jyutping": "gaa1 fe1",
+    "cantonese": "ga-fe",
     "english": "coffee",
     "notes": "",
     "category": "liquids"
   },
   {
-    "cantonese": "chan zup",
+    "jyutping": "caang4 zap1",
+    "cantonese": "chaang-zap",
     "english": "orange juice",
     "notes": "",
     "category": "liquids"
   },
   {
-    "cantonese": "pee jaw",
+    "jyutping": "be1 zau2",
+    "cantonese": "be-jow",
     "english": "beer",
     "notes": "",
     "category": "liquids"
   },
   {
-    "cantonese": "jaw",
-    "english": "alcohol",
-    "notes": "",
-    "category": "liquids"
-  },
-  {
-    "cantonese": "hong jaw",
+    "jyutping": "hung4 zau2",
+    "cantonese": "hung-jow",
     "english": "red wine",
     "notes": "",
     "category": "liquids"
   },
   {
-    "cantonese": "bak jaw",
+    "jyutping": "baak6 zau2",
+    "cantonese": "baak-jow",
     "english": "white wine",
     "notes": "",
     "category": "liquids"
   },
   {
-    "cantonese": "yi lew",
+    "jyutping": "hei1 seoi2",
+    "cantonese": "hei-seui",
     "english": "soft drink",
     "notes": "",
     "category": "liquids"
   },
   {
-    "cantonese": "ho law",
-    "english": "cola",
+    "jyutping": "jau5 hei5 gaa1 seoi2",
+    "cantonese": "yau-hei-ga-seui",
+    "english": "sparkling water",
     "notes": "",
     "category": "liquids"
   },
   {
+    "jyutping": "tim4 zau2",
+    "cantonese": "tim-jow",
+    "english": "sweet wine",
+    "notes": "",
+    "category": "liquids"
+  },
+  {
+    "jyutping": "cin4",
     "cantonese": "chin",
     "english": "money",
     "notes": "",
     "category": "money-shopping"
   },
   {
-    "cantonese": "ngarn",
+    "jyutping": "man1",
+    "cantonese": "man",
     "english": "dollar",
     "notes": "",
     "category": "money-shopping"
   },
   {
-    "cantonese": "man",
+    "jyutping": "fan1",
+    "cantonese": "fan",
     "english": "cent",
     "notes": "",
     "category": "money-shopping"
   },
   {
-    "cantonese": "gay dor chin",
+    "jyutping": "gai2 do1 cin4",
+    "cantonese": "gai-do-chin",
     "english": "how much",
     "notes": "",
     "category": "money-shopping"
   },
   {
+    "jyutping": "gwai3",
     "cantonese": "gwai",
     "english": "expensive",
     "notes": "",
     "category": "money-shopping"
   },
   {
-    "cantonese": "ping",
+    "jyutping": "peng3",
+    "cantonese": "peng",
     "english": "cheap",
     "notes": "",
     "category": "money-shopping"
   },
   {
-    "cantonese": "da jit",
+    "jyutping": "daa6 zit3",
+    "cantonese": "daa-zit",
     "english": "discount",
     "notes": "",
     "category": "money-shopping"
   },
   {
-    "cantonese": "mai",
+    "jyutping": "maai5",
+    "cantonese": "maai",
     "english": "buy",
     "notes": "",
     "category": "money-shopping"
   },
   {
-    "cantonese": "mai",
+    "jyutping": "maai6",
+    "cantonese": "maai",
     "english": "sell",
-    "notes": "",
+    "notes": "Same tone for buy, different for sell",
     "category": "money-shopping"
   },
   {
-    "cantonese": "toi",
+    "jyutping": "sau1 geui3",
+    "cantonese": "sau-geui",
     "english": "receipt",
     "notes": "",
     "category": "money-shopping"
   },
   {
-    "cantonese": "bay chin",
+    "jyutping": "bei2 cin4",
+    "cantonese": "bei-cin",
     "english": "pay money",
     "notes": "",
     "category": "money-shopping"
   },
   {
-    "cantonese": "seen gum",
+    "jyutping": "sin1 gam1",
+    "cantonese": "sin-gam",
     "english": "cash",
     "notes": "",
     "category": "money-shopping"
   },
   {
-    "cantonese": "seen yong kart",
+    "jyutping": "sin1 jung1 kaat1",
+    "cantonese": "sin-jung-kaat",
     "english": "credit card",
     "notes": "",
     "category": "money-shopping"
   },
   {
-    "cantonese": "ba si kart",
+    "jyutping": "baat1 daat1 tung1",
+    "cantonese": "baat-daat-tung",
     "english": "octopus card",
     "notes": "",
     "category": "money-shopping"
   },
   {
-    "cantonese": "jung chin",
+    "jyutping": "zung3 cin4",
+    "cantonese": "zung-chin",
     "english": "change (money)",
     "notes": "",
     "category": "money-shopping"
   },
   {
-    "cantonese": "mm sai",
+    "jyutping": "m4 sai2",
+    "cantonese": "m-sai",
     "english": "don't need",
     "notes": "",
     "category": "money-shopping"
   },
   {
-    "cantonese": "yow mo da jit",
+    "jyutping": "jau5 mou5 daa6 zit3",
+    "cantonese": "yau-mo-daa-zit",
     "english": "any discount",
     "notes": "",
     "category": "money-shopping"
   },
   {
-    "cantonese": "tai gwai",
+    "jyutping": "taai3 gwai3",
+    "cantonese": "tai-gwai",
     "english": "too expensive",
     "notes": "",
     "category": "money-shopping"
   },
   {
-    "cantonese": "ping dee",
+    "jyutping": "peng3 di1",
+    "cantonese": "peng-di",
     "english": "cheaper",
     "notes": "",
     "category": "money-shopping"
   },
   {
-    "cantonese": "seen seen tai",
+    "jyutping": "sin1 sin1 tai3",
+    "cantonese": "sin-sin-tai",
     "english": "try on (clothes)",
     "notes": "",
     "category": "money-shopping"
   },
   {
-    "cantonese": "yut",
+    "jyutping": "jat1",
+    "cantonese": "yat",
     "english": "one",
     "notes": "",
     "category": "numbers"
   },
   {
+    "jyutping": "ji6",
     "cantonese": "yee",
     "english": "two",
     "notes": "",
     "category": "numbers"
   },
   {
+    "jyutping": "saam1",
     "cantonese": "saam",
     "english": "three",
     "notes": "",
     "category": "numbers"
   },
   {
-    "cantonese": "say",
+    "jyutping": "sei3",
+    "cantonese": "sei",
     "english": "four",
     "notes": "",
     "category": "numbers"
   },
   {
-    "cantonese": "nnnnng",
+    "jyutping": "ng5",
+    "cantonese": "ng",
     "english": "five",
     "notes": "",
     "category": "numbers"
   },
   {
-    "cantonese": "lok",
+    "jyutping": "luk6",
+    "cantonese": "luk",
     "english": "six",
     "notes": "",
     "category": "numbers"
   },
   {
+    "jyutping": "chat1",
     "cantonese": "chat",
     "english": "seven",
     "notes": "",
     "category": "numbers"
   },
   {
-    "cantonese": "bat",
+    "jyutping": "baat3",
+    "cantonese": "baat",
     "english": "eight",
     "notes": "",
     "category": "numbers"
   },
   {
+    "jyutping": "gau2",
     "cantonese": "gow",
     "english": "nine",
     "notes": "",
     "category": "numbers"
   },
   {
-    "cantonese": "sup",
+    "jyutping": "sap6",
+    "cantonese": "sap",
     "english": "ten",
     "notes": "",
     "category": "numbers"
   },
   {
-    "cantonese": "yee sup",
+    "jyutping": "ji6 sap6",
+    "cantonese": "yi-sap",
     "english": "twenty",
     "notes": "",
     "category": "numbers"
   },
   {
-    "cantonese": "saam sup",
+    "jyutping": "saam1 sap6",
+    "cantonese": "saam-sap",
     "english": "thirty",
     "notes": "",
     "category": "numbers"
   },
   {
-    "cantonese": "yut bak",
+    "jyutping": "jat1 baak3",
+    "cantonese": "yat-baak",
     "english": "hundred",
     "notes": "",
     "category": "numbers"
   },
   {
-    "cantonese": "yut chin",
+    "jyutping": "jat1 cin1",
+    "cantonese": "yat-chin",
     "english": "thousand",
     "notes": "",
     "category": "numbers"
   },
   {
+    "jyutping": "ling4",
     "cantonese": "ling",
     "english": "zero",
     "notes": "",
     "category": "numbers"
   },
   {
+    "jyutping": "ngo5",
     "cantonese": "ore",
     "english": "Me",
     "notes": "Represents the speaker",
     "category": "people"
   },
   {
+    "jyutping": "nei5",
     "cantonese": "lay",
     "english": "You",
     "notes": "Represents the person the speaker is referring to",
     "category": "people"
   },
   {
+    "jyutping": "keoi5",
     "cantonese": "koy",
     "english": "He/She",
     "notes": "",
     "category": "people"
   },
   {
+    "jyutping": "maa1 maa1",
     "cantonese": "ma-ma",
     "english": "Mum",
     "notes": "",
     "category": "people"
   },
   {
+    "jyutping": "baa1 baa1",
     "cantonese": "ba-ba",
     "english": "Dad",
     "notes": "",
     "category": "people"
   },
   {
-    "cantonese": "gaw gaw",
+    "jyutping": "go1 go1",
+    "cantonese": "go-go",
     "english": "older brother",
     "notes": "",
     "category": "people"
   },
   {
-    "cantonese": "jee jee",
+    "jyutping": "ze2 ze2",
+    "cantonese": "je-je",
     "english": "older sister",
     "notes": "",
     "category": "people"
   },
   {
-    "cantonese": "die die",
+    "jyutping": "dai6 dai6",
+    "cantonese": "dai-dai",
     "english": "younger brother",
     "notes": "",
     "category": "people"
   },
   {
-    "cantonese": "mui mui",
+    "jyutping": "mui1 mui6",
+    "cantonese": "mui-mui",
     "english": "younger sister",
     "notes": "",
     "category": "people"
   },
   {
-    "cantonese": "yea yea",
+    "jyutping": "je4 je4",
+    "cantonese": "je-je",
     "english": "grandfather",
     "notes": "",
     "category": "people"
   },
   {
-    "cantonese": "po po",
+    "jyutping": "po4 po4",
+    "cantonese": "po-po",
     "english": "grandmother",
     "notes": "",
     "category": "people"
   },
   {
-    "cantonese": "pang-yau",
+    "jyutping": "pang4 jau5",
+    "cantonese": "pang-yow",
     "english": "Friend",
     "notes": "",
     "category": "people"
   },
   {
-    "cantonese": "lou-baan",
+    "jyutping": "lou5 baan2",
+    "cantonese": "low-baan",
     "english": "Boss/Owner",
     "notes": "",
     "category": "people"
   },
   {
+    "jyutping": "tung4 si6",
     "cantonese": "tung-si",
     "english": "Colleague",
     "notes": "",
     "category": "people"
   },
   {
-    "cantonese": "nam yan",
+    "jyutping": "naam4 jan4",
+    "cantonese": "naam-yan",
     "english": "man",
     "notes": "",
     "category": "people"
   },
   {
-    "cantonese": "lui yan",
+    "jyutping": "neoi5 jan4",
+    "cantonese": "nui-yan",
     "english": "woman",
     "notes": "",
     "category": "people"
   },
   {
-    "cantonese": "sigh nam zai",
+    "jyutping": "sai3 lou6 zai2",
+    "cantonese": "sai-lo-zai",
     "english": "boy",
     "notes": "",
     "category": "people"
   },
   {
-    "cantonese": "sigh lui zai",
+    "jyutping": "sai3 lou6 neoi5 zai2",
+    "cantonese": "sai-lo-nui-zai",
     "english": "girl",
     "notes": "",
     "category": "people"
   },
   {
-    "cantonese": "ook kay",
+    "jyutping": "uk1 kei2",
+    "cantonese": "uk-kei",
     "english": "home",
     "notes": "",
     "category": "places"
   },
   {
+    "jyutping": "hok6 hau2",
     "cantonese": "hok-hau",
     "english": "school",
     "notes": "",
     "category": "places"
   },
   {
-    "cantonese": "gung si",
+    "jyutping": "gung1 si1",
+    "cantonese": "gung-si",
     "english": "office",
     "notes": "",
     "category": "places"
   },
   {
-    "cantonese": "chaan teng",
+    "jyutping": "caan1 tang4",
+    "cantonese": "chaan-teng",
     "english": "restaurant",
     "notes": "",
     "category": "places"
   },
   {
-    "cantonese": "chaa chan teng",
+    "jyutping": "caa4 caan1 tang4",
+    "cantonese": "cha-caan-teng",
     "english": "cafe",
     "notes": "",
     "category": "places"
   },
   {
-    "cantonese": "see jern",
+    "jyutping": "syu1 dim3",
+    "cantonese": "syu-dim",
     "english": "bookstore",
     "notes": "",
     "category": "places"
   },
   {
-    "cantonese": "choy see chang",
+    "jyutping": "gaai1 si4 coeng4",
+    "cantonese": "gai-si-coeng",
     "english": "market",
     "notes": "",
     "category": "places"
   },
   {
-    "cantonese": "yee yun",
+    "jyutping": "ji1 jyun4",
+    "cantonese": "yi-yun",
     "english": "hospital",
     "notes": "",
     "category": "places"
   },
   {
-    "cantonese": "gay cheung",
+    "jyutping": "gei1 coeng4",
+    "cantonese": "gei-coeng",
     "english": "airport",
     "notes": "",
     "category": "places"
   },
   {
-    "cantonese": "fo chee jarm",
+    "jyutping": "fo2 ce1 zaam6",
+    "cantonese": "fo-ce-zam",
     "english": "train station",
     "notes": "",
     "category": "places"
   },
   {
-    "cantonese": "ba si jarm",
+    "jyutping": "ba6 si1 zaam6",
+    "cantonese": "ba-si-zam",
     "english": "bus station",
     "notes": "",
     "category": "places"
   },
   {
+    "jyutping": "dim3",
     "cantonese": "dim",
     "english": "shop/store",
     "notes": "",
     "category": "places"
   },
   {
+    "jyutping": "gaai1",
     "cantonese": "gai",
     "english": "street",
     "notes": "",
     "category": "places"
   },
   {
-    "cantonese": "gung yun",
+    "jyutping": "gung1 jyun4",
+    "cantonese": "gung-yun",
     "english": "park",
     "notes": "",
     "category": "places"
   },
   {
-    "cantonese": "hay yun",
+    "jyutping": "hei3 jyun4",
+    "cantonese": "hei-yun",
     "english": "theater",
     "notes": "",
     "category": "places"
   },
   {
-    "cantonese": "tow sue gorn",
+    "jyutping": "tou4 syu1 gun2",
+    "cantonese": "tou-syu-gun",
     "english": "library",
     "notes": "",
     "category": "places"
   },
   {
-    "cantonese": "ngarn hong",
+    "jyutping": "ngan4 hong4",
+    "cantonese": "ngan-hong",
     "english": "bank",
     "notes": "",
     "category": "places"
   },
   {
-    "cantonese": "yau gook",
+    "jyutping": "jau4 guk1",
+    "cantonese": "yau-guk",
     "english": "post office",
     "notes": "",
     "category": "places"
   },
   {
-    "cantonese": "been dee",
+    "jyutping": "bin1 dei6",
+    "cantonese": "bin-dei",
     "english": "which place",
     "notes": "",
     "category": "places"
   },
   {
-    "cantonese": "gaw dee",
+    "jyutping": "gaa2 dou6",
+    "cantonese": "gaa-do",
     "english": "there",
     "notes": "",
     "category": "places"
   },
   {
-    "cantonese": "nee dee",
+    "jyutping": "lei1 dou6",
+    "cantonese": "lei-do",
     "english": "here",
     "notes": "",
     "category": "places"
   },
   {
-    "cantonese": "seung meen",
+    "jyutping": "soeng6 min6",
+    "cantonese": "soeng-min",
     "english": "upstairs",
     "notes": "",
     "category": "places"
   },
   {
-    "cantonese": "ha meen",
+    "jyutping": "haa6 min6",
+    "cantonese": "haa-min",
     "english": "downstairs",
     "notes": "",
     "category": "places"
   },
   {
+    "jyutping": "jyun4",
     "cantonese": "yun",
     "english": "far",
     "notes": "",
     "category": "places"
   },
   {
-    "cantonese": "kahn",
+    "jyutping": "gan1",
+    "cantonese": "gan",
     "english": "near",
     "notes": "",
     "category": "places"
   },
   {
-    "cantonese": "gay",
+    "jyutping": "gai2 do1",
+    "cantonese": "gai-do",
     "english": "how many",
     "notes": "",
     "category": "questions"
   },
   {
-    "cantonese": "mat yea",
+    "jyutping": "mat1 je5",
+    "cantonese": "mat-je",
     "english": "what",
     "notes": "",
     "category": "questions"
   },
   {
-    "cantonese": "been go",
+    "jyutping": "bin1 go3",
+    "cantonese": "bin-go",
     "english": "who",
     "notes": "",
     "category": "questions"
   },
   {
-    "cantonese": "been dee",
+    "jyutping": "bin1 dou6",
+    "cantonese": "bin-do",
     "english": "where",
     "notes": "",
     "category": "questions"
   },
   {
-    "cantonese": "gay see",
+    "jyutping": "gai2 si4",
+    "cantonese": "gai-si",
     "english": "when",
     "notes": "",
     "category": "questions"
   },
   {
-    "cantonese": "dim gaai",
+    "jyutping": "dim2 gaai2",
+    "cantonese": "dim-gaai",
     "english": "why",
     "notes": "",
     "category": "questions"
   },
   {
-    "cantonese": "dim yeung",
+    "jyutping": "dim2 joeng2",
+    "cantonese": "dim-yeung",
     "english": "how",
     "notes": "",
     "category": "questions"
   },
   {
+    "jyutping": "bin1",
     "cantonese": "bin",
     "english": "which",
     "notes": "",
     "category": "questions"
   },
   {
-    "cantonese": "hay mmm hay",
+    "jyutping": "hai6 m4 hai6",
+    "cantonese": "hai-m-hai",
     "english": "is it",
     "notes": "",
     "category": "questions"
   },
   {
-    "cantonese": "yow mo",
+    "jyutping": "jau5 mou5",
+    "cantonese": "yau-mo",
     "english": "have or not",
     "notes": "",
     "category": "questions"
   },
   {
-    "cantonese": "yut",
+    "jyutping": "jat1",
+    "cantonese": "yat",
     "english": "day",
     "notes": "",
     "category": "time"
   },
   {
-    "cantonese": "sing kay yut",
+    "jyutping": "sing1 kei4 jat1",
+    "cantonese": "sing-kei-yat",
     "english": "Monday",
     "notes": "",
     "category": "time"
   },
   {
-    "cantonese": "sing kay yee",
+    "jyutping": "sing1 kei4 ji6",
+    "cantonese": "sing-kei-yi",
     "english": "Tuesday",
     "notes": "",
     "category": "time"
   },
   {
-    "cantonese": "sing kay sam",
+    "jyutping": "sing1 kei4 saam1",
+    "cantonese": "sing-kei-saam",
     "english": "Wednesday",
     "notes": "",
     "category": "time"
   },
   {
-    "cantonese": "sing kay say",
+    "jyutping": "sing1 kei4 sei3",
+    "cantonese": "sing-kei-sei",
     "english": "Thursday",
     "notes": "",
     "category": "time"
   },
   {
-    "cantonese": "sing kay ng",
+    "jyutping": "sing1 kei4 ng5",
+    "cantonese": "sing-kei-ng",
     "english": "Friday",
     "notes": "",
     "category": "time"
   },
   {
-    "cantonese": "sing kay lok",
+    "jyutping": "sing1 kei4 luk6",
+    "cantonese": "sing-kei-luk",
     "english": "Saturday",
     "notes": "",
     "category": "time"
   },
   {
-    "cantonese": "sing kay yut",
+    "jyutping": "sing1 kei4 jat1",
+    "cantonese": "sing-kei-yat",
     "english": "Sunday",
     "notes": "",
     "category": "time"
   },
   {
-    "cantonese": "yut tow",
+    "jyutping": "zau2 tau4",
+    "cantonese": "jow-tau",
     "english": "morning",
     "notes": "",
     "category": "time"
   },
   {
-    "cantonese": "ng an",
+    "jyutping": "ngaan3 aa3",
+    "cantonese": "ngan-aa",
     "english": "afternoon",
     "notes": "",
     "category": "time"
   },
   {
-    "cantonese": "man man",
+    "jyutping": "maan4 maan4",
+    "cantonese": "maan-maan",
     "english": "evening",
     "notes": "",
     "category": "time"
   },
   {
-    "cantonese": "yea man",
+    "jyutping": "je4 maan4",
+    "cantonese": "ye-maan",
     "english": "night",
     "notes": "",
     "category": "time"
   },
   {
-    "cantonese": "gum yut",
+    "jyutping": "gam1 jat1",
+    "cantonese": "gam-yat",
     "english": "today",
     "notes": "",
     "category": "time"
   },
   {
-    "cantonese": "kam yut",
+    "jyutping": "kam4 jat1",
+    "cantonese": "kam-yat",
     "english": "yesterday",
     "notes": "",
     "category": "time"
   },
   {
-    "cantonese": "ting yut",
+    "jyutping": "ting1 jat1",
+    "cantonese": "ting-yat",
     "english": "tomorrow",
     "notes": "",
     "category": "time"
   },
   {
-    "cantonese": "yee ga",
+    "jyutping": "ji4 gaa1",
+    "cantonese": "yi-gaa",
     "english": "now",
     "notes": "",
     "category": "time"
   },
   {
-    "cantonese": "yi chin",
+    "jyutping": "ji4 cin4",
+    "cantonese": "yi-chin",
     "english": "before",
     "notes": "",
     "category": "time"
   },
   {
-    "cantonese": "yi hoe",
+    "jyutping": "ji4 hau6",
+    "cantonese": "yi-hau",
     "english": "after",
     "notes": "",
     "category": "time"
   },
   {
-    "cantonese": "dim jung",
+    "jyutping": "dim2 zung1",
+    "cantonese": "dim-zung",
     "english": "what time",
     "notes": "",
     "category": "time"
   },
   {
-    "cantonese": "gay dim",
+    "jyutping": "gai2 dim2",
+    "cantonese": "gai-dim",
     "english": "what time",
     "notes": "",
     "category": "time"
   },
   {
-    "cantonese": "yut",
+    "jyutping": "jat1",
+    "cantonese": "yat",
     "english": "day",
     "notes": "",
     "category": "time"
   },
   {
-    "cantonese": "yut gay",
+    "jyutping": "jat1 go3 sing1 kei4",
+    "cantonese": "yat-go-sing-kei",
     "english": "week",
     "notes": "",
     "category": "time"
   },
   {
-    "cantonese": "yut",
+    "jyutping": "jat1 go3 jyut6",
+    "cantonese": "yat-go-yut",
     "english": "month",
     "notes": "",
     "category": "time"
   },
   {
+    "jyutping": "nin4",
     "cantonese": "nin",
     "english": "year",
     "notes": "",
     "category": "time"
   },
   {
-    "cantonese": "dim jung",
+    "jyutping": "dim2 zung1",
+    "cantonese": "dim-zung",
     "english": "hour",
     "notes": "",
     "category": "time"
   },
   {
-    "cantonese": "fun jung",
+    "jyutping": "fan1 zung1",
+    "cantonese": "fan-zung",
     "english": "minute",
     "notes": "",
     "category": "time"
   },
   {
-    "cantonese": "mew",
+    "jyutping": "miu1",
+    "cantonese": "miu",
     "english": "second",
     "notes": "",
     "category": "time"
   },
   {
-    "cantonese": "chee",
+    "jyutping": "ce1",
+    "cantonese": "che",
     "english": "car",
     "notes": "",
     "category": "transportation"
   },
   {
-    "cantonese": "ba si",
+    "jyutping": "ba6 si1",
+    "cantonese": "ba-si",
     "english": "bus",
     "notes": "",
     "category": "transportation"
   },
   {
-    "cantonese": "dik si",
+    "jyutping": "dik1 si6",
+    "cantonese": "dik-si",
     "english": "taxi",
     "notes": "",
     "category": "transportation"
   },
   {
-    "cantonese": "dee tee",
+    "jyutping": "dei6 tit3",
+    "cantonese": "dei-tit",
     "english": "subway/MTR",
     "notes": "",
     "category": "transportation"
   },
   {
-    "cantonese": "fo chee",
+    "jyutping": "fo2 ce1",
+    "cantonese": "fo-che",
     "english": "train",
     "notes": "",
     "category": "transportation"
   },
   {
-    "cantonese": "fay gay",
+    "jyutping": "fei1 gei1",
+    "cantonese": "fei-gei",
     "english": "airplane",
     "notes": "",
     "category": "transportation"
   },
   {
-    "cantonese": "suen",
+    "jyutping": "syun4",
+    "cantonese": "syun",
     "english": "boat/ship",
     "notes": "",
     "category": "transportation"
   },
   {
-    "cantonese": "daan chee",
+    "jyutping": "daan1 ce1",
+    "cantonese": "daan-che",
     "english": "bicycle",
     "notes": "",
     "category": "transportation"
   },
   {
-    "cantonese": "mo tow chee",
+    "jyutping": "mo1 to1 ce1",
+    "cantonese": "mo-to-che",
     "english": "motorcycle",
     "notes": "",
     "category": "transportation"
   },
   {
-    "cantonese": "gung gay",
+    "jyutping": "fo3 ce1",
+    "cantonese": "fo-che",
     "english": "truck",
     "notes": "",
     "category": "transportation"
   },
   {
-    "cantonese": "din chee",
+    "jyutping": "din6 ce1",
+    "cantonese": "din-che",
     "english": "tram",
     "notes": "",
     "category": "transportation"
   },
   {
-    "cantonese": "chut jor chee",
+    "jyutping": "ceot1 zyu1 ce1",
+    "cantonese": "chut-ju-che",
     "english": "rental car",
     "notes": "",
     "category": "transportation"
   },
   {
-    "cantonese": "sigh ba",
+    "jyutping": "saai1 ba1",
+    "cantonese": "sai-ba",
     "english": "minibus",
     "notes": "",
     "category": "transportation"
   },
   {
+    "jyutping": "sik6",
     "cantonese": "sik",
     "english": "eat",
     "notes": "",
     "category": "verbs"
   },
   {
-    "cantonese": "yum",
+    "jyutping": "jam2",
+    "cantonese": "jam",
     "english": "drink",
     "notes": "",
     "category": "verbs"
   },
   {
+    "jyutping": "tai2",
     "cantonese": "tai",
     "english": "look/watch/see",
     "notes": "",
     "category": "verbs"
   },
   {
+    "jyutping": "ting1",
     "cantonese": "ting",
     "english": "listen/hear",
     "notes": "",
     "category": "verbs"
   },
   {
+    "jyutping": "gong2",
     "cantonese": "gong",
     "english": "speak/say",
     "notes": "",
     "category": "verbs"
   },
   {
-    "cantonese": "zor",
+    "jyutping": "zou6",
+    "cantonese": "zo",
     "english": "do/make",
     "notes": "",
     "category": "verbs"
   },
   {
-    "cantonese": "high",
+    "jyutping": "heoi3",
+    "cantonese": "hoy",
     "english": "go",
     "notes": "",
     "category": "verbs"
   },
   {
-    "cantonese": "loy",
+    "jyutping": "lai4",
+    "cantonese": "lai",
     "english": "come",
     "notes": "",
     "category": "verbs"
   },
   {
-    "cantonese": "fan gau",
+    "jyutping": "fan3 gau3",
+    "cantonese": "fan-gow",
     "english": "sleep",
     "notes": "",
     "category": "verbs"
   },
   {
-    "cantonese": "hai gum",
+    "jyutping": "hei2 san1",
+    "cantonese": "hei-san",
     "english": "wake up",
     "notes": "",
     "category": "verbs"
   },
   {
-    "cantonese": "jor",
+    "jyutping": "zo2",
+    "cantonese": "zo",
     "english": "sit",
     "notes": "",
     "category": "verbs"
   },
   {
-    "cantonese": "zarn",
+    "jyutping": "zaap6",
+    "cantonese": "jap",
     "english": "stand",
     "notes": "",
     "category": "verbs"
   },
   {
+    "jyutping": "zau2",
     "cantonese": "zow",
     "english": "run",
     "notes": "",
     "category": "verbs"
   },
   {
-    "cantonese": "hang",
+    "jyutping": "haang4",
+    "cantonese": "haang",
     "english": "walk",
     "notes": "",
     "category": "verbs"
   },
   {
-    "cantonese": "mai",
+    "jyutping": "maai5",
+    "cantonese": "maai",
     "english": "buy",
     "notes": "",
     "category": "verbs"
   },
   {
-    "cantonese": "mai",
+    "jyutping": "maai6",
+    "cantonese": "maai",
     "english": "sell",
     "notes": "Same sound as buy, context determines which",
     "category": "verbs"
   },
   {
-    "cantonese": "bay",
+    "jyutping": "bei2",
+    "cantonese": "bei",
     "english": "give",
     "notes": "",
     "category": "verbs"
   },
   {
-    "cantonese": "gnor",
+    "jyutping": "lo2",
+    "cantonese": "lo",
     "english": "take",
     "notes": "",
     "category": "verbs"
   },
   {
+    "jyutping": "hok6",
     "cantonese": "hok",
     "english": "learn/study",
     "notes": "",
     "category": "verbs"
   },
   {
-    "cantonese": "gaa",
+    "jyutping": "gaau3",
+    "cantonese": "gow",
     "english": "teach",
     "notes": "",
     "category": "verbs"
   },
   {
-    "cantonese": "sew",
+    "jyutping": "se2",
+    "cantonese": "se",
     "english": "write",
     "notes": "",
     "category": "verbs"
   },
   {
+    "jyutping": "duk6",
     "cantonese": "duk",
     "english": "read",
     "notes": "",
     "category": "verbs"
   },
   {
+    "jyutping": "min2",
     "cantonese": "min",
     "english": "understand",
     "notes": "",
     "category": "verbs"
   },
   {
-    "cantonese": "zee",
+    "jyutping": "zi1",
+    "cantonese": "ji",
     "english": "know",
     "notes": "",
     "category": "verbs"
   },
   {
-    "cantonese": "gem",
+    "jyutping": "gam3",
+    "cantonese": "gam",
     "english": "try",
     "notes": "",
     "category": "verbs"
   },
   {
+    "jyutping": "zo1",
     "cantonese": "zo",
     "english": "help",
     "notes": "",
     "category": "verbs"
   },
   {
+    "jyutping": "tung3",
     "cantonese": "tung",
     "english": "hurt/pain",
     "notes": "",
     "category": "verbs"
   },
   {
+    "jyutping": "gwai3",
     "cantonese": "gwai",
     "english": "expensive/costly",
     "notes": "",
     "category": "verbs"
   },
   {
-    "cantonese": "ping",
+    "jyutping": "peng3",
+    "cantonese": "peng",
     "english": "cheap/inexpensive",
     "notes": "",
     "category": "verbs"
   },
   {
-    "cantonese": "teng yut",
+    "jyutping": "tin1 hei3",
+    "cantonese": "tin-hei",
     "english": "weather",
     "notes": "",
     "category": "weather"
   },
   {
-    "cantonese": "teen chee",
+    "jyutping": "tin1 hung1",
+    "cantonese": "tin-hung",
     "english": "sky",
     "notes": "",
     "category": "weather"
   },
   {
-    "cantonese": "yut tow",
+    "jyutping": "taai3 joeng4",
+    "cantonese": "tai-yeung",
     "english": "sun",
     "notes": "",
     "category": "weather"
   },
   {
-    "cantonese": "yut leung",
+    "jyutping": "jyut6 loeng4",
+    "cantonese": "yut-leung",
     "english": "moon",
     "notes": "",
     "category": "weather"
   },
   {
-    "cantonese": "sing sing",
+    "jyutping": "sing1 sing1",
+    "cantonese": "sing-sing",
     "english": "star",
     "notes": "",
     "category": "weather"
   },
   {
-    "cantonese": "wun",
+    "jyutping": "wan1",
+    "cantonese": "wan",
     "english": "cloud",
     "notes": "",
     "category": "weather"
   },
   {
-    "cantonese": "yo",
+    "jyutping": "jyu5",
+    "cantonese": "yu",
     "english": "rain",
     "notes": "",
     "category": "weather"
   },
   {
+    "jyutping": "fung1",
     "cantonese": "fung",
     "english": "wind",
     "notes": "",
     "category": "weather"
   },
   {
-    "cantonese": "suet",
+    "jyutping": "syut3",
+    "cantonese": "syut",
     "english": "snow",
     "notes": "",
     "category": "weather"
   },
   {
-    "cantonese": "lee",
+    "jyutping": "lei4",
+    "cantonese": "lei",
     "english": "thunder",
     "notes": "",
     "category": "weather"
   },
   {
-    "cantonese": "sim deen",
+    "jyutping": "sim3 din6",
+    "cantonese": "sim-din",
     "english": "lightning",
     "notes": "",
     "category": "weather"
   },
   {
-    "cantonese": "yeet",
+    "jyutping": "jit6",
+    "cantonese": "yit",
     "english": "hot (weather)",
     "notes": "",
     "category": "weather"
   },
   {
+    "jyutping": "dung1",
     "cantonese": "dung",
     "english": "cold (weather)",
     "notes": "",
     "category": "weather"
   },
   {
-    "cantonese": "yeet chee",
+    "jyutping": "wan1 dou6",
+    "cantonese": "wan-dou",
     "english": "temperature",
     "notes": "",
     "category": "weather"
   },
   {
-    "cantonese": "chow sam",
+    "jyutping": "ciu4 sap1",
+    "cantonese": "chiu-sap",
     "english": "humid",
     "notes": "",
     "category": "weather"
   },
   {
-    "cantonese": "gon jaw",
+    "jyutping": "gon1 zou3",
+    "cantonese": "gon-zou",
     "english": "dry",
     "notes": "",
     "category": "weather"
