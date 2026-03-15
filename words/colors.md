@@ -2,13 +2,13 @@
 | ------------ | ------- | ----- |
 | hong sik     | red     |       |
 | lam sik      | blue    |       |
-| luk sik      | green   |       |
-| wong sik     | yellow  |       |
+| lok sik      | green   |       |
+| wonng sik    | yellow  |       |
 | hak sik      | black   |       |
 | bak sik      | white   |       |
-| cheng sik    | orange  |       |
+| charn sik    | orange  |       |
 | jee sik      | purple  |       |
 | fun hong sik | pink    |       |
-| fay sik      | grey    |       |
-| gam sik      | gold    |       |
+| foi sik      | grey    |       |
+| gum sik      | gold    |       |
 | ngarn sik    | silver  |       |

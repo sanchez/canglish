@@ -1,17 +1,17 @@
-| Cantonese | English     | Notes |
-| --------- | ----------- | ----- |
-| tow       | head        |       |
-| ngarn     | eye         |       |
-| yee       | ear         |       |
-| bay       | nose        |       |
-| jew       | mouth       |       |
-| nga       | tooth/teeth |       |
-| lain      | face        |       |
-| sow       | hand        |       |
-| geok      | foot/leg    |       |
-| sum       | heart       |       |
-| tou       | stomach     |       |
-| bay       | back        |       |
-| san tye   | body        |       |
-| sow jee   | finger      |       |
-| geok jee  | toe         |       |
+| Cantonese | English     | Notes                             |
+| --------- | ----------- | --------------------------------- |
+| tau       | head        |                                   |
+| aarn      | eye         |                                   |
+| yee       | ear         |                                   |
+| bay       | nose        |                                   |
+| joe       | mouth       |                                   |
+| aar       | tooth/teeth |                                   |
+| mean      | face        |                                   |
+| souw      | hand        |                                   |
+| girk      | foot/leg    |                                   |
+| sum       | heart       |                                   |
+| touw      | stomach     |                                   |
+| bui zek   | back        |                                   |
+| san       | body        |                                   |
+| souw jee  | finger      | Direct translation is end of hand |
+| girk jee  | toe         | Direct translation is end of foot |

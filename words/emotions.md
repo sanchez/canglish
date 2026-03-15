@@ -1,23 +1,18 @@
 | Cantonese   | English       | Notes |
 | ----------- | ------------- | ----- |
 | hoy sum     | happy         |       |
-| mmm hoy sum | unhappy/sad   |       |
-| fo sum      | angry         |       |
-| hai pa      | scared/afraid |       |
-| gern jung   | nervous       |       |
-| ying dong   | excited       |       |
-| gwai        | tired         |       |
-| mm gwai     | not tired     |       |
-| mun         | bored         |       |
-| juk         | worried       |       |
-| gee mo      | proud         |       |
-| sau sum     | sad           |       |
-| foo low     | annoyed       |       |
-| goy ga      | embarrassed   |       |
-| gay dong    | touched/moved |       |
-| ngoi        | love          |       |
+| mmm hoy sum | unhappy       |       |
+| lowe        | angry         |       |
+| gang        | scared/afraid |       |
+| gung jerng  | nervous       |       |
+| hing fun    | excited       |       |
+| gwoi        | tired         |       |
+| mm gwoi     | not tired     |       |
+| mooun       | bored         |       |
+| pa          | worried       |       |
+| ho lat      | proud         |       |
+| ore         | love          |       |
 | jung ee     | like          |       |
-| tow yim     | hate          |       |
-| gum dong    | grateful      |       |
-| hoy sum     | comfortable   |       |
-| mmm sue fu  | uncomfortable |       |
+| mmm jung ee | hate          |       |
+| shue fo     | comfortable   |       |
+| mmm shue fo | uncomfortable |       |

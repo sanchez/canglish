@@ -7,19 +7,28 @@
 | tau fu       | tofu         |       |
 | tau fu fa    | tofu pudding |       |
 
+# Timing
+
+| Cantonese | English   | Notes |
+| --------- | --------- | ----- |
+| gnn chan  | Lunch     |       |
+| joe chan  | Breakfast |       |
+
 # Fruit / Vegetables
 
-| Cantonese         | English    | Notes |
-| ----------------- | ---------- | ----- |
-| her-ung chiew     | banana     |       |
-| ping gaw          | apple      |       |
-| sea door bare lay | strawberry |       |
-| ying taw          | peach      |       |
-| taw               | peach      |       |
-| faan care         | tomato     |       |
-| yerng chong       | onion      |       |
-| woo law baa       | carrot     |       |
-| suw zai           | potato     |       |
+| Cantonese         | English       | Notes |
+| ----------------- | ------------- | ----- |
+| her-ung chiew     | banana        |       |
+| ping gaw          | apple         |       |
+| sea door bare lay | strawberry    |       |
+| toew              | peach         |       |
+| faan care         | tomato        |       |
+| yerng chong       | onion         |       |
+| hong law baa      | carrot        |       |
+| suw zai           | potato        |       |
+| mung gwore        | mango         |       |
+| yeah zee          | coconut       |       |
+| yeah zup          | coconut sauce |       |
 
 # Meat
 
@@ -32,8 +41,9 @@
 | guy         | chicken |       |
 | ha          | shrimp  |       |
 | hai         | crab    |       |
-| app         | duck    |       |
-| goo         | lamb    |       |
+| arpp        | duck    |       |
+| ore         | goose   |       |
+| yerng       | lamb    |       |
 | sam man you | salmon  |       |
 
 # Yum Cha
@@ -42,3 +52,4 @@
 | --------- | ------------ | ----- |
 | dahn tart | egg tart     |       |
 | ta su bao | bbq pork bun |       |
+| fong zoiw | chicken feet |       |

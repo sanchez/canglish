@@ -2,7 +2,7 @@
 
 ## Ordering and Preferences
 
-| Cantonese Phrase (Phenetics)    | English Translation        | Notes                                      |
+| Cantonese                       | English                    | Notes                                      |
 | ------------------------------- | -------------------------- | ------------------------------------------ |
 | ore oi sik                      | I want to eat              | Expressing hunger/desire to eat            |
 | nay oi sik ma                   | Do you want to eat?        | Asking if someone wants to eat             |
@@ -28,8 +28,8 @@
 
 ## Food Descriptions
 
-| Cantonese Phrase (Phenetics) | English Translation          | Notes                 |
-| ---------------------------- | ---------------------------- | --------------------- |
-| ho ho sik                    | Very good to eat / delicious | Complimenting food    |
-| mmm ho sik                   | Not good to eat              | Negative food review  |
-| ore oi ho yuk                | I want lots of meat          | Requesting extra meat |
+| Cantonese     | English                      | Notes                 |
+| ------------- | ---------------------------- | --------------------- |
+| ho ho sik     | Very good to eat / delicious | Complimenting food    |
+| mmm ho sik    | Not good to eat              | Negative food review  |
+| ore oi ho yuk | I want lots of meat          | Requesting extra meat |

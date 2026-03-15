@@ -4,7 +4,7 @@
 | mmm       | not                  | Placed infront of a word, means not, so mmm ho -> not good                        |
 | oi        | want                 |                                                                                   |
 | hi        | hi                   |                                                                                   |
-| hai       | yes / am             | Can be used to either me yes, or you are (e.g. I am boy)                          |
+| hai       | yes / am             | Can be used to either mean yes, or you are (e.g. I am boy)                        |
 | mou       | lacking / don't have | Similar to mmm, however would mean you don't have, e.g. useless -> don't have use |
 | mmm goi   | please               |                                                                                   |
 | chung-ee  | like                 |                                                                                   |
@@ -13,20 +13,12 @@
 | aaa       |                      | Used at the end of a sentence as a way to like soften the statement just made     |
 | gew       | called               |                                                                                   |
 | joy ghin  | good bye             |                                                                                   |
-| dye       | big                  |                                                                                   |
-| sigh      | small                |                                                                                   |
-| gai       | old (things)         |                                                                                   |
-| sun       | new                  |                                                                                   |
-| low       | old (people)         |                                                                                   |
-| high      | fast                 |                                                                                   |
-| marn      | slow                 |                                                                                   |
-| yung      | hot                  |                                                                                   |
+| die       | big                  |                                                                                   |
+| say       | small                |                                                                                   |
+| man-dee   | slow down            | Say to someone to ask them to slow down                                           |
+| yeet      | hot                  |                                                                                   |
 | dong      | cold                 |                                                                                   |
-| lung      | long                 |                                                                                   |
-| duen      | short                |                                                                                   |
-| gor       | tall/high            |                                                                                   |
-| ngai      | short (height)       |                                                                                   |
 | fay       | fat                  |                                                                                   |
-| saw       | thin                 |                                                                                   |
+| sou       | skinny               |                                                                                   |
+| saw       | stupid               |                                                                                   |
 | lay       | pretty               |                                                                                   |
-| chow      | ugly                 |                                                                                   |

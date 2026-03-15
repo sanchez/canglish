@@ -26,7 +26,7 @@
   {
     "cantonese": "hai",
     "english": "yes / am",
-    "notes": "Can be used to either me yes, or you are (e.g. I am boy)",
+    "notes": "Can be used to either mean yes, or you are (e.g. I am boy)",
     "category": "adjectives"
   },
   {
@@ -78,26 +78,14 @@
     "category": "adjectives"
   },
   {
-    "cantonese": "dye",
+    "cantonese": "die",
     "english": "big",
     "notes": "",
     "category": "adjectives"
   },
   {
-    "cantonese": "sigh",
+    "cantonese": "say",
     "english": "small",
-    "notes": "",
-    "category": "adjectives"
-  },
-  {
-    "cantonese": "gai",
-    "english": "old (things)",
-    "notes": "",
-    "category": "adjectives"
-  },
-  {
-    "cantonese": "sun",
-    "english": "new",
     "notes": "",
     "category": "adjectives"
   },

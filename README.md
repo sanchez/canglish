@@ -15,3 +15,11 @@ The repo is structured into folders, grouping by whatever came into my head, wit
 | --------- | ------- | ------------------ |
 | Word      | Meaning | Additional context |
 ```
+
+# TODO:
+
+Mango Coconut Sauce Chicken
+
+Lay deem dew aaa -> How did you cook it?
+Ho ho may, lay deem dew aaa -> How did you cook it?
+ore see aaa -> I try

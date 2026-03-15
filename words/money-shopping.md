@@ -7,7 +7,7 @@
 | gwai           | expensive        |       |
 | ping           | cheap            |       |
 | da jit         | discount         |       |
-| mai            | buy              |       |
+| jor            | buy              |       |
 | mai            | sell             |       |
 | toi            | receipt          |       |
 | bay chin       | pay money        |       |
