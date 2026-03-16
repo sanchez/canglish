@@ -21,9 +21,12 @@ export const useFlags = () => {
     return { items: {} };
   });
 
+  const { syncToCloud } = useSyncFlags();
+
   const saveToStorage = () => {
     if (process.client) {
       localStorage.setItem(STORAGE_KEY, JSON.stringify(state.value));
+      syncToCloud(state.value);
     }
   };
 

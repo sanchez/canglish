@@ -1,24 +1,24 @@
 <template>
   <div class="space-y-6">
     <div class="flex justify-between items-center mb-4">
-      <div class="text-sm text-gray-500">Build the phrase</div>
+      <div class="text-sm text-gray-500 dark:text-gray-400">Build the phrase</div>
       <HeartsDisplay :count="hearts" />
     </div>
 
     <div class="text-center mb-8">
-      <div class="text-sm text-gray-500 mb-2">English</div>
-      <div class="text-2xl font-bold text-gray-900">
+      <div class="text-sm text-gray-500 dark:text-gray-400 mb-2">English</div>
+      <div class="text-2xl font-bold text-gray-900 dark:text-white">
         {{ question.english }}
       </div>
     </div>
 
     <!-- Built phrase area -->
     <div
-      class="min-h-[80px] bg-gray-50 border-2 border-dashed border-gray-300 rounded-lg p-4"
+      class="min-h-[80px] bg-gray-50 dark:bg-gray-700 border-2 border-dashed border-gray-300 dark:border-gray-600 rounded-lg p-4"
     >
       <div
         v-if="selectedTokens.length === 0"
-        class="text-center text-gray-400"
+        class="text-center text-gray-400 dark:text-gray-500"
       >
         Tap tokens below to build the phrase
       </div>
@@ -47,7 +47,7 @@
         :class="[
           wrongToken === choice
             ? 'bg-red-500 text-white'
-            : 'bg-gray-100 hover:bg-gray-200 text-gray-900',
+            : 'bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 text-gray-900 dark:text-white',
           'px-4 py-3 rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed',
         ]"
       >
@@ -62,7 +62,7 @@
     >
       <button
         @click="reset"
-        class="flex-1 px-6 py-3 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition-colors"
+        class="flex-1 px-6 py-3 bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-500 transition-colors"
       >
         Reset
       </button>
@@ -74,7 +74,7 @@
       class="text-center"
     >
       <div
-        :class="feedback.correct ? 'text-green-600' : 'text-red-600'"
+        :class="feedback.correct ? 'text-green-600 dark:text-green-400' : 'text-red-600 dark:text-red-400'"
         class="text-lg font-semibold mb-3"
       >
         {{ feedback.message }}
@@ -254,5 +254,3 @@
 
   watch(() => props.question, initialize, { immediate: true });
 </script>
-
-};ript>

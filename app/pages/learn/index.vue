@@ -1,24 +1,24 @@
 <template>
   <div class="max-w-4xl mx-auto space-y-8">
     <div class="text-center space-y-4">
-      <h1 class="text-4xl font-bold text-gray-900">Learning Mode</h1>
-      <p class="text-lg text-gray-600">
+      <h1 class="text-4xl font-bold text-gray-900 dark:text-white">Learning Mode</h1>
+      <p class="text-lg text-gray-600 dark:text-gray-300">
         Practice up to 20 words and phrases at a time. Score 6/6 to master each
         item!
       </p>
     </div>
 
-    <div class="bg-white rounded-lg shadow p-8">
+    <div class="bg-white dark:bg-gray-800 rounded-lg shadow p-8">
       <div class="grid grid-cols-2 gap-6 mb-8">
         <div class="text-center">
-          <div class="text-3xl font-bold text-blue-600">{{ poolSize }}</div>
-          <div class="text-sm text-gray-600">Items in Learning Pool</div>
+          <div class="text-3xl font-bold text-blue-600 dark:text-blue-400">{{ poolSize }}</div>
+          <div class="text-sm text-gray-600 dark:text-gray-400">Items in Learning Pool</div>
         </div>
         <div class="text-center">
-          <div class="text-3xl font-bold text-green-600">
+          <div class="text-3xl font-bold text-green-600 dark:text-green-400">
             {{ sessionCount }}
           </div>
-          <div class="text-sm text-gray-600">Answered This Session</div>
+          <div class="text-sm text-gray-600 dark:text-gray-400">Answered This Session</div>
         </div>
       </div>
 
@@ -32,9 +32,9 @@
       </div>
     </div>
 
-    <div class="bg-blue-50 rounded-lg p-6">
-      <h2 class="text-xl font-semibold text-gray-900 mb-3">Learning Tips</h2>
-      <ul class="space-y-2 text-gray-700">
+    <div class="bg-blue-50 dark:bg-blue-900/30 rounded-lg p-6">
+      <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Learning Tips</h2>
+      <ul class="space-y-2 text-gray-700 dark:text-gray-300">
         <li>
           • <strong>Words:</strong> Answer multiple choice questions correctly
           to earn points

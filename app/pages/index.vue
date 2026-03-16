@@ -1,25 +1,25 @@
 <template>
   <div class="text-center space-y-8">
     <div class="space-y-4">
-      <h1 class="text-5xl font-bold text-gray-900">Canglish</h1>
-      <p class="text-xl text-gray-600">
+      <h1 class="text-5xl font-bold text-gray-900 dark:text-white">Canglish</h1>
+      <p class="text-xl text-gray-600 dark:text-gray-300">
         Learn Cantonese using English phonetics
       </p>
     </div>
 
     <!-- Progress Stats -->
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto">
-      <div class="bg-white rounded-lg shadow p-6">
-        <div class="text-3xl font-bold text-blue-600">{{ totalWords }}</div>
-        <div class="text-sm text-gray-600">Total Words</div>
+      <div class="bg-white dark:bg-gray-800 rounded-lg shadow p-6">
+        <div class="text-3xl font-bold text-blue-600 dark:text-blue-400">{{ totalWords }}</div>
+        <div class="text-sm text-gray-600 dark:text-gray-400">Total Words</div>
       </div>
-      <div class="bg-white rounded-lg shadow p-6">
-        <div class="text-3xl font-bold text-purple-600">{{ totalPhrases }}</div>
-        <div class="text-sm text-gray-600">Total Phrases</div>
+      <div class="bg-white dark:bg-gray-800 rounded-lg shadow p-6">
+        <div class="text-3xl font-bold text-purple-600 dark:text-purple-400">{{ totalPhrases }}</div>
+        <div class="text-sm text-gray-600 dark:text-gray-400">Total Phrases</div>
       </div>
-      <div class="bg-white rounded-lg shadow p-6">
-        <div class="text-3xl font-bold text-green-600">{{ masteredCount }}</div>
-        <div class="text-sm text-gray-600">Mastered</div>
+      <div class="bg-white dark:bg-gray-800 rounded-lg shadow p-6">
+        <div class="text-3xl font-bold text-green-600 dark:text-green-400">{{ masteredCount }}</div>
+        <div class="text-sm text-gray-600 dark:text-gray-400">Mastered</div>
       </div>
     </div>
 
@@ -59,9 +59,9 @@
     </div>
 
     <!-- Quick Info -->
-    <div class="max-w-2xl mx-auto mt-12 text-left bg-gray-50 rounded-lg p-6">
-      <h2 class="text-xl font-semibold text-gray-900 mb-3">How it works</h2>
-      <ul class="space-y-2 text-gray-700">
+    <div class="max-w-2xl mx-auto mt-12 text-left bg-gray-50 dark:bg-gray-800 rounded-lg p-6">
+      <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">How it works</h2>
+      <ul class="space-y-2 text-gray-700 dark:text-gray-300">
         <li>
           🔍 <strong>Search:</strong> Find any word or phrase in Cantonese or
           English

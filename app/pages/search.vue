@@ -1,6 +1,6 @@
 <template>
   <div class="space-y-4">
-    <h2 class="text-2xl font-bold text-gray-900">Search Cantonese & English</h2>
+    <h2 class="text-2xl font-bold text-gray-900 dark:text-white">Search Cantonese & English</h2>
 
     <SearchBar
       v-model="searchQuery"
@@ -13,7 +13,7 @@
     >
       <!-- Words Results -->
       <div v-if="filteredWords.length > 0">
-        <h3 class="text-xl font-semibold text-gray-800 mb-3">
+        <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-3">
           Words ({{ filteredWords.length }})
         </h3>
         <div class="grid gap-4 md:grid-cols-2">
@@ -28,7 +28,7 @@
 
       <!-- Phrases Results -->
       <div v-if="filteredPhrases.length > 0">
-        <h3 class="text-xl font-semibold text-gray-800 mb-3">
+        <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-3">
           Phrases ({{ filteredPhrases.length }})
         </h3>
         <div class="grid gap-4">
@@ -46,10 +46,10 @@
         v-if="filteredWords.length === 0 && filteredPhrases.length === 0"
         class="text-center py-12"
       >
-        <p class="text-gray-500 text-lg">
+        <p class="text-gray-500 dark:text-gray-400 text-lg">
           No results found for "{{ searchQuery }}"
         </p>
-        <p class="text-gray-400 text-sm mt-2">Try a different search term</p>
+        <p class="text-gray-400 dark:text-gray-500 text-sm mt-2">Try a different search term</p>
       </div>
     </div>
 
@@ -57,10 +57,10 @@
       v-else
       class="text-center py-12"
     >
-      <p class="text-gray-500 text-lg">
+      <p class="text-gray-500 dark:text-gray-400 text-lg">
         Start typing to search words and phrases
       </p>
-      <p class="text-gray-400 text-sm mt-2">
+      <p class="text-gray-400 dark:text-gray-500 text-sm mt-2">
         Search works with both English and Cantonese phonetics
       </p>
     </div>

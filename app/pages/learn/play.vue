@@ -4,7 +4,7 @@
       <template #top-right>
         <NuxtLink
           to="/learn"
-          class="text-sm text-blue-600 hover:text-blue-800 whitespace-nowrap"
+          class="text-sm text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 whitespace-nowrap"
         >
           Exit
         </NuxtLink>
@@ -22,7 +22,7 @@
         v-if="loading"
         class="text-center py-12"
       >
-        <div class="text-gray-500">Loading next question...</div>
+        <div class="text-gray-500 dark:text-gray-400">Loading next question...</div>
       </div>
 
       <div
@@ -30,10 +30,10 @@
         class="text-center py-12 space-y-4"
       >
         <div class="text-2xl">🎉</div>
-        <div class="text-xl font-semibold text-gray-900">
+        <div class="text-xl font-semibold text-gray-900 dark:text-white">
           No more items to learn right now!
         </div>
-        <div class="text-gray-600">
+        <div class="text-gray-600 dark:text-gray-400">
           You've mastered everything in your learning pool.
         </div>
         <NuxtLink

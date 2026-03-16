@@ -28,9 +28,12 @@ export const useProgress = () => {
   });
 
   // Save to localStorage whenever state changes
+  const { syncToCloud } = useSyncProgress();
+
   const saveToStorage = () => {
     if (process.client) {
       localStorage.setItem(STORAGE_KEY, JSON.stringify(state.value));
+      syncToCloud(state.value);
     }
   };
 

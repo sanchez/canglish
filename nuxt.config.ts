@@ -30,7 +30,11 @@ export default defineNuxtConfig({
     layoutTransition: { name: "layout", mode: "out-in" },
   },
 
-  modules: ["@nuxt/ui"],
+  modules: ["@nuxt/ui", "@nuxtjs/supabase"],
+
+  supabase: {
+    redirect: false,
+  },
 
   css: ["~/assets/css/main.css"],
 

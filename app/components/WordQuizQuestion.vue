@@ -1,15 +1,15 @@
 <template>
   <div class="space-y-6">
     <div class="text-center">
-      <div class="text-sm text-gray-500 mb-2">
+      <div class="text-sm text-gray-500 dark:text-gray-400 mb-2">
         {{ question.promptType === "cantonese" ? "Cantonese" : "English" }}
       </div>
-      <div class="text-3xl font-bold text-gray-900 mb-2">
+      <div class="text-3xl font-bold text-gray-900 dark:text-white mb-2">
         {{ question.prompt }}
       </div>
       <div
         v-if="question.notes"
-        class="text-sm text-gray-500 italic mb-6"
+        class="text-sm text-gray-500 dark:text-gray-400 italic mb-6"
       >
         {{ question.notes }}
       </div>
@@ -101,7 +101,7 @@
 
   const getOptionClass = (optionId: string) => {
     if (!answered.value) {
-      return "bg-gray-100 hover:bg-gray-200 text-gray-900";
+      return "bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 text-gray-900 dark:text-white";
     }
 
     if (optionId === props.question.correctOptionId) {
@@ -112,7 +112,7 @@
       return "bg-red-500 text-white";
     }
 
-    return "bg-gray-100 text-gray-400";
+    return "bg-gray-100 dark:bg-gray-700 text-gray-400 dark:text-gray-500";
   };
 
   // Reset when question changes

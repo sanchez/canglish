@@ -4,7 +4,7 @@
       v-model="query"
       type="text"
       :placeholder="placeholder"
-      class="w-full px-4 py-3 text-lg border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+      class="w-full px-4 py-3 text-lg border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
       @input="handleInput"
     />
     <div
@@ -13,7 +13,7 @@
     >
       <button
         @click="clear"
-        class="text-gray-400 hover:text-gray-600"
+        class="text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300"
       >
         ✕
       </button>

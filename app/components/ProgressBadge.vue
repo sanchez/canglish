@@ -16,14 +16,14 @@
 
   const badgeClass = computed(() => {
     if (!props.entry || !props.entry.unlocked) {
-      return "bg-gray-200 text-gray-700";
+      return "bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-300";
     }
 
     if (props.entry.mastered) {
-      return "bg-green-100 text-green-800";
+      return "bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200";
     }
 
-    return "bg-blue-100 text-blue-800";
+    return "bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200";
   });
 
   const displayText = computed(() => {
