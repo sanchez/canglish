@@ -1,22 +1,26 @@
 <template>
-  <div class="space-y-4">
-    <h2 class="text-2xl font-bold text-gray-900 dark:text-white">Search Cantonese & English</h2>
+  <div class="max-w-3xl mx-auto space-y-8">
+    <!-- Header -->
+    <div class="text-center space-y-2">
+      <h1 class="text-2xl font-bold text-gray-900 dark:text-white">Search</h1>
+      <p class="text-muted">Find words and phrases in Cantonese or English</p>
+    </div>
 
+    <!-- Search Input -->
     <SearchBar
       v-model="searchQuery"
-      placeholder="Search by English or Cantonese..."
+      placeholder="Type to search..."
     />
 
-    <div
-      v-if="searchQuery"
-      class="space-y-6"
-    >
+    <!-- Results -->
+    <div v-if="searchQuery" class="space-y-8">
       <!-- Words Results -->
       <div v-if="filteredWords.length > 0">
-        <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-3">
-          Words ({{ filteredWords.length }})
-        </h3>
-        <div class="grid gap-4 md:grid-cols-2">
+        <div class="flex items-center gap-2 mb-4">
+          <h2 class="text-lg font-semibold text-gray-900 dark:text-white">Words</h2>
+          <span class="px-2 py-0.5 text-xs font-medium rounded-full bg-gray-100 dark:bg-gray-700 text-muted">{{ filteredWords.length }}</span>
+        </div>
+        <div class="grid gap-3 sm:grid-cols-2">
           <WordListItem
             v-for="word in filteredWords"
             :key="getWordId(word)"
@@ -28,10 +32,11 @@
 
       <!-- Phrases Results -->
       <div v-if="filteredPhrases.length > 0">
-        <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-3">
-          Phrases ({{ filteredPhrases.length }})
-        </h3>
-        <div class="grid gap-4">
+        <div class="flex items-center gap-2 mb-4">
+          <h2 class="text-lg font-semibold text-gray-900 dark:text-white">Phrases</h2>
+          <span class="px-2 py-0.5 text-xs font-medium rounded-full bg-gray-100 dark:bg-gray-700 text-muted">{{ filteredPhrases.length }}</span>
+        </div>
+        <div class="grid gap-3">
           <PhraseListItem
             v-for="phrase in filteredPhrases"
             :key="getPhraseId(phrase)"
@@ -42,28 +47,31 @@
       </div>
 
       <!-- No Results -->
-      <div
+      <EmptyState
         v-if="filteredWords.length === 0 && filteredPhrases.length === 0"
-        class="text-center py-12"
+        title="No results found"
+        :description="`We couldn't find anything matching &quot;${searchQuery}&quot;.`"
       >
-        <p class="text-gray-500 dark:text-gray-400 text-lg">
-          No results found for "{{ searchQuery }}"
-        </p>
-        <p class="text-gray-400 dark:text-gray-500 text-sm mt-2">Try a different search term</p>
-      </div>
+        <template #icon>
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+          </svg>
+        </template>
+      </EmptyState>
     </div>
 
-    <div
-      v-else
-      class="text-center py-12"
+    <!-- Initial Empty State -->
+    <EmptyState
+      v-if="!searchQuery"
+      title="Start searching"
+      description="Type in English or Cantonese phonetics to find words and phrases."
     >
-      <p class="text-gray-500 dark:text-gray-400 text-lg">
-        Start typing to search words and phrases
-      </p>
-      <p class="text-gray-400 dark:text-gray-500 text-sm mt-2">
-        Search works with both English and Cantonese phonetics
-      </p>
-    </div>
+      <template #icon>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+        </svg>
+      </template>
+    </EmptyState>
   </div>
 </template>
 

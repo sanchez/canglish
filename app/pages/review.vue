@@ -1,33 +1,49 @@
 <template>
-  <div>
-    <div class="max-w-4xl mx-auto space-y-8 mb-8">
-      <div class="text-center space-y-4">
-        <h1 class="text-4xl font-bold text-gray-900 dark:text-white">Review Mode</h1>
-        <p class="text-lg text-gray-600 dark:text-gray-300">
-          Practice your mastered words and phrases to keep them fresh!
-        </p>
-      </div>
-
-      <div
-        v-if="!hasItems"
-        class="bg-yellow-50 dark:bg-yellow-900/30 rounded-lg p-8 text-center"
-      >
-        <div class="text-4xl mb-3">📚</div>
-        <div class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-          No items to review yet
-        </div>
-        <div class="text-gray-600 dark:text-gray-300 mb-4">
-          Master some words and phrases first!
-        </div>
-        <NuxtLink
-          to="/learn"
-          class="inline-block px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700"
-        >
-          Go to Learning
-        </NuxtLink>
-      </div>
+  <div class="max-w-2xl mx-auto space-y-8">
+    <!-- Header -->
+    <div class="text-center space-y-3">
+      <h1 class="text-3xl font-bold text-gray-900 dark:text-white">Review Mode</h1>
+      <p class="text-muted max-w-md mx-auto">
+        Keep your mastered words and phrases fresh with spaced practice.
+      </p>
     </div>
 
+    <!-- No Items State -->
+    <div v-if="!hasItems" class="card text-center">
+      <div class="w-16 h-16 rounded-2xl bg-amber-100 dark:bg-amber-900/30 flex items-center justify-center mx-auto mb-4">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-amber-600 dark:text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+        </svg>
+      </div>
+      <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">No items to review</h2>
+      <p class="text-muted mb-6">Master some words and phrases first to start reviewing.</p>
+      <NuxtLink to="/learn" class="btn-primary inline-flex items-center gap-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+        </svg>
+        Go to Learning
+      </NuxtLink>
+    </div>
+
+    <!-- Start Review Card -->
+    <div v-if="hasItems && !showQuiz" class="card text-center">
+      <div class="text-4xl font-bold text-violet-600 dark:text-violet-400 tabular-nums mb-2">
+        {{ masteredItemsCount }}
+      </div>
+      <div class="text-sm text-muted mb-6">Mastered items ready for review</div>
+      <button
+        @click="startReview"
+        class="btn-primary inline-flex items-center gap-2 px-8 py-4 text-lg font-semibold"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+        Start Review
+      </button>
+    </div>
+
+    <!-- Quiz -->
     <QuizShell
       v-if="hasItems && showQuiz"
       :mode="'review'"
@@ -35,9 +51,9 @@
       <template #top-right>
         <button
           @click="exitReview"
-          class="text-sm text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 whitespace-nowrap"
+          class="text-sm font-medium text-muted hover:text-gray-900 dark:hover:text-white transition-colors"
         >
-          Exit Review
+          Exit
         </button>
       </template>
 
@@ -53,7 +69,7 @@
         v-if="loading"
         class="text-center py-12"
       >
-        <div class="text-gray-500 dark:text-gray-400">Loading next question...</div>
+        <LoadingSpinner size="lg" label="Loading next question..." />
       </div>
 
       <div v-else-if="currentQuestion?.type === 'word'">
@@ -74,24 +90,6 @@
         />
       </div>
     </QuizShell>
-
-    <div
-      v-if="hasItems && !showQuiz"
-      class="max-w-4xl mx-auto"
-    >
-      <div class="bg-white dark:bg-gray-800 rounded-lg shadow p-8 text-center">
-        <div class="text-3xl font-bold text-purple-600 dark:text-purple-400 mb-2">
-          {{ masteredItemsCount }}
-        </div>
-        <div class="text-sm text-gray-600 dark:text-gray-400 mb-6">Mastered Items Available</div>
-        <button
-          @click="startReview"
-          class="px-8 py-4 bg-purple-600 text-white text-xl font-semibold rounded-lg hover:bg-purple-700 transition-colors shadow-lg"
-        >
-          Start Review Session
-        </button>
-      </div>
-    </div>
   </div>
 </template>
 

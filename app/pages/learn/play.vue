@@ -22,24 +22,31 @@
         v-if="loading"
         class="text-center py-12"
       >
-        <div class="text-gray-500 dark:text-gray-400">Loading next question...</div>
+        <LoadingSpinner size="lg" label="Loading next question..." />
       </div>
 
       <div
         v-else-if="!currentQuestion"
         class="text-center py-12 space-y-4"
       >
-        <div class="text-2xl">🎉</div>
-        <div class="text-xl font-semibold text-gray-900 dark:text-white">
-          No more items to learn right now!
+        <div class="w-20 h-20 rounded-2xl bg-emerald-100 dark:bg-emerald-900/30 flex items-center justify-center mx-auto">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-emerald-600 dark:text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
         </div>
-        <div class="text-gray-600 dark:text-gray-400">
-          You've mastered everything in your learning pool.
+        <div class="text-xl font-semibold text-gray-900 dark:text-white">
+          All done for now!
+        </div>
+        <div class="text-muted max-w-xs mx-auto">
+          You've mastered everything in your learning pool. Come back later to learn more.
         </div>
         <NuxtLink
           to="/learn"
-          class="inline-block mt-4 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
+          class="inline-flex items-center gap-2 mt-4 px-6 py-3 btn-primary"
         >
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+          </svg>
           Back to Learn
         </NuxtLink>
       </div>
