@@ -1,23 +1,24 @@
 <template>
-  <div class="bg-white dark:bg-gray-800 rounded-lg shadow p-4 hover:shadow-md transition-shadow">
-    <div class="flex justify-between items-start mb-2">
-      <div class="flex-1">
-        <div class="text-xl font-bold text-gray-900 dark:text-white">{{ word.cantonese }}</div>
-        <div class="text-lg text-gray-600 dark:text-gray-300">{{ word.english }}</div>
+  <div class="card-interactive group">
+    <div class="flex justify-between items-start gap-4">
+      <div class="flex-1 min-w-0">
+        <div class="text-xl font-bold text-gray-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">{{ word.cantonese }}</div>
+        <div class="text-base text-muted truncate">{{ word.english }}</div>
       </div>
-      <div class="flex items-center gap-2">
+      <div class="flex items-center gap-2 flex-shrink-0">
+        <ProgressBadge :entry="progress" />
         <button
           type="button"
-          :aria-label="isFlaggedItem ? 'Unflag item' : 'Flag for update'"
-          class="p-1 rounded hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+          :aria-label="isFlaggedItem ? 'Unflag item' : 'Flag for review'"
+          class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors focus:outline-none focus:ring-2 focus:ring-indigo-500"
+          :class="isFlaggedItem ? 'text-rose-500' : 'text-gray-400 dark:text-gray-500 hover:text-rose-500'"
           @click="toggleFlag"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="h-5 w-5"
-            :class="isFlaggedItem ? 'text-red-500 fill-current' : 'text-gray-400 dark:text-gray-500'"
+            class="w-5 h-5"
             viewBox="0 0 20 20"
-            fill="currentColor"
+            :fill="isFlaggedItem ? 'currentColor' : 'none'"
           >
             <path
               fill-rule="evenodd"
@@ -26,16 +27,15 @@
             />
           </svg>
         </button>
-        <ProgressBadge :entry="progress" />
       </div>
     </div>
     <div
       v-if="word.notes"
-      class="text-sm text-gray-500 dark:text-gray-400 mt-2"
+      class="text-sm text-muted mt-2 line-clamp-2"
     >
       {{ word.notes }}
     </div>
-    <div class="text-xs text-gray-400 dark:text-gray-500 mt-1">Category: {{ word.category }}</div>
+    <div class="text-xs text-gray-400 dark:text-gray-500 mt-2">{{ word.category }}</div>
   </div>
 </template>
 
