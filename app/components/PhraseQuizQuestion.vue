@@ -1,12 +1,18 @@
 <template>
   <div class="space-y-6">
-    <div class="flex justify-between items-center mb-4">
-      <div class="text-sm text-gray-500 dark:text-gray-400">Build the phrase</div>
+    <!-- Header with hearts -->
+    <div class="flex justify-between items-center">
+      <div class="flex items-center gap-2">
+        <span class="text-sm font-medium text-muted">Build the phrase</span>
+      </div>
       <HeartsDisplay :count="hearts" />
     </div>
 
-    <div class="text-center mb-8">
-      <div class="text-sm text-gray-500 dark:text-gray-400 mb-2">English</div>
+    <!-- English prompt -->
+    <div class="text-center py-4">
+      <div class="inline-flex items-center px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-xs font-medium text-muted mb-3">
+        English
+      </div>
       <div class="text-2xl font-bold text-gray-900 dark:text-white">
         {{ question.english }}
       </div>
@@ -14,42 +20,40 @@
 
     <!-- Built phrase area -->
     <div
-      class="min-h-[80px] bg-gray-50 dark:bg-gray-700 border-2 border-dashed border-gray-300 dark:border-gray-600 rounded-lg p-4"
+      class="min-h-[72px] bg-gray-50 dark:bg-gray-800/80 border-2 border-dashed border-gray-200 dark:border-gray-700 rounded-xl p-4 transition-colors duration-200"
     >
       <div
         v-if="selectedTokens.length === 0"
-        class="text-center text-gray-400 dark:text-gray-500"
+        class="h-full flex items-center justify-center text-sm text-muted"
       >
-        Tap tokens below to build the phrase
+        Tap words below to build the phrase
       </div>
       <div
         v-else
         class="flex flex-wrap gap-2"
       >
-        <button
-          v-for="(token, index) in selectedTokens"
-          :key="`selected-${index}`"
-          @click="removeToken(index)"
-          class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors"
-        >
-          {{ token }}
-        </button>
+        <TransitionGroup name="list">
+          <button
+            v-for="(token, index) in selectedTokens"
+            :key="`selected-${index}`"
+            @click="removeToken(index)"
+            class="px-4 py-2 bg-indigo-500 text-white rounded-lg hover:bg-indigo-600 shadow-sm transition-colors focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900"
+          >
+            {{ token }}
+          </button>
+        </TransitionGroup>
       </div>
     </div>
 
     <!-- Available choices -->
-    <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
+    <div class="grid grid-cols-2 sm:grid-cols-3 gap-2">
       <button
         v-for="(choice, index) in availableChoices"
         :key="`choice-${index}`"
         @click="addToken(choice)"
         :disabled="completed"
-        :class="[
-          wrongToken === choice
-            ? 'bg-red-500 text-white'
-            : 'bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 text-gray-900 dark:text-white',
-          'px-4 py-3 rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed',
-        ]"
+        :class="getChoiceClass(choice)"
+        class="px-4 py-3 rounded-xl transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900 font-medium"
       >
         {{ choice }}
       </button>
@@ -58,11 +62,11 @@
     <!-- Actions -->
     <div
       v-if="!completed"
-      class="flex gap-3 mt-6"
+      class="flex gap-3"
     >
       <button
         @click="reset"
-        class="flex-1 px-6 py-3 bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-500 transition-colors"
+        class="flex-1 px-4 py-3 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-200 rounded-xl hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 dark:focus:ring-offset-gray-900 font-medium"
       >
         Reset
       </button>
@@ -71,20 +75,26 @@
     <!-- Feedback -->
     <div
       v-if="feedback"
-      class="text-center"
+      class="text-center py-3"
     >
       <div
-        :class="feedback.correct ? 'text-green-600 dark:text-green-400' : 'text-red-600 dark:text-red-400'"
-        class="text-lg font-semibold mb-3"
+        class="inline-flex items-center gap-2 text-lg font-semibold mb-4"
+        :class="feedback.correct ? 'text-emerald-600 dark:text-emerald-400' : 'text-red-600 dark:text-red-400'"
       >
+        <svg v-if="feedback.correct" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+        <svg v-else xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
         {{ feedback.message }}
       </div>
       <button
         v-if="completed && !isAutoAdvancing"
         @click="handleNext"
-        class="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+        class="btn-primary px-6 py-3"
       >
-        Next Question
+        Continue
       </button>
     </div>
   </div>
@@ -184,13 +194,10 @@
       }, 500);
 
       if (hearts.value <= 0) {
-        // Out of hearts
         completed.value = true;
         feedback.value = {
           correct: false,
-          message: `❌ Out of hearts! The correct answer was: ${props.question.targetTokens.join(
-            " "
-          )}`,
+          message: `The correct answer was: ${props.question.targetTokens.join(" ")}`,
         };
 
         setTimeout(() => {
@@ -204,14 +211,12 @@
       return;
     }
 
-    // Check if phrase is complete
     if (currentLength === props.question.targetTokens.length) {
-      // Phrase is complete and correct!
       completed.value = true;
       isAutoAdvancing.value = true;
       feedback.value = {
         correct: true,
-        message: "🎉 Correct! Well done!",
+        message: "Correct! Well done!",
       };
 
       setTimeout(() => {
@@ -234,6 +239,13 @@
   const handleNext = () => {
     if (isAutoAdvancing.value) return;
     emit("next");
+  };
+
+  const getChoiceClass = (choice: string) => {
+    if (wrongToken.value === choice) {
+      return "bg-red-500 text-white scale-95";
+    }
+    return "bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white hover:bg-indigo-50 dark:hover:bg-indigo-900/30 hover:scale-[1.02]";
   };
 
   const arraysEqual = (a: string[], b: string[]): boolean => {
