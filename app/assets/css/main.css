@@ -2,12 +2,76 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .btn-primary {
+    @apply px-5 py-2.5 bg-indigo-500 hover:bg-indigo-600 text-white font-medium rounded-xl transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900;
+  }
+
+  .btn-secondary {
+    @apply px-5 py-2.5 bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-200 font-medium rounded-xl transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 dark:focus:ring-offset-gray-900;
+  }
+
+  .btn-danger {
+    @apply px-5 py-2.5 bg-red-500 hover:bg-red-600 text-white font-medium rounded-xl transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900;
+  }
+
+  .btn-success {
+    @apply px-5 py-2.5 bg-green-500 hover:bg-green-600 text-white font-medium rounded-xl transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900;
+  }
+
+  .card {
+    @apply bg-white dark:bg-gray-800 rounded-2xl shadow-smooth p-6;
+  }
+
+  .card-interactive {
+    @apply bg-white dark:bg-gray-800 rounded-2xl shadow-smooth p-6 hover:shadow-elevated hover:-translate-y-0.5 transition-all duration-200 cursor-pointer;
+  }
+
+  .input-field {
+    @apply w-full rounded-xl border-gray-200 dark:border-gray-700 dark:bg-gray-800 dark:text-white shadow-smooth focus:border-indigo-400 focus:ring-2 focus:ring-indigo-400/20 px-4 py-3 border transition-all duration-200;
+  }
+
+  .section-title {
+    @apply text-lg font-semibold text-gray-900 dark:text-white;
+  }
+
+  .text-muted {
+    @apply text-gray-500 dark:text-gray-400;
+  }
+}
+
 .page-enter-active,
 .page-leave-active {
-  transition: opacity 0.15s;
+  transition: all 0.25s ease-out;
 }
 
 .page-enter-from,
 .page-leave-to {
+  opacity: 0;
+  transform: translateY(8px);
+}
+
+.list-enter-active,
+.list-leave-active {
+  transition: all 0.3s ease;
+}
+
+.list-enter-from,
+.list-leave-to {
+  opacity: 0;
+  transform: translateY(12px);
+}
+
+.list-move {
+  transition: transform 0.3s ease;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.25s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
   opacity: 0;
 }
