@@ -33,6 +33,9 @@ jobs:
         run: npm run build:content
 
       - name: Generate static site
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
         run: npm run generate
 
       - name: Configure GitHub Pages
