@@ -15,20 +15,25 @@ interface CloudProgressEntry {
 
 export const useSyncProgress = () => {
   const client = useSupabaseClient();
-  const { profile, setSyncing, isSyncing, getOrCreateDeviceId } = useUser();
+  const { profile, user, setSyncing, isSyncing } = useUser();
+
+  const getUserId = (): string | null => {
+    if (!process.client) return null;
+    return user.value?.id || profile.value?.id || null;
+  };
 
   const syncToCloud = async (state: ProgressState): Promise<boolean> => {
     if (!process.client) return false;
-    if (!profile.value) {
-      console.warn("[SyncProgress] No profile, skipping cloud sync");
+    const userId = getUserId();
+    if (!userId) {
+      console.warn("[SyncProgress] No authenticated user, skipping cloud sync");
       return false;
     }
 
     setSyncing(true);
     try {
-      const deviceId = getOrCreateDeviceId();
       const entries = Object.values(state.items).map((entry) => ({
-        device_id: deviceId,
+        user_id: userId,
         item_id: entry.id,
         item_type: entry.type,
         score: entry.score,
@@ -44,7 +49,7 @@ export const useSyncProgress = () => {
       const { error } = await client
         .from("progress_entries")
         .upsert(entries, {
-          onConflict: "device_id,item_id",
+          onConflict: "user_id,item_id",
         });
 
       if (error) {
@@ -64,18 +69,18 @@ export const useSyncProgress = () => {
 
   const syncFromCloud = async (): Promise<ProgressState["items"] | null> => {
     if (!process.client) return null;
-    if (!profile.value) {
-      console.warn("[SyncProgress] No profile, skipping cloud fetch");
+    const userId = getUserId();
+    if (!userId) {
+      console.warn("[SyncProgress] No authenticated user, skipping cloud fetch");
       return null;
     }
 
     setSyncing(true);
     try {
-      const deviceId = getOrCreateDeviceId();
       const { data, error } = await client
         .from("progress_entries")
         .select("*")
-        .eq("device_id", deviceId);
+        .eq("user_id", userId);
 
       if (error) {
         console.error("[SyncProgress] Failed to fetch from cloud:", error);
@@ -111,8 +116,9 @@ export const useSyncProgress = () => {
 
   const sync = async (localState: ProgressState): Promise<ProgressState["items"]> => {
     if (!process.client) return localState.items;
-    if (!profile.value) {
-      console.warn("[SyncProgress] No profile, using local data only");
+    const userId = getUserId();
+    if (!userId) {
+      console.warn("[SyncProgress] No authenticated user, using local data only");
       return localState.items;
     }
 
@@ -131,9 +137,15 @@ export const useSyncProgress = () => {
 
       if (!localEntry) {
         merged[key] = cloudEntry;
-      } else if (cloudEntry.updated_at) {
-        const cloudTime = new Date(cloudEntry.updated_at).getTime();
-        merged[key] = cloudEntry;
+      } else {
+        const maxScore = Math.max(localEntry.score, cloudEntry.score);
+        if (maxScore > localEntry.score) {
+          merged[key] = {
+            ...localEntry,
+            score: maxScore,
+            mastered: maxScore >= 6,
+          };
+        }
       }
     }
 

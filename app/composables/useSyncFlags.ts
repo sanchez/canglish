@@ -13,19 +13,24 @@ interface CloudFlagEntry {
 
 export const useSyncFlags = () => {
   const client = useSupabaseClient();
-  const { profile, setSyncing, getOrCreateDeviceId } = useUser();
+  const { profile, user, setSyncing } = useUser();
+
+  const getUserId = (): string | null => {
+    if (!process.client) return null;
+    return user.value?.id || profile.value?.id || null;
+  };
 
   const syncToCloud = async (state: FlagsState): Promise<boolean> => {
     if (!process.client) return false;
-    if (!profile.value) {
-      console.warn("[SyncFlags] No profile, skipping cloud sync");
+    const userId = getUserId();
+    if (!userId) {
+      console.warn("[SyncFlags] No authenticated user, skipping cloud sync");
       return false;
     }
 
     try {
-      const deviceId = getOrCreateDeviceId();
       const entries = Object.values(state.items).map((entry) => ({
-        device_id: deviceId,
+        user_id: userId,
         item_id: entry.id,
         item_type: entry.type,
         reason: entry.reason,
@@ -39,7 +44,7 @@ export const useSyncFlags = () => {
       const { error } = await client
         .from("flags")
         .upsert(entries, {
-          onConflict: "device_id,item_id",
+          onConflict: "user_id,item_id",
         });
 
       if (error) {
@@ -57,17 +62,17 @@ export const useSyncFlags = () => {
 
   const syncFromCloud = async (): Promise<FlagsState["items"] | null> => {
     if (!process.client) return null;
-    if (!profile.value) {
-      console.warn("[SyncFlags] No profile, skipping cloud fetch");
+    const userId = getUserId();
+    if (!userId) {
+      console.warn("[SyncFlags] No authenticated user, skipping cloud fetch");
       return null;
     }
 
     try {
-      const deviceId = getOrCreateDeviceId();
       const { data, error } = await client
         .from("flags")
         .select("*")
-        .eq("device_id", deviceId);
+        .eq("user_id", userId);
 
       if (error) {
         console.error("[SyncFlags] Failed to fetch from cloud:", error);
@@ -100,8 +105,9 @@ export const useSyncFlags = () => {
 
   const sync = async (localState: FlagsState): Promise<FlagsState["items"]> => {
     if (!process.client) return localState.items;
-    if (!profile.value) {
-      console.warn("[SyncFlags] No profile, using local data only");
+    const userId = getUserId();
+    if (!userId) {
+      console.warn("[SyncFlags] No authenticated user, using local data only");
       return localState.items;
     }
 
