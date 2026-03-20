@@ -61,6 +61,11 @@ export const useLearningPool = () => {
     saveToStorage();
   };
 
+  const clearPool = () => {
+    state.value.items = [];
+    saveToStorage();
+  };
+
   const replaceMasteredItem = (masteredItem: PoolItem) => {
     removeItem(masteredItem.type, masteredItem.id);
     refillIfNeeded();
@@ -158,6 +163,7 @@ export const useLearningPool = () => {
     pool: computed(() => state.value.items),
     addItem,
     removeItem,
+    clearPool,
     replaceMasteredItem,
     refillIfNeeded,
     ensureInPool,

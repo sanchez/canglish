@@ -79,7 +79,7 @@
     title: "Learning Session",
   });
 
-  const { pool, refillIfNeeded, replaceMasteredItem } = useLearningPool();
+  const { pool, refillIfNeeded, replaceMasteredItem, clearPool } = useLearningPool();
   const { increment, getEntry } = useProgress();
   const { getNextQuestion: getNextWordQuestion } = useWordQuiz();
   const { getNextQuestion: getNextPhraseQuestion } = usePhraseQuiz();
@@ -92,11 +92,18 @@
     question: WordQuizQuestion | PhraseQuizQuestion;
   } | null>(null);
 
-  const loadNextQuestion = async () => {
+  const loadNextQuestion = async (attempt = 0) => {
+    const MAX_ATTEMPTS = 10;
+
+    if (attempt >= MAX_ATTEMPTS) {
+      console.error("[Learn] Failed to load question after", MAX_ATTEMPTS, "attempts");
+      currentQuestion.value = null;
+      return;
+    }
+
     loading.value = true;
 
     try {
-      // Ensure pool is filled
       refillIfNeeded();
 
       if (pool.value.length === 0) {
@@ -104,7 +111,6 @@
         return;
       }
 
-      // Get random item from pool
       const poolItems = pool.value;
       const randomIndex = Math.floor(Math.random() * poolItems.length);
       const item = poolItems[randomIndex];
@@ -121,8 +127,7 @@
             question,
           };
         } else {
-          // Try again with different selection
-          loadNextQuestion();
+          loadNextQuestion(attempt + 1);
         }
       } else {
         const phraseIds = poolItems
@@ -136,8 +141,7 @@
             question,
           };
         } else {
-          // Try again with different selection
-          loadNextQuestion();
+          loadNextQuestion(attempt + 1);
         }
       }
     } finally {
@@ -177,6 +181,21 @@
 
   // Load first question on mount
   onMounted(() => {
+    if (pool.value.length > 0 && pool.value.every((item) => item.type === "word")) {
+      const { getEntry } = useProgress();
+      const allMastered = pool.value.every((item) => {
+        if (item.type === "word") {
+          const entry = getEntry("word", item.id);
+          return entry && entry.mastered;
+        }
+        return false;
+      });
+
+      if (allMastered) {
+        clearPool();
+      }
+    }
+
     refillIfNeeded();
     sessionTarget.value = pool.value.length;
     loadNextQuestion();

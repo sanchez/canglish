@@ -9,7 +9,7 @@ interface ProgressState {
 const STORAGE_KEY = "canglish-progress-v1";
 
 export const useProgress = () => {
-  const { words, getWordByCantonese } = useWords();
+  const { words, getWordByCantonese, getWordByJyutping } = useWords();
   const { phrases, getPhraseTokens } = usePhrases();
 
   // Initialize state from localStorage or default
@@ -144,10 +144,13 @@ export const useProgress = () => {
     const tokens = getPhraseTokens(phraseId);
 
     for (const token of tokens) {
-      const word = getWordByCantonese(token);
+      let word = getWordByCantonese(token);
 
       if (!word) {
-        // Token doesn't match any word - phrase is not eligible
+        word = getWordByJyutping(token);
+      }
+
+      if (!word) {
         console.log(
           `[Progress] Token "${token}" in phrase ${phraseId} has no matching word`
         );
@@ -158,7 +161,6 @@ export const useProgress = () => {
       const wordProgress = getEntry("word", wordId);
 
       if (!wordProgress || !wordProgress.mastered) {
-        // Word is not mastered - phrase is not eligible
         console.log(
           `[Progress] Word "${word.cantonese}" (${wordId}) not mastered for phrase ${phraseId}`
         );

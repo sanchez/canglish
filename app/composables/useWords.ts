@@ -18,13 +18,11 @@ export const useWords = () => {
   };
 
   const getWordByCantonese = (cantonese: string): Word | undefined => {
-    // Direct match first
     let word = words.value.find((w) => w.cantonese === cantonese);
 
-    // Handle common spelling variations if no direct match
     if (!word) {
       const variations: Record<string, string> = {
-        nay: "lay", // "you" variation
+        nay: "lay",
         lay: "nay",
       };
 
@@ -37,6 +35,10 @@ export const useWords = () => {
     return word;
   };
 
+  const getWordByJyutping = (jyutping: string): Word | undefined => {
+    return words.value.find((w) => w.jyutping === jyutping);
+  };
+
   const getAllCategories = (): string[] => {
     return [...new Set(words.value.map((w) => w.category))];
   };
@@ -47,6 +49,7 @@ export const useWords = () => {
     getWordsByIds,
     getWordsByCategory,
     getWordByCantonese,
+    getWordByJyutping,
     getAllCategories,
   };
 };
