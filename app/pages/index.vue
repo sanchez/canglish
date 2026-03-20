@@ -1,142 +1,299 @@
 <template>
-  <div class="max-w-2xl mx-auto space-y-6">
+  <div class="max-w-xl mx-auto space-y-8 animate-fade-in">
     <!-- Hero Section -->
-    <div class="relative overflow-hidden bg-gradient-to-br from-indigo-600 via-purple-600 to-violet-700 rounded-2xl p-8 text-white">
-      <div class="absolute inset-0 opacity-30">
-        <svg class="w-full h-full" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
-              <path d="M 20 0 L 0 0 0 20" fill="none" stroke="white" stroke-width="0.5" opacity="0.3"/>
-            </pattern>
-          </defs>
-          <rect width="100%" height="100%" fill="url(#grid)" />
+    <div class="text-center pt-8">
+      <h1 class="text-4xl font-bold tracking-tight text-gray-900 dark:text-white mb-3">
+        Learn Cantonese
+      </h1>
+      <p class="text-gray-500 dark:text-gray-400 text-base">
+        Master Cantonese using English phonetics
+      </p>
+    </div>
+
+    <!-- Quiz Area -->
+    <div v-if="!isDone">
+      <!-- Progress -->
+      <div class="flex items-center justify-between mb-4">
+        <span class="text-sm text-gray-500 dark:text-gray-400">{{ sessionCount }} answered</span>
+        <div class="flex items-center gap-2">
+          <div class="w-32 h-2 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
+            <div 
+              class="h-full bg-gray-900 dark:bg-white rounded-full transition-all duration-300"
+              :style="{ width: `${sessionProgress}%` }"
+            ></div>
+          </div>
+          <span class="text-sm text-gray-500 dark:text-gray-400">{{ poolSize }} left</span>
+        </div>
+      </div>
+
+      <!-- Question -->
+      <div v-if="currentQuestion" class="space-y-6">
+        <!-- Prompt -->
+        <div class="text-center">
+          <div class="inline-flex items-center px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-xs font-medium text-gray-500 dark:text-gray-400 mb-4">
+            {{ currentQuestion.promptType === "cantonese" ? "Cantonese" : "English" }}
+          </div>
+          <div class="text-3xl font-bold text-gray-900 dark:text-white mb-2">
+            {{ currentQuestion.prompt }}
+          </div>
+          <div v-if="currentQuestion.notes" class="text-sm text-gray-500 dark:text-gray-400 italic">
+            {{ currentQuestion.notes }}
+          </div>
+        </div>
+
+        <!-- Options -->
+        <div class="grid grid-cols-1 gap-3">
+          <button
+            v-for="(option, index) in currentQuestion.options"
+            :key="option.id"
+            @click="handleAnswer(option.id)"
+            :disabled="answered"
+            :class="getOptionClass(option.id)"
+            class="group relative px-5 py-4 text-base font-medium rounded-xl transition-all duration-200 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 dark:focus:ring-white"
+          >
+            <span class="flex items-center justify-between gap-3">
+              <span class="flex items-center gap-3">
+                <span class="w-8 h-8 rounded-lg bg-gray-200 dark:bg-gray-700 flex items-center justify-center text-sm font-semibold">
+                  {{ String.fromCharCode(65 + index) }}
+                </span>
+                <span>{{ option.text }}</span>
+              </span>
+              <svg v-if="answered && option.id === currentQuestion.correctOptionId" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+              <svg v-else-if="answered && option.id === selectedId && option.id !== currentQuestion.correctOptionId" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </span>
+          </button>
+        </div>
+
+        <!-- Next Button -->
+        <div v-if="answered && !isAutoAdvancing" class="text-center pt-2">
+          <button @click="loadNextQuestion" class="px-6 py-3 bg-gray-900 dark:bg-white text-white dark:text-gray-900 rounded-xl font-medium hover:bg-gray-700 dark:hover:bg-gray-100 transition-colors">
+            Continue
+          </button>
+        </div>
+      </div>
+
+      <!-- Loading -->
+      <div v-else class="text-center py-12">
+        <div class="w-8 h-8 border-2 border-gray-300 dark:border-gray-600 border-t-gray-900 dark:border-t-white rounded-full animate-spin mx-auto"></div>
+        <p class="text-gray-500 dark:text-gray-400 mt-3">Loading...</p>
+      </div>
+    </div>
+
+    <!-- Completion State -->
+    <div v-else class="text-center py-12 space-y-6">
+      <div class="w-16 h-16 rounded-2xl bg-gray-100 dark:bg-gray-800 flex items-center justify-center mx-auto">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-gray-600 dark:text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
         </svg>
       </div>
-      <div class="relative text-center">
-        <div class="w-16 h-16 rounded-2xl bg-white/15 backdrop-blur-sm flex items-center justify-center mx-auto mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-9 h-9" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
-          </svg>
-        </div>
-        <h1 class="text-4xl font-bold mb-2">Canglish</h1>
-        <p class="text-white/80 text-sm">Learn Cantonese using English phonetics</p>
+      <div>
+        <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">All done for now!</h2>
+        <p class="text-gray-500 dark:text-gray-400">You've completed {{ sessionCount }} questions. Come back later to learn more.</p>
+      </div>
+      <div class="flex justify-center gap-4 text-sm">
+        <NuxtLink to="/search" class="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors">
+          Search words
+        </NuxtLink>
+        <NuxtLink to="/review" class="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors" :class="{ 'opacity-50': !hasReviewItems }">
+          Review
+        </NuxtLink>
       </div>
     </div>
 
     <!-- Quick Stats -->
-    <div class="grid grid-cols-3 gap-3">
-      <div class="card text-center py-4">
-        <div class="text-2xl font-bold text-indigo-600 dark:text-indigo-400 tabular-nums">{{ totalWords }}</div>
-        <div class="text-xs text-muted mt-1">Words</div>
-      </div>
-      <div class="card text-center py-4">
-        <div class="text-2xl font-bold text-purple-600 dark:text-purple-400 tabular-nums">{{ totalPhrases }}</div>
-        <div class="text-xs text-muted mt-1">Phrases</div>
-      </div>
-      <div class="card text-center py-4">
-        <div class="text-2xl font-bold text-emerald-600 dark:text-emerald-400 tabular-nums">{{ masteredCount }}</div>
-        <div class="text-xs text-muted mt-1">Mastered</div>
-      </div>
-    </div>
-
-    <!-- Main Actions -->
-    <div class="grid grid-cols-3 gap-3">
-      <NuxtLink to="/search" class="card-interactive text-center py-5 px-3">
-        <div class="w-11 h-11 rounded-xl bg-blue-100 dark:bg-blue-900/40 flex items-center justify-center mx-auto mb-3">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-blue-600 dark:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-          </svg>
-        </div>
-        <div class="font-semibold text-gray-900 dark:text-white text-sm">Search</div>
-        <div class="text-xs text-muted mt-0.5">Find words</div>
-      </NuxtLink>
-
-      <NuxtLink to="/learn" class="card-interactive text-center py-5 px-3">
-        <div class="w-11 h-11 rounded-xl bg-emerald-100 dark:bg-emerald-900/40 flex items-center justify-center mx-auto mb-3">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-emerald-600 dark:text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-          </svg>
-        </div>
-        <div class="font-semibold text-gray-900 dark:text-white text-sm">Learn</div>
-        <div class="text-xs text-muted mt-0.5">Practice</div>
-      </NuxtLink>
-
-      <NuxtLink to="/review" class="card-interactive text-center py-5 px-3" :class="{ 'opacity-50': !hasReviewItems }">
-        <div class="w-11 h-11 rounded-xl bg-violet-100 dark:bg-violet-900/40 flex items-center justify-center mx-auto mb-3">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-violet-600 dark:text-violet-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
-          </svg>
-        </div>
-        <div class="font-semibold text-gray-900 dark:text-white text-sm">Review</div>
-        <div class="text-xs text-muted mt-0.5">{{ hasReviewItems ? 'Keep fresh' : 'None yet' }}</div>
-      </NuxtLink>
-    </div>
-
-    <!-- How It Works -->
-    <div class="card">
-      <h2 class="section-title mb-4">How it works</h2>
-      <div class="space-y-3">
-        <div class="flex items-start gap-3">
-          <div class="w-8 h-8 rounded-lg bg-blue-100 dark:bg-blue-900/40 flex items-center justify-center flex-shrink-0">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-blue-600 dark:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-            </svg>
-          </div>
-          <div>
-            <div class="font-medium text-gray-900 dark:text-white text-sm">Search</div>
-            <div class="text-xs text-muted">Find words in Cantonese or English phonetics</div>
-          </div>
-        </div>
-        <div class="flex items-start gap-3">
-          <div class="w-8 h-8 rounded-lg bg-emerald-100 dark:bg-emerald-900/40 flex items-center justify-center flex-shrink-0">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-emerald-600 dark:text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-            </svg>
-          </div>
-          <div>
-            <div class="font-medium text-gray-900 dark:text-white text-sm">Learn</div>
-            <div class="text-xs text-muted">Practice up to 20 items at a time</div>
-          </div>
-        </div>
-        <div class="flex items-start gap-3">
-          <div class="w-8 h-8 rounded-lg bg-violet-100 dark:bg-violet-900/40 flex items-center justify-center flex-shrink-0">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-violet-600 dark:text-violet-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
-            </svg>
-          </div>
-          <div>
-            <div class="font-medium text-gray-900 dark:text-white text-sm">Review</div>
-            <div class="text-xs text-muted">Spaced repetition keeps skills sharp</div>
-          </div>
-        </div>
-        <div class="flex items-start gap-3">
-          <div class="w-8 h-8 rounded-lg bg-rose-100 dark:bg-rose-900/40 flex items-center justify-center flex-shrink-0">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-rose-600 dark:text-rose-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-            </svg>
-          </div>
-          <div>
-            <div class="font-medium text-gray-900 dark:text-white text-sm">Master</div>
-            <div class="text-xs text-muted">6 correct answers to unlock phrases</div>
-          </div>
-        </div>
+    <div class="flex justify-center gap-12 text-center pt-4">
+      <div>
+        <div class="text-2xl font-bold text-gray-900 dark:text-white tabular-nums">{{ masteredCount }}</div>
+        <div class="text-xs text-gray-500 dark:text-gray-400 mt-1">Mastered</div>
       </div>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
+  import type { WordQuizQuestion, QuizOption } from "~/types";
+  import { getWordId } from "~/types";
+
   const { words } = useWords();
   const { phrases } = usePhrases();
-  const { getMasteredCount } = useProgress();
-  const { hasItems } = useReviewPool();
+  const { getMasteredCount, increment, getEntry } = useProgress();
+  const { pool, refillIfNeeded, replaceMasteredItem } = useLearningPool();
 
   useHead({
     title: "Home",
   });
 
-  const totalWords = computed(() => words.value.length);
-  const totalPhrases = computed(() => phrases.value.length);
   const masteredCount = computed(() => getMasteredCount());
-  const hasReviewItems = computed(() => hasItems.value);
+  const poolSize = computed(() => pool.value.length);
+
+  const sessionCount = ref(0);
+  const currentQuestion = ref<WordQuizQuestion | null>(null);
+  const answered = ref(false);
+  const selectedId = ref<string | null>(null);
+  const isAutoAdvancing = ref(false);
+  const isDone = ref(false);
+
+  const sessionProgress = computed(() => {
+    const total = sessionCount.value + poolSize.value;
+    if (total === 0) return 0;
+    return (sessionCount.value / total) * 100;
+  });
+
+  const hasReviewItems = computed(() => {
+    const { hasItems } = useReviewPool();
+    return hasItems.value;
+  });
+
+  const buildQuestion = (wordId: string): WordQuizQuestion | null => {
+    const { getWordById } = useWords();
+    const word = getWordById(wordId);
+    if (!word) return null;
+
+    const promptType = Math.random() < 0.5 ? "cantonese" : "english";
+    const prompt = promptType === "cantonese" ? word.cantonese : word.english;
+
+    const correctOption: QuizOption = {
+      id: wordId,
+      text: promptType === "cantonese" ? word.english : word.cantonese,
+    };
+
+    const distractors = findDistractors(word, promptType, 3);
+    const allOptions = [correctOption, ...distractors];
+    shuffleArray(allOptions);
+
+    return {
+      wordId,
+      promptType,
+      prompt,
+      options: allOptions,
+      correctOptionId: wordId,
+      notes: word.notes,
+    };
+  };
+
+  const findDistractors = (targetWord: Word, promptType: "cantonese" | "english", count: number): QuizOption[] => {
+    const distractors: QuizOption[] = [];
+    const targetWordId = getWordId(targetWord);
+
+    const sameCategoryWords = words.value.filter(
+      (w) => getWordId(w) !== targetWordId && w.category === targetWord.category
+    );
+
+    shuffleArray(sameCategoryWords);
+    for (const word of sameCategoryWords) {
+      if (distractors.length >= count) break;
+      distractors.push({
+        id: getWordId(word),
+        text: promptType === "cantonese" ? word.english : word.cantonese,
+      });
+    }
+
+    if (distractors.length < count) {
+      const otherWords = words.value.filter(
+        (w) => getWordId(w) !== targetWordId && !sameCategoryWords.includes(w)
+      );
+      shuffleArray(otherWords);
+
+      for (const word of otherWords) {
+        if (distractors.length >= count) break;
+        distractors.push({
+          id: getWordId(word),
+          text: promptType === "cantonese" ? word.english : word.cantonese,
+        });
+      }
+    }
+
+    return distractors.slice(0, count);
+  };
+
+  function shuffleArray<T>(array: T[]): void {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+  }
+
+  const loadNextQuestion = () => {
+    answered.value = false;
+    selectedId.value = null;
+    isAutoAdvancing.value = false;
+
+    if (pool.value.length === 0) {
+      isDone.value = true;
+      currentQuestion.value = null;
+      return;
+    }
+
+    const wordIds = pool.value.filter((p) => p.type === "word").map((p) => p.id);
+    if (wordIds.length === 0) {
+      isDone.value = true;
+      currentQuestion.value = null;
+      return;
+    }
+
+    // Shuffle and try to build a question, retrying if needed
+    shuffleArray(wordIds);
+    for (const wordId of wordIds) {
+      const question = buildQuestion(wordId);
+      if (question) {
+        currentQuestion.value = question;
+        return;
+      }
+    }
+
+    // All questions failed to build - pool might be empty or corrupted
+    isDone.value = true;
+    currentQuestion.value = null;
+  };
+
+  const handleAnswer = (optionId: string) => {
+    if (answered.value || !currentQuestion.value) return;
+
+    selectedId.value = optionId;
+    answered.value = true;
+
+    const correct = optionId === currentQuestion.value.correctOptionId;
+
+    if (correct) {
+      isAutoAdvancing.value = true;
+      const entry = increment("word", currentQuestion.value.wordId);
+      if (entry.mastered) {
+        replaceMasteredItem({ type: "word", id: currentQuestion.value.wordId });
+      }
+    }
+
+    setTimeout(() => {
+      if (correct) {
+        sessionCount.value++;
+        setTimeout(() => {
+          loadNextQuestion();
+        }, 800);
+      }
+    }, 300);
+  };
+
+  const getOptionClass = (optionId: string) => {
+    if (!answered.value) {
+      return "bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-900 dark:text-white";
+    }
+
+    if (optionId === currentQuestion.value?.correctOptionId) {
+      return "bg-emerald-500 text-white";
+    }
+
+    if (optionId === selectedId.value) {
+      return "bg-red-500 text-white";
+    }
+
+    return "bg-gray-100 dark:bg-gray-800 text-gray-400 dark:text-gray-500 opacity-50";
+  };
+
+  onMounted(() => {
+    refillIfNeeded();
+    loadNextQuestion();
+  });
 </script>
