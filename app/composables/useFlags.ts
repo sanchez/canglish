@@ -92,6 +92,19 @@ export const useFlags = () => {
     saveToStorage();
   };
 
+  const setFlags = (cloudItems: Record<string, FlagEntry>): void => {
+    const merged: Record<string, FlagEntry> = { ...state.value.items };
+
+    for (const [key, cloudEntry] of Object.entries(cloudItems)) {
+      if (!merged[key]) {
+        merged[key] = cloudEntry;
+      }
+    }
+
+    state.value.items = merged;
+    saveToStorage();
+  };
+
   return {
     isFlagged,
     flagItem,
@@ -102,5 +115,6 @@ export const useFlags = () => {
     getFlaggedPhrases,
     getFlagCount,
     clearAllFlags,
+    setFlags,
   };
 };

@@ -183,6 +183,30 @@ export const useProgress = () => {
     return usage[wordId] || 0;
   };
 
+  const setProgress = (cloudItems: Record<string, ProgressEntry>): void => {
+    const merged: Record<string, ProgressEntry> = { ...state.value.items };
+
+    for (const [key, cloudEntry] of Object.entries(cloudItems)) {
+      const localEntry = merged[key];
+
+      if (!localEntry) {
+        merged[key] = cloudEntry;
+      } else {
+        const maxScore = Math.max(localEntry.score, cloudEntry.score);
+        if (maxScore > localEntry.score) {
+          merged[key] = {
+            ...localEntry,
+            score: maxScore,
+            mastered: maxScore >= 6,
+          };
+        }
+      }
+    }
+
+    state.value.items = merged;
+    saveToStorage();
+  };
+
   return {
     getEntry,
     unlock,
@@ -197,5 +221,6 @@ export const useProgress = () => {
     areAllWordsMasteredForPhrase,
     getEligiblePhrases,
     getWordUsage,
+    setProgress,
   };
 };

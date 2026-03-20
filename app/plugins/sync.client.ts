@@ -11,22 +11,23 @@ export default defineNuxtPlugin(async (nuxtApp) => {
     return;
   }
 
-  const { getEntry, unlock, increment, demote } = useProgress();
-  const { isFlagged, flagItem, unflagItem } = useFlags();
+  const { setProgress } = useProgress();
+  const { setFlags } = useFlags();
 
-  const { sync: syncProgress } = useSyncProgress();
-  const { sync: syncFlags } = useSyncFlags();
+  const { syncFromCloud: fetchCloudProgress } = useSyncProgress();
+  const { syncFromCloud: fetchCloudFlags } = useSyncFlags();
 
-  const localProgressState = {
-    items: {} as Record<string, unknown>,
-  };
+  const cloudProgress = await fetchCloudProgress();
+  if (cloudProgress) {
+    setProgress(cloudProgress);
+    console.log("[SyncPlugin] Merged cloud progress");
+  }
 
-  const localFlagsState = {
-    items: {} as Record<string, unknown>,
-  };
-
-  const mergedProgress = await syncProgress(localProgressState);
-  const mergedFlags = await syncFlags(localFlagsState);
+  const cloudFlags = await fetchCloudFlags();
+  if (cloudFlags) {
+    setFlags(cloudFlags);
+    console.log("[SyncPlugin] Merged cloud flags");
+  }
 
   console.log("[SyncPlugin] Sync complete");
 
@@ -36,8 +37,6 @@ export default defineNuxtPlugin(async (nuxtApp) => {
     if (syncInterval) return;
 
     syncInterval = setInterval(async () => {
-      const { getEntry: pGetEntry } = useProgress();
-      const { isFlagged: fIsFlagged } = useFlags();
       console.log("[SyncPlugin] Periodic sync...");
     }, 5 * 60 * 1000);
   };
