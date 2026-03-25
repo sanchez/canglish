@@ -133,9 +133,21 @@
             :key="flag.id"
             class="flex justify-between items-center p-3 rounded-xl bg-gray-50 dark:bg-gray-700/50"
           >
-            <div>
-              <div class="font-medium text-gray-900 dark:text-white">{{ getWordData(flag.id)?.cantonese || flag.id }}</div>
-              <div class="text-sm text-muted">{{ getWordData(flag.id)?.english }}</div>
+            <div class="flex items-center gap-2">
+              <div>
+                <div class="font-medium text-gray-900 dark:text-white">{{ getWordData(flag.id)?.cantonese || flag.id }}</div>
+                <div class="text-sm text-muted">{{ getWordData(flag.id)?.english }}</div>
+              </div>
+              <button
+                type="button"
+                @click="speak(getWordData(flag.id)?.cantonese || '')"
+                class="p-1.5 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 text-gray-400 hover:text-indigo-500"
+                :aria-label="`Play pronunciation for ${getWordData(flag.id)?.cantonese}`"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+                </svg>
+              </button>
             </div>
             <button
               type="button"
@@ -157,9 +169,21 @@
             :key="flag.id"
             class="flex justify-between items-center p-3 rounded-xl bg-gray-50 dark:bg-gray-700/50"
           >
-            <div>
-              <div class="font-medium text-gray-900 dark:text-white">{{ getPhraseData(flag.id)?.cantonese || flag.id }}</div>
-              <div class="text-sm text-muted">{{ getPhraseData(flag.id)?.english }}</div>
+            <div class="flex items-center gap-2">
+              <div>
+                <div class="font-medium text-gray-900 dark:text-white">{{ getPhraseData(flag.id)?.cantonese || flag.id }}</div>
+                <div class="text-sm text-muted">{{ getPhraseData(flag.id)?.english }}</div>
+              </div>
+              <button
+                type="button"
+                @click="speak(getPhraseData(flag.id)?.cantonese || '')"
+                class="p-1.5 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 text-gray-400 hover:text-indigo-500"
+                :aria-label="`Play pronunciation for ${getPhraseData(flag.id)?.cantonese}`"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+                </svg>
+              </button>
             </div>
             <button
               type="button"
@@ -203,9 +227,21 @@
           :key="word.id"
           class="flex justify-between items-center p-4 rounded-xl bg-gray-50 dark:bg-gray-700/50"
         >
-          <div>
-            <div class="font-semibold text-gray-900 dark:text-white">{{ word.word.cantonese }}</div>
-            <div class="text-sm text-muted">{{ word.word.english }}</div>
+          <div class="flex items-center gap-2">
+            <div>
+              <div class="font-semibold text-gray-900 dark:text-white">{{ word.word.cantonese }}</div>
+              <div class="text-sm text-muted">{{ word.word.english }}</div>
+            </div>
+            <button
+              type="button"
+              @click="speak(word.word.cantonese)"
+              class="p-1.5 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 text-gray-400 hover:text-indigo-500"
+              :aria-label="`Play pronunciation for ${word.word.cantonese}`"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+              </svg>
+            </button>
           </div>
           <div class="text-right">
             <div class="text-sm font-medium" :class="word.progress.mastered ? 'text-emerald-600 dark:text-emerald-400' : 'text-muted'">
@@ -300,6 +336,7 @@
   const { getMasteredWords, getMasteredPhrases, getUnlockedWords, getUnlockedPhrases, getEntry } = useProgress();
   const { words, getWordById } = useWords();
   const { phrases, getPhraseById } = usePhrases();
+  const { speak } = useSpeech();
   const { profile, isSyncing, linkEmail: linkEmailFn, signOut } = useUser();
   const { getMasteredItems, hasItems } = useReviewPool();
   const { getFlaggedWords, getFlaggedPhrases, getFlagCount, unflagItem, clearAllFlags } = useFlags();

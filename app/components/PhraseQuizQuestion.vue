@@ -13,8 +13,20 @@
       <div class="inline-flex items-center px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-xs font-medium text-muted mb-3">
         English
       </div>
-      <div class="text-2xl font-bold text-gray-900 dark:text-white">
-        {{ question.english }}
+      <div class="flex items-center justify-center gap-3">
+        <div class="text-2xl font-bold text-gray-900 dark:text-white">
+          {{ question.english }}
+        </div>
+        <button
+          type="button"
+          aria-label="Play pronunciation"
+          class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-400 hover:text-indigo-500 transition-colors focus:outline-none focus:ring-2 focus:ring-indigo-500"
+          @click="speak(question.targetTokens.join(' '))"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+          </svg>
+        </button>
       </div>
     </div>
 
@@ -55,7 +67,19 @@
         :class="getChoiceClass(choice)"
         class="px-4 py-3 rounded-xl transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900 font-medium"
       >
-        {{ choice }}
+        <span class="flex items-center justify-between gap-2 w-full">
+          <span>{{ choice }}</span>
+          <button
+            type="button"
+            @click.stop="speak(choice)"
+            class="p-1 rounded hover:bg-gray-200 dark:hover:bg-gray-600 text-gray-400 hover:text-indigo-500"
+            :aria-label="`Play pronunciation for ${choice}`"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+            </svg>
+          </button>
+        </span>
       </button>
     </div>
 
@@ -114,6 +138,8 @@
     ];
     next: [];
   }>();
+
+  const { speak } = useSpeech();
 
   const hearts = ref(3);
   const selectedTokens = ref<string[]>([]);

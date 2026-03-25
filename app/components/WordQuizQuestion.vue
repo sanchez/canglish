@@ -5,8 +5,20 @@
       <div class="inline-flex items-center px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-xs font-medium text-muted mb-4">
         {{ question.promptType === "cantonese" ? "Cantonese" : "English" }}
       </div>
-      <div class="text-3xl font-bold text-gray-900 dark:text-white mb-2">
-        {{ question.prompt }}
+      <div class="flex items-center justify-center gap-3 mb-2">
+        <div class="text-3xl font-bold text-gray-900 dark:text-white">
+          {{ question.prompt }}
+        </div>
+        <button
+          type="button"
+          aria-label="Play pronunciation"
+          class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-400 hover:text-indigo-500 transition-colors focus:outline-none focus:ring-2 focus:ring-indigo-500"
+          @click="speak(question.promptType === 'cantonese' ? question.prompt : '')"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+          </svg>
+        </button>
       </div>
       <div
         v-if="question.notes"
@@ -33,12 +45,24 @@
             </span>
             <span>{{ option.text }}</span>
           </span>
-          <svg v-if="answered && option.id === question.correctOptionId" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-          </svg>
-          <svg v-else-if="answered && option.id === selectedId && option.id !== question.correctOptionId" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-          </svg>
+          <span class="flex items-center gap-2">
+            <button
+              type="button"
+              @click.stop="speak(option.text)"
+              class="p-1 rounded hover:bg-gray-200 dark:hover:bg-gray-600 text-gray-400 hover:text-indigo-500"
+              :aria-label="`Play pronunciation for ${option.text}`"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+              </svg>
+            </button>
+            <svg v-if="answered && option.id === question.correctOptionId" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+            </svg>
+            <svg v-else-if="answered && option.id === selectedId && option.id !== question.correctOptionId" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </span>
         </span>
       </button>
     </div>
@@ -70,6 +94,8 @@
     answered: [payload: { correct: boolean; wordId: string }];
     next: [];
   }>();
+
+  const { speak } = useSpeech();
 
   const answered = ref(false);
   const selectedId = ref<string | null>(null);

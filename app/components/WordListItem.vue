@@ -2,7 +2,19 @@
   <div class="card-interactive group">
     <div class="flex justify-between items-start gap-4">
       <div class="flex-1 min-w-0">
-        <div class="text-xl font-bold text-gray-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">{{ word.cantonese }}</div>
+        <div class="flex items-center gap-2">
+          <div class="text-xl font-bold text-gray-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">{{ word.cantonese }}</div>
+          <button
+            type="button"
+            aria-label="Play pronunciation"
+            class="p-1.5 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-400 hover:text-indigo-500 transition-colors focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            @click="speak(word.cantonese)"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+            </svg>
+          </button>
+        </div>
         <div class="text-base text-muted truncate">{{ word.english }}</div>
       </div>
       <div class="flex items-center gap-2 flex-shrink-0">
@@ -49,6 +61,7 @@
   }>();
 
   const { isFlagged: checkIsFlagged, flagItem, unflagItem } = useFlags();
+  const { speak } = useSpeech();
 
   const wordId = computed(() => getWordId(props.word));
   const isFlaggedItem = computed(() => checkIsFlagged("word", wordId.value));
