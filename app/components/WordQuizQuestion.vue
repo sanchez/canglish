@@ -10,10 +10,11 @@
           {{ question.prompt }}
         </div>
         <button
+          v-if="question.promptType === 'cantonese'"
           type="button"
           aria-label="Play pronunciation"
           class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-400 hover:text-indigo-500 transition-colors focus:outline-none focus:ring-2 focus:ring-indigo-500"
-          @click="speak(question.promptType === 'cantonese' ? question.prompt : '')"
+          @click="speak(question.prompt)"
         >
           <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
             <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
@@ -47,6 +48,7 @@
           </span>
           <span class="flex items-center gap-2">
             <button
+              v-if="question.promptType === 'english'"
               type="button"
               @click.stop="speak(option.text)"
               class="p-1 rounded hover:bg-gray-200 dark:hover:bg-gray-600 text-gray-400 hover:text-indigo-500"
